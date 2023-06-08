@@ -36,37 +36,39 @@ margin: 20px 0;
 
 
 .about-content {
-display: flex;
-flex-direction: row;
-align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    font-size: 40px;
+
 }
+
 
 .about-image {
-width: 300px;
-height: auto;
-margin-right: 20px;
+    width: 300px;
+    height: auto;
+    margin-right: 20px;
 }
 
-.about-text {
-flex-grow: 1;
-}
+
 
 @media (max-width: 768px) {
-.about-content {
-    flex-direction: column;
-}
+    .about-content {
+        flex-direction: column;
+    }
 }
 .about-image {
 
-width: 100%;
-margin-left: 25px;
-margin-right: 25px;
+    width: 100%;
+    margin-left:10px;
+    margin-right: 50px;
+
 
 }
 
 .about-text {
-padding: 20px;
-text-align: left;
+    padding: 40px;
+    text-align: left;
 }
 
 @media (max-width: 768px) {
@@ -76,12 +78,12 @@ text-align: left;
 }
 
 .about-paragraph {
-margin-bottom: 15px;
+    margin-bottom: 15px;
 }
 
 
 .wrapper {
-    height: 100vh;
+    min-height: 100vh;
     /*This part is important for centering*/
     display: grid;
     place-items: center;
