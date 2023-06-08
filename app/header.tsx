@@ -27,7 +27,7 @@ const Header: React.FC = () => {
   useEffect(() => {
     const handleResize = () => {
         // not sure about the proper width yetttt
-      setIsMobileView(window.innerWidth <= 768); 
+      setIsMobileView(window.innerWidth <= 1000); 
     };
 
     handleResize();

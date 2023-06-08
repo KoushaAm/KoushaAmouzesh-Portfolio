@@ -1,16 +1,114 @@
+
+
+
 .section {
-    height: 100vh; /* Set the height to minimum window size */
+    min-height: 150vh; /* Set the height to minimum window size */
     background-color: black; /* Set the background color to black */
     color: white; /* Set the text color to white */
     font-family: 'Times New Roman', Times, serif; /* Set the font family to Times New Roman */
-    padding: 20px; /* Add padding to the sections */
+    
+}
+  
+.section h1 {
+font-size: 40px; /* Set the font size for section headings */
+margin-left: 25px;
+margin-top: 25px;
+margin-right: 25px;
+}
+
+.section p {
+font-size: 20px; /* Set the font size for section paragraphs */
+padding: 20px;
+}
+
+.about-image {
+width: 100%;
+height: auto;
+max-width: 500px;
+margin: 20px 0;
+}
+
+@media (max-width: 768px) {
+.about-image {
+    order: -1;
+}
+}
+
+
+.about-content {
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+}
+
+.about-image {
+width: 300px;
+height: auto;
+margin-right: 20px;
+}
+
+.about-text {
+flex-grow: 1;
+}
+
+@media (max-width: 768px) {
+.about-content {
+    flex-direction: column;
+}
+}
+.about-image {
+
+width: 100%;
+margin-left: 25px;
+margin-right: 25px;
+
+}
+
+.about-text {
+padding: 20px;
+text-align: left;
+}
+
+@media (max-width: 768px) {
+.about-text {
+    padding: 10px;
+}
+}
+
+.about-paragraph {
+margin-bottom: 15px;
+}
+
+
+.wrapper {
+    height: 100vh;
+    /*This part is important for centering*/
+    display: grid;
+    place-items: center;
   }
   
-  .section h2 {
-    font-size: 24px; /* Set the font size for section headings */
+  .typing-demo {
+    width: fit-content;
+    animation: typing 2s steps(20), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 60px;
   }
   
-  .section p {
-    font-size: 16px; /* Set the font size for section paragraphs */
+  @keyframes typing {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: calc(15ch); /* Add the width of border to the final width */
+    }
+  }
+  
+  @keyframes blink {
+    30% {
+      border-color: transparent;
+    }
   }
   
