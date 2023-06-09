@@ -18,6 +18,7 @@
 
 
 .sidebar-toggle {
+    height: 100%;
     padding: 20px;
     position: fixed;
     top: 10px;

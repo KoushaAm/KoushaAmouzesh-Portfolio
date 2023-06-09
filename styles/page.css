@@ -145,7 +145,6 @@ margin: 20px 0;
   .education-content {
     display: flex;
     flex-direction: column;
-    line-height: 1.2; /* Adjust the line height to your desired spacing */
 
   }
   
