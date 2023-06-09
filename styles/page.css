@@ -86,10 +86,12 @@ margin: 20px 0;
     min-height: 100vh;
     /*This part is important for centering*/
     display: grid;
+    padding: 20px;
     place-items: center;
   }
   
   .typing-demo {
+    padding: 0px;
     width: fit-content;
     animation: typing 2s steps(20), blink .5s step-end infinite alternate;
     white-space: nowrap;
@@ -112,5 +114,100 @@ margin: 20px 0;
     30% {
       border-color: transparent;
     }
+  }
+  
+
+  .link {
+    color: #ffffff;
+    text-decoration: none;
+    margin-right: 10px;
+    font-size: 20px;
+    
+}
+
+.link:hover {
+    /* color: #626161; */
+    background-color: #aaaaaa;
+}
+
+.section-box {
+    color: #000;
+    border-radius: 5px;
+    padding:20px;
+    max-width: 1000px; /* Adjust the max-width to make the box smaller */
+    margin: 0 auto; /* Center the box horizontally */
+    border-radius: 10px;
+    background: #e0e0e0;
+    box-shadow:  20px 20px 60px #171717,
+                -20px -20px 60px #1e1e1e;
+}
+  
+  .education-content {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2; /* Adjust the line height to your desired spacing */
+
+  }
+  
+  .education-item {
+    margin-bottom: 20px;
+  }
+  
+  .contact-box {
+    text-align: center;
+  }
+  
+  .contact-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: left; /* Adjust the text alignment to left */
+  }
+  
+  .contact-item {
+    margin-bottom: 10px; /* Reduce the margin-bottom */
+  }
+  
+
+  .section h1 {
+    margin-top: 10px; /* Reduce the margin-top */
+    margin-bottom: 10px; /* Reduce the margin-bottom */
+  }
+  
+  .section p {
+    margin-bottom: 10px; /* Reduce the margin-bottom */
+  }
+  
+  .about-content {
+    font-size: 30px; /* Reduce the font size */
+  }
+  
+  .about-image {
+    margin-right: 10px; /* Reduce the margin-right */
+  }
+  
+  .about-text {
+    padding: 20px; /* Increase the padding for more space between paragraphs */
+  }
+  
+  .about-paragraph {
+    margin-bottom: 10px; /* Reduce the margin-bottom */
+  }
+  
+  .section-box {
+    padding: 20px; /* Increase the padding for more space between items */
+    max-width: 800px; /* Adjust the max-width to make the box smaller */
+  }
+  
+  .education-content {
+    gap: 10px; /* Reduce the gap between education items */
+  }
+  
+  .contact-content {
+    gap: 10px; /* Reduce the gap between contact items */
+  }
+  
+  .contact-item {
+    margin-bottom: 10px; /* Reduce the margin-bottom */
   }
   
