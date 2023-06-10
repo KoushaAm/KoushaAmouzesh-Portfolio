@@ -26,7 +26,7 @@ const Home: React.FC = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const position = window.pageYOffset;
+      const position = window.scrollY;
       setScrollPosition(position);
     };
 
@@ -79,7 +79,7 @@ const Home: React.FC = () => {
       </section>
 
       <section id="AboutMe" className="section" style={{ backgroundColor }}>
-        <h1 style={{ marginLeft: "80px", fontSize: "60px" }}>
+        <h1 style={{ marginLeft: "80px", fontSize: "50px" }}>
           <strong>About me...</strong>
         </h1>
         <div className="about-content">
@@ -91,12 +91,13 @@ const Home: React.FC = () => {
               Besides my passion for technology and academia, I have a strong drive for sports and thrive in competitive environments. I have been involved in competitive swimming for 8 years and also enjoy the complexity and excitement of recreational soccer. Additionally, I have a musical background and play the Persian Tombak, piano, and drums.
             </p>
           </div>
-          <img
-            src="https://github.com/KoushaAm/Portfolio/blob/master/Screenshot%202023-05-28%20at%209.43.43%20PM.png?raw=true"
-            alt="About Me"
-            className="about-image"
-            style={{ width: "400px", height: "auto", marginLeft: "40px", marginRight: "40px" }}
-          />
+          <div className="image-container">
+            <img
+              src="https://github.com/KoushaAm/Portfolio/blob/master/Screenshot%202023-05-28%20at%209.43.43%20PM.png?raw=true"
+              alt="About Me"
+              className="about-image"
+            />
+          </div>
         </div>
       </section>
 
@@ -138,11 +139,8 @@ const Home: React.FC = () => {
         <h1>Contact</h1>
         <div className="contact-content">
           <div className="contact-item">
-            <a href="https://www.linkedin.com/in/kousha-amouzesh-b31445232/" className="link">
-              <FontAwesomeIcon icon={faLinkedin} />
-              <span style = {{marginLeft: "10px"}}>LinkedIn</span>
-            </a>
-            <p>
+
+            <p style = {{marginBottom: "0px"}}>
               <FontAwesomeIcon icon={faEnvelope} />
               <span  style = {{marginLeft: "10px"}}>koushaamouzesh@gmail.com</span>
             </p>
@@ -150,22 +148,35 @@ const Home: React.FC = () => {
               <FontAwesomeIcon icon={faPhone} />
               <span  style = {{marginLeft: "10px"}}>604-782-2974</span>
             </p>
-            <p>
-              <FontAwesomeIcon icon={faMapMarkerAlt} />
-              <span  style = {{marginLeft: "10px"}}>Vancouver, B.C., Canada</span>
-            </p>
-          </div>
-          <div className="contact-item">
+
+            <a href="https://www.linkedin.com/in/kousha-amouzesh-b31445232/" style = {{marginBottom: "30px"}} className="link">
+              <FontAwesomeIcon icon={faLinkedin} />
+              <span style = {{marginLeft: "10px"}}>LinkedIn</span>
+            </a>
+
             <a href="https://github.com/KoushaAm?tab=overview&from=2023-05-01&to=2023-05-28" className="link">
               <FontAwesomeIcon icon={faGithub} />
               <span  style = {{marginLeft: "10px"}}>GitHub</span>
             </a>
+            
+
+            <p>
+              <FontAwesomeIcon icon={faMapMarkerAlt} />
+              <span  style = {{marginLeft: "10px"}}>Vancouver, B.C., Canada</span>
+            </p>
+
+            
           </div>
+            
         </div>
       </div>
     </section>
 
-
+    <footer>
+      <div className="footer">
+        <p style={{ marginTop: "0px", marginLeft: "20px"}}>Developed by Kousha Amouzesh</p>
+      </div>
+    </footer>
     </main>
   );
 };
