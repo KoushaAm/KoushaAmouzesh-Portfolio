@@ -86,27 +86,47 @@ margin: 20px 0;
     min-height: 100vh;
     /*This part is important for centering*/
     display: grid;
-    padding: 20px;
+    padding: 10px;
     place-items: center;
+    grid-gap: 10px;
   }
   
   .typing-demo {
     padding: 0px;
-    width: fit-content;
-    animation: typing 2s steps(20), blink .5s step-end infinite alternate;
+    width: 0;
+    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
     white-space: nowrap;
     overflow: hidden;
     border-right: 3px solid;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 60px;
+    font-size: 50px;
+    animation-fill-mode: forwards;
+    margin-bottom: 0px; /* Adjust the margin-bottom value */
   }
   
+
+  .typing-demo-2 {
+    color: #959595;
+    padding: 0px;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 30px;
+
+    margin-top: 0px; /* Adjust the margin-top value */
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+
+  .typing-demo-2.visible {
+    opacity: 1;
+  }
+
   @keyframes typing {
     0% {
       width: 0;
     }
     100% {
-      width: calc(15ch); /* Add the width of border to the final width */
+      width: calc(16ch);
     }
   }
   
@@ -115,6 +135,8 @@ margin: 20px 0;
       border-color: transparent;
     }
   }
+
+
   
 
   .link {
@@ -209,4 +231,6 @@ margin: 20px 0;
   .contact-item {
     margin-bottom: 10px; /* Reduce the margin-bottom */
   }
+  
+
   
