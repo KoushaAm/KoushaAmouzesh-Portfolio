@@ -3,6 +3,11 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import Header from './header';
 import '../styles/page.css'; // Import the CSS file for the Home component
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope, faPhone, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
+
+
 
 const Home: React.FC = () => {
 
@@ -15,24 +20,70 @@ const Home: React.FC = () => {
 
     return () => clearTimeout(timer);
   }, []);
-  
+
+  const [scrollPosition, setScrollPosition] = useState<number>(0);
+  const [backgroundColor, setBackgroundColor] = useState<string>('black');
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const position = window.pageYOffset;
+      setScrollPosition(position);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  useEffect(() => {
+    const calculateBackgroundColor = () => {
+      const windowHeight = window.innerHeight;
+      const documentHeight = document.documentElement.scrollHeight;
+      const scrollableDistance = documentHeight - windowHeight;
+
+      const percentage = (scrollPosition / scrollableDistance) * 100;
+      const rateOfChange = 400;
+      const colorValue = Math.round((percentage / rateOfChange) * 255);
+      const backgroundColor = `rgb(${colorValue}, ${colorValue}, ${colorValue})`;
+
+      setBackgroundColor(backgroundColor);
+    };
+
+    calculateBackgroundColor();
+  }, [scrollPosition]);
+
+  const sections = [
+    { id: 'Intro', title: 'Home'},
+    { id: 'AboutMe', title: 'About Me' },
+    { id: 'Education', title: 'Education' },
+    { id: 'Skills', title: 'Skills' },
+    { id: 'Experience', title: 'Experience' },
+    { id: 'Projects', title: 'Projects' },
+    { id: 'Contact', title: 'Contact' },
+  ];
+
   return (
     <main>
       <Header />
-      <section className="section">
+      <section id="Intro" className="section" style={{ backgroundColor }}>
         <div className="wrapper">
-          <div className="typing-demo">Kousha Amouzesh</div>
+          <div className={`typing-demo ${isVisible ? 'visible' : ''}`}>
+            Kousha Amouzesh
+          </div>
           <div className={`typing-demo-2 ${isVisible ? 'visible' : ''}`}>
             I am a software developer
           </div>
-
         </div>
-        
       </section>
-      <section id="AboutMe" className="section">
-        <h1 style ={{marginLeft: "80px", fontSize: "60px"}}><strong>About me...</strong></h1>
+
+      <section id="AboutMe" className="section" style={{ backgroundColor }}>
+        <h1 style={{ marginLeft: "80px", fontSize: "60px" }}>
+          <strong>About me...</strong>
+        </h1>
         <div className="about-content">
-          <div className="about-text" style={{ margin:"40px" }}>
+          <div className="about-text" style={{ margin: "40px" }}>
             <p className="about-paragraph">
               I am a 20-year-old Computer Science student at Simon Fraser University in Burnaby, British Columbia. Since a young age, I have been fascinated by the potential of computer science and mathematics, starting with the first spaceship game I developed at the age of 14. As I progress in my academic journey, I am constantly inspired by projects that bridge the vast world of mathematics with computer science. Currently, I am actively seeking a co-op position for the remainder of 2023.
             </p>
@@ -44,12 +95,12 @@ const Home: React.FC = () => {
             src="https://github.com/KoushaAm/Portfolio/blob/master/Screenshot%202023-05-28%20at%209.43.43%20PM.png?raw=true"
             alt="About Me"
             className="about-image"
-            style={{ width: "400px", height: "auto" , marginLeft: "40px", marginRight:"40px"}}
+            style={{ width: "400px", height: "auto", marginLeft: "40px", marginRight: "40px" }}
           />
         </div>
       </section>
 
-      <section id="Academics" className="section">
+      <section id="Education" className="section" style={{ backgroundColor }}>
         <div className="education-content" style={{ lineHeight: "1.2" }}>
           <h1 style={{ textAlign: 'center' }}><strong>Education</strong></h1>
           <div className="education-item">
@@ -66,41 +117,56 @@ const Home: React.FC = () => {
         </div>
       </section>
 
-      <section id="Skills" className="section">
+      <section id="Skills" className="section" style={{ backgroundColor }}>
         <h2>Skills</h2>
         {/* Your content for the Skills section */}
       </section>
 
-      <section id="Experience" className="section">
+      <section id="Experience" className="section" style={{ backgroundColor }}>
         <h2>Experience</h2>
         {/* Your content for the Experience section */}
       </section>
 
-      <section id="Projects" className="section">
+      <section id="Projects" className="section" style={{ backgroundColor }}>
         <h2>Projects</h2>
         {/* Your content for the Projects section */}
       </section>
 
-      <section className="section" id="Contact">
-        <div className="section-box contact-box">
-          <h1>Contact</h1>
-          <div className="contact-content">
-            <div className="contact-item">
-              <a href="https://www.linkedin.com/in/kousha-amouzesh-b31445232/" className="link" style={{ textAlign: 'left' }}>
-                <p>Linkedin</p>
-              </a>
-              <p style={{ textAlign: 'left' }}>koushaamouzesh@gmail.com</p>
-            </div>
-            <div className="contact-item">
-              <a href="https://github.com/KoushaAm?tab=overview&from=2023-05-01&to=2023-05-28" className="link" style={{ textAlign: 'left' }}>
-                <p style={{ textAlign: 'left' }}>Github</p>
-              </a>
-              <p style={{ textAlign: 'left' }}>604-782-2974</p>
-              <p style={{ textAlign: 'left' }}>Vancouver, B.C., Canada</p>
-            </div>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-vB6O16rOxKtJeZ+OLfGea2vJbqQESAFnBHHBjLgH0njmWR8ec5bo7a5kbHPHczQIbAvGlozKVTfrfzgDLk8u0A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+      <section className="section" id="Contact" style={{ backgroundColor }}>
+      <div className="container-contact">
+        <h1>Contact</h1>
+        <div className="contact-content">
+          <div className="contact-item">
+            <a href="https://www.linkedin.com/in/kousha-amouzesh-b31445232/" className="link">
+              <FontAwesomeIcon icon={faLinkedin} />
+              <span style = {{marginLeft: "10px"}}>LinkedIn</span>
+            </a>
+            <p>
+              <FontAwesomeIcon icon={faEnvelope} />
+              <span  style = {{marginLeft: "10px"}}>koushaamouzesh@gmail.com</span>
+            </p>
+            <p>
+              <FontAwesomeIcon icon={faPhone} />
+              <span  style = {{marginLeft: "10px"}}>604-782-2974</span>
+            </p>
+            <p>
+              <FontAwesomeIcon icon={faMapMarkerAlt} />
+              <span  style = {{marginLeft: "10px"}}>Vancouver, B.C., Canada</span>
+            </p>
+          </div>
+          <div className="contact-item">
+            <a href="https://github.com/KoushaAm?tab=overview&from=2023-05-01&to=2023-05-28" className="link">
+              <FontAwesomeIcon icon={faGithub} />
+              <span  style = {{marginLeft: "10px"}}>GitHub</span>
+            </a>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
+
+
     </main>
   );
 };

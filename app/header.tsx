@@ -19,15 +19,13 @@ const Header: React.FC = () => {
     }
   };
 
-  
   const toggleSidebar = () => {
     setIsSidebarOpen(!isSidebarOpen);
   };
 
   useEffect(() => {
     const handleResize = () => {
-        // not sure about the proper width yetttt
-      setIsMobileView(window.innerWidth <= 1000); 
+      setIsMobileView(window.innerWidth <= 1000);
     };
 
     handleResize();
@@ -49,24 +47,48 @@ const Header: React.FC = () => {
         </div>
       ) : (
         <nav className="transparent-header-nav">
-            <ul>
-                <li><a href="#AboutMe" onClick={(e) => scrollToSection(e, 'AboutMe')}>Me</a></li>
-                <li> <a href="#Acedamics" onClick={(e) => scrollToSection(e, 'Acedamics')}>Education</a></li>
-                <li><a href="#Skills" onClick={(e) => scrollToSection(e, 'Skills')}>Skills</a></li>
-                <li><a href="#Experience" onClick={(e) => scrollToSection(e, 'Experience')}>Experience</a></li>
-                <li><a href="#Projects" onClick={(e) => scrollToSection(e, 'Projects')}>Projects</a></li>
-                <li><a href="#Contact" onClick={(e) => scrollToSection(e, 'Contact')}>Contact</a></li>
-            </ul>
+          <ul>
+            <a href="#AboutMe" onClick={(e) => scrollToSection(e, 'AboutMe')}>
+              <li>Me</li>
+            </a>
+            <a href="#Education" onClick={(e) => scrollToSection(e, 'Education')}>
+              <li>Education</li>
+            </a>
+            <a href="#Skills" onClick={(e) => scrollToSection(e, 'Skills')}>
+              <li>Skills</li>
+            </a>
+            <a href="#Experience" onClick={(e) => scrollToSection(e, 'Experience')}>
+              <li>Experience</li>
+            </a>
+            <a href="#Projects" onClick={(e) => scrollToSection(e, 'Projects')}>
+              <li>Projects</li>
+            </a>
+            <a href="#Contact" onClick={(e) => scrollToSection(e, 'Contact')}>
+              <li>Contact</li>
+            </a>
+          </ul>
         </nav>
       )}
       <nav className={`sidebar ${isSidebarOpen && isMobileView ? "open" : ""}`}>
         <ul>
-            <li><a href="#AboutMe" onClick={(e) => scrollToSection(e, 'AboutMe')}>Me</a></li>
-            <li> <a href="#Acedamics" onClick={(e) => scrollToSection(e, 'Acedamics')}>Education</a></li>
-            <li><a href="#Skills" onClick={(e) => scrollToSection(e, 'Skills')}>Skills</a></li>
-            <li><a href="#Experience" onClick={(e) => scrollToSection(e, 'Experience')}>Experience</a></li>
-            <li><a href="#Projects" onClick={(e) => scrollToSection(e, 'Projects')}>Projects</a></li>
-            <li><a href="#Contact" onClick={(e) => scrollToSection(e, 'Contact')}>Contact</a></li>
+          <a href="#AboutMe" onClick={(e) => scrollToSection(e, 'AboutMe')}>
+            <li >Me</li>
+          </a>
+          <a href="#Education" onClick={(e) => scrollToSection(e, 'Education')}>
+            <li>Education</li>
+          </a>
+          <a href="#Skills" onClick={(e) => scrollToSection(e, 'Skills')}>
+            <li>Skills</li>
+          </a>
+          <a href="#Experience" onClick={(e) => scrollToSection(e, 'Experience')}>
+            <li>Experience</li>
+          </a>
+          <a href="#Projects" onClick={(e) => scrollToSection(e, 'Projects')}>
+            <li>Projects</li>
+          </a>
+          <a href="#Contact" onClick={(e) => scrollToSection(e, 'Contact')}>
+            <li>Contact</li>
+          </a>
         </ul>
       </nav>
     </header>
