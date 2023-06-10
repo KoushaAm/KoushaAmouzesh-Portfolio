@@ -132,7 +132,6 @@ const Home: React.FC = () => {
         {/* Your content for the Projects section */}
       </section>
 
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-vB6O16rOxKtJeZ+OLfGea2vJbqQESAFnBHHBjLgH0njmWR8ec5bo7a5kbHPHczQIbAvGlozKVTfrfzgDLk8u0A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
       <section className="section" id="Contact" style={{ backgroundColor }}>
       <div className="container-contact">
