@@ -144,6 +144,7 @@ const Home: React.FC = () => {
               
               <div className="project-card">
                   <h2>Math2Latex</h2>
+                  <img src = "https://github.com/KoushaAm/KoushaAmouzesh-Portfolio/blob/main/Math2Latex.png?raw=true" className="project-image"></img>
                   <p>Uses deep learning CNN model with pytorch to predict the mathematical symbol
                         and predict upon the input image.</p>
                         <a href="https://github.com/KoushaAm/Math2Latex">
@@ -154,6 +155,7 @@ const Home: React.FC = () => {
   
               <div className="project-card">
                   <h2>Survey Manager</h2>
+                  <img src= "https://github.com/KoushaAm/KoushaAmouzesh-Portfolio/blob/main/survey.png?raw=true" className="project-image"></img>
                   <p>A Java based windows application to manage the created survey by users.
                         The application provides users with opportunites to collect data from their custom surveys and edit them as desired</p>
                   <button>Learn More</button>
