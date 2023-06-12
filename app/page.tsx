@@ -119,13 +119,176 @@ const Home: React.FC = () => {
       </section>
 
       <section id="Skills" className="section" style={{ backgroundColor }}>
-        <h2>Skills</h2>
-        {/* Your content for the Skills section */}
+      <div className="skills-section">
+  <h2 className="skills-heading">Skills</h2>
+  <div className="skills-table">
+    <div className="skills-column">
+      <h3 className="skills-category">Languages</h3>
+      <ul className="skills-list">
+        <li>
+          <span className="skill-name">Java</span>
+          <div className="skill-bar">
+            <div className="skill-progress" style= {{width: "99%"}}></div>
+          </div>
+        </li>
+        <li>
+          <span className="skill-name">Python</span>
+          <div className="skill-bar">
+            <div className="skill-progress" style= {{width: "90%"}}></div>
+          </div>
+        </li>
+        <li>
+          <span className="skill-name">JavaScript</span>
+          <div className="skill-bar">
+            <div className="skill-progress" style= {{width: "85%"}}></div>
+          </div>
+        </li>
+        <li>
+          <span className="skill-name">C</span>
+          <div className="skill-bar">
+            <div className="skill-progress" style= {{width: "60%"}}></div>
+          </div>
+        </li>
+        <li>
+          <span className="skill-name">C++</span>
+          <div className="skill-bar">
+            <div className="skill-progress" style= {{width: "80%"}}></div>
+          </div>
+        </li>
+        <li>
+          <span className="skill-name">R</span>
+          <div className="skill-bar">
+            <div className="skill-progress" style= {{width: "80%"}}></div>
+          </div>
+        </li>
+        <li>
+          <span className="skill-name">HTML</span>
+          <div className="skill-bar">
+            <div className="skill-progress" style= {{width: "100%"}}></div>
+          </div>
+        </li>
+        <li>
+          <span className="skill-name">CSS</span>
+          <div className="skill-bar">
+            <div className="skill-progress" style= {{width: "80%"}}></div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div className="skills-column">
+      <h3 className="skills-category">Tools</h3>
+      <ul className="skills-list">
+      <li>
+          <span className="skill-name">Node.js</span>
+          <div className="skill-bar">
+            <div className="skill-progress" style= {{width: "95%"}}></div>
+          </div>
+        </li>
+        <li>
+          <span className="skill-name">React.js</span>
+          <div className="skill-bar">
+            <div className="skill-progress" style= {{width: "85%"}}></div>
+          </div>
+        </li>
+        <li>
+          <span className="skill-name">Next.js</span>
+          <div className="skill-bar">
+            <div className="skill-progress" style= {{width: "80%"}}></div>
+          </div>
+        </li>
+        <li>
+          <span className="skill-name">EJS</span>
+          <div className="skill-bar">
+            <div className="skill-progress" style= {{width: "95%"}}></div>
+          </div>
+        </li>
+        <li>
+          <span className="skill-name">PyTorch</span>
+          <div className="skill-bar">
+            <div className="skill-progress" style= {{width: "60%"}}></div>
+          </div>
+        </li>
+        <li>
+          <span className="skill-name">Tensorflow</span>
+          <div className="skill-bar">
+            <div className="skill-progress" style= {{width: "75%"}}></div>
+          </div>
+        </li>
+        <li>
+          <span className="skill-name">Firebase</span>
+          <div className="skill-bar">
+            <div className="skill-progress" style= {{width: "85%"}}></div>
+          </div>
+        </li>
+        <li>
+          <span className="skill-name">Web APIs</span>
+          <div className="skill-bar">
+            <div className="skill-progress" style= {{width: "99%"}}></div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div className="skills-column">
+      <h3 className="skills-category">Soft Skills</h3>
+      <ul className="skills-list">
+      <li>
+          <span className="skill-name">Leadership</span>
+          <div className="skill-bar">
+            <div className="skill-progress" style= {{width: "90%"}}></div>
+          </div>
+        </li>
+        <li>
+          <span className="skill-name">Teamwork</span>
+          <div className="skill-bar">
+            <div className="skill-progress" style= {{width: "99%"}}></div>
+          </div>
+        </li>
+        <li>
+          <span className="skill-name">Planning</span>
+          <div className="skill-bar">
+            <div className="skill-progress" style= {{width: "95%"}}></div>
+          </div>
+        </li>
+        <li>
+          <span className="skill-name">Public Speaking</span>
+          <div className="skill-bar">
+            <div className="skill-progress" style= {{width: "99%"}}></div>
+          </div>
+        </li>
+        <li>
+          <span className="skill-name">Communication</span>
+          <div className="skill-bar">
+            <div className="skill-progress" style= {{width: "99%"}}></div>
+          </div>
+        </li>
+        <li>
+          <span className="skill-name">Agile Development</span>
+          <div className="skill-bar">
+            <div className="skill-progress" style= {{width: "95%"}}></div>
+          </div>
+        </li>
+        <li>
+          <span className="skill-name">Fluent in Farsi</span>
+          <div className="skill-bar">
+            <div className="skill-progress" style= {{width: "100%"}}></div>
+          </div>
+        </li>
+        <li>
+          <span className="skill-name">Teaching</span>
+          <div className="skill-bar">
+            <div className="skill-progress" style= {{width: "80%"}}></div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
       </section>
 
       <section id="Experience" className="section" style={{ backgroundColor }}>
-        <h2>Experience</h2>
-        {/* Your content for the Experience section */}
+      <h2 className="skills-heading">Experience</h2>
+       <p> to be completed ...</p>
       </section>
 
       <section id="Projects" className="section-project" style={{ backgroundColor }}>
@@ -139,7 +302,9 @@ const Home: React.FC = () => {
                   <p>A website where users can search for jobs at their location 
                       and save or apply for their desired jobs. A fully working data
                         base to keep track of job records.</p>
-                  <button>Learn More</button>
+                        <a href = "https://github.com/KoushaAm/JobSearch">
+                          <button>Learn More</button>
+                        </a>
               </div>
               
               <div className="project-card">
@@ -149,41 +314,55 @@ const Home: React.FC = () => {
                         and predict upon the input image.</p>
                         <a href="https://github.com/KoushaAm/Math2Latex">
                           <button>learn more</button>
-                         </a> 
+                        </a> 
                   
               </div>
   
               <div className="project-card">
                   <h2>Survey Manager</h2>
-                  <img src= "https://github.com/KoushaAm/KoushaAmouzesh-Portfolio/blob/main/survey.png?raw=true" className="project-image"></img>
+                  <img src= "https://github.com/KoushaAm/KoushaAmouzesh-Portfolio/blob/main/survey.png?raw=true"   className="project-image"></img>
                   <p>A Java based windows application to manage the created survey by users.
                         The application provides users with opportunites to collect data from their custom surveys and edit them as desired</p>
-                  <button>Learn More</button>
+                        <a href="https://github.com/KoushaAm/SurveyManager">
+                          <button>learn more</button>
+                        </a> 
               </div>
   
               <div className="project-card">
                   <h2>Path Finding Algorithm Visulization</h2>
+                  <img src = "https://user-images.githubusercontent.com/67440795/215621916-7579fa95-db66-4c12-952d-21064264bc0c.png" className = "project-image"></img>
                   <p>A C++ program to shortest path between two points in an input image.
                         The app contains comprehensiv unit testing and OOP structure of various
                         common data structures</p>
-                  <button>Learn More</button>
+                        <a href="https://github.com/KoushaAm/Path-Finding">
+                          <button>learn more</button>
+                        </a> 
               </div>
               <div className="project-card">
                   <h2>Food Prediction Model</h2>
+                  <img src= "https://github.com/KoushaAm/KoushaAmouzesh-Portfolio/blob/main/foodPred.png?raw=true" className="project-image"></img>
                   <p>Built a CNN model on tensorflow to predict the name of 10 different dishes based
                         on their images. The model is trained on 10,000 images</p>
-                  <button>Learn More</button>
+                      <a href="https://github.com/KoushaAm/Deeplearning">
+                        <button>learn more</button>
+                      </a> 
               </div>
               <div className="project-card">
                   <h2>Word Soduko App</h2>
+                  <img src = "https://github.com/KoushaAm/KoushaAmouzesh-Portfolio/blob/main/sudoku.png?raw=true" style = {{height: "200px"}}></img>
                   <p>Created a Java-based Android Sudoku game with multiple language levels and modes, utilizing a vast word database for translations.</p>
-                  <button>Learn More</button>
+                      <a href="https://github.com/KoushaAm/WordSudoku">
+                        <button>learn more</button>
+                      </a> 
               </div>
 
               <div className="project-card">
                   <h2>Deep Learning</h2>
+                  <img src= "https://github.com/KoushaAm/KoushaAmouzesh-Portfolio/blob/main/deeplearning.png?raw=true" style = {{height: "200px"}}></img>
                   <p> I have also worked on several other multi-class & Binary classification projects with raw and processed using tensorflow</p>
-                  <button>Learn More</button>
+                  <a href="https://github.com/KoushaAm/Deeplearning">
+                        <button>learn more</button>
+                      </a> 
               </div>
           </div>
         

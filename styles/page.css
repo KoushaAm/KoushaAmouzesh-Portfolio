@@ -5,28 +5,25 @@
   background-color: black;
   color: white;
   font-family: 'Times New Roman', Times, serif;
-  margin: 0; 
-  padding: 0;
+
 
 }
 
+
+
 .section-project {
-  min-height: 250vh;
+  min-height: 300vh;
   background-color: black;
-  color: white;
   font-family: 'Times New Roman', Times, serif;
-  margin: 0; 
-  padding: 0;
 
 }
   
 .section h1 {
-font-size: 40px; /* Set the font size for section headings */
-margin-left: 25px;
-margin-top: 25px;
-position: relative;
-
-margin-right: 25px;
+  font-size: 40px;
+  margin-left: 25px;
+  margin-top: 25px;
+  position: relative;
+  margin-right: 25px;
 }
 
 .section p {
@@ -198,6 +195,7 @@ max-width: 500px;
   
   .contact-box {
     text-align: center;
+    margin-top: 50px;
   }
   
   .contact-content {
@@ -364,7 +362,6 @@ max-width: 500px;
 .project-card p {
   font-size: 20px;
   line-height: 1.4;
-  margin-bottom: 20px;
   color:black;
 }
 
@@ -383,13 +380,89 @@ max-width: 500px;
 }
 
 .project-image {
-  width: 100%;
+  width: 700px;
   height: 200px; /* Adjust the image height as desired */
-  object-fit: cover;
+  object-fit: contain;
   border-radius: 4px;
 }
 
 
 
+
+
+
+.skills-section {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.skills-heading {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.skills-table {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.skills-column {
+  flex-basis: 30%;
+}
+
+.skills-category {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skills-list li {
+  margin-bottom: 10px;
+}
+
+.skill-name {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.skill-bar {
+  background-color: #e0e0e0;
+  height: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.skill-progress {
+  background-color: #4d4848;
+  height: 100%;
+  animation: slide-in 2s ease-in-out;
+}
+
+@keyframes slide-in {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* Adjust margins and heights for contact and project sections */
+.section-contact {
+  min-height: 150vh; /* Adjust the height as desired */
+  margin-bottom: -100vh; /* Overlap the section below */
+}
+
+.section-project {
+  min-height: 300vh; /* Adjust the height as desired */
+  margin-top: -100vh; /* Overlap the section above */
+}
 
 
