@@ -69,11 +69,12 @@ const Home: React.FC = () => {
       <Header />
       <section id="Intro" className="section" style={{ backgroundColor }}>
         <div className="wrapper">
+
           <div className={`typing-demo ${isVisible ? 'visible' : ''}`}>
             Kousha Amouzesh
           </div>
           <div className={`typing-demo-2 ${isVisible ? 'visible' : ''}`}>
-            I am a software developer
+            <p>I am a software developer</p>
           </div>
         </div>
       </section>
@@ -95,7 +96,7 @@ const Home: React.FC = () => {
             src="https://github.com/KoushaAm/Portfolio/blob/master/Screenshot%202023-05-28%20at%209.43.43%20PM.png?raw=true"
             alt="About Me"
             className="about-image"
-            style={{ width: "400px", height: "auto", marginLeft: "40px", marginRight: "40px" , justifyContent:"center"}}
+            style={{ width: "400px", height: "auto", padding: "40px" , justifyContent:"center"}}
           />
         </div>
       </section>
@@ -127,10 +128,64 @@ const Home: React.FC = () => {
         {/* Your content for the Experience section */}
       </section>
 
-      <section id="Projects" className="section" style={{ backgroundColor }}>
-        <h2>Projects</h2>
-        {/* Your content for the Projects section */}
-      </section>
+      <section id="Projects" className="section-project" style={{ backgroundColor }}>
+          
+          <h2 style = {{fontSize:"60px", marginLeft: "40px"}}>Projects</h2>
+          <div className="projects-row" style={{ fontSize: "60px"}}>
+              
+              <div className="project-card active">
+                  <h2>Job Seeking Platform</h2>
+                  <img src="https://user-images.githubusercontent.com/67440795/241589813-a326679b-9c23-4e99-aa57-4be48f5f3502.png" alt="Job Seeking Platform" className="project-image"></img>
+                  <p>A website where users can search for jobs at their location 
+                      and save or apply for their desired jobs. A fully working data
+                        base to keep track of job records.</p>
+                  <button>Learn More</button>
+              </div>
+              
+              <div className="project-card">
+                  <h2>Math2Latex</h2>
+                  <p>Uses deep learning CNN model with pytorch to predict the mathematical symbol
+                        and predict upon the input image.</p>
+                        <a href="https://github.com/KoushaAm/Math2Latex">
+                          <button>learn more</button>
+                         </a> 
+                  
+              </div>
+  
+              <div className="project-card">
+                  <h2>Survey Manager</h2>
+                  <p>A Java based windows application to manage the created survey by users.
+                        The application provides users with opportunites to collect data from their custom surveys and edit them as desired</p>
+                  <button>Learn More</button>
+              </div>
+  
+              <div className="project-card">
+                  <h2>Path Finding Algorithm Visulization</h2>
+                  <p>A C++ program to shortest path between two points in an input image.
+                        The app contains comprehensiv unit testing and OOP structure of various
+                        common data structures</p>
+                  <button>Learn More</button>
+              </div>
+              <div className="project-card">
+                  <h2>Food Prediction Model</h2>
+                  <p>Built a CNN model on tensorflow to predict the name of 10 different dishes based
+                        on their images. The model is trained on 10,000 images</p>
+                  <button>Learn More</button>
+              </div>
+              <div className="project-card">
+                  <h2>Word Soduko App</h2>
+                  <p>Created a Java-based Android Sudoku game with multiple language levels and modes, utilizing a vast word database for translations.</p>
+                  <button>Learn More</button>
+              </div>
+
+              <div className="project-card">
+                  <h2>Deep Learning</h2>
+                  <p> I have also worked on several other multi-class & Binary classification projects with raw and processed using tensorflow</p>
+                  <button>Learn More</button>
+              </div>
+          </div>
+        
+    </section>
 
 
       <section className="section" id="Contact" style={{ backgroundColor }}>

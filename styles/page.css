@@ -9,11 +9,23 @@
   padding: 0;
 
 }
+
+.section-project {
+  min-height: 250vh;
+  background-color: black;
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0; 
+  padding: 0;
+
+}
   
 .section h1 {
 font-size: 40px; /* Set the font size for section headings */
 margin-left: 25px;
 margin-top: 25px;
+position: relative;
+
 margin-right: 25px;
 }
 
@@ -26,7 +38,6 @@ padding: 20px;
 width: 100%;
 height: auto;
 max-width: 500px;
-margin: 20px 0;
 }
 
 @media (max-width: 768px) {
@@ -50,7 +61,6 @@ margin: 20px 0;
 .about-image {
     width: 300px;
     height: auto;
-    margin-right: 20px;
 }
 
 .image-container{
@@ -101,7 +111,7 @@ margin: 20px 0;
     display: grid;
     padding: 10px;
     place-items: center;
-    grid-gap: 10px;
+    grid-gap: 20px;
   }
   
   .typing-demo {
@@ -250,6 +260,7 @@ margin: 20px 0;
 
   /*contact card*/
   .card-contact {
+    margin-top: 100px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
     width: 40%;
@@ -309,5 +320,76 @@ margin: 20px 0;
   }
   
 
+/** projects page */
 
-  
+.projects-row {
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: -50px; /* Add negative margin to overlap the section below */
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start; /* Adjust alignment to start */
+}
+
+.project-card {
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 400px; /* Increase the width for larger cards */
+  height: 500px; /* Increase the height for larger cards */
+  background-color: #adadad;
+  border-radius: 2px;
+  color: #ffffff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 300ms;
+}
+
+.project-card:hover {
+  opacity: 0.8;
+  transform: scale(1.05); /* Slightly reduce the scaling */
+}
+
+.project-card h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color:black;
+}
+
+.project-card p {
+  font-size: 20px;
+  line-height: 1.4;
+  margin-bottom: 20px;
+  color:black;
+}
+
+.project-card button {
+  font-size: 16px;
+  padding: 10px 20px;
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.project-card button:hover {
+  background-color: #aaaaaa;
+}
+
+.project-image {
+  width: 100%;
+  height: 200px; /* Adjust the image height as desired */
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+
+
+
+
