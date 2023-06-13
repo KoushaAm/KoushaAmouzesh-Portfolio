@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import Header from './header';
 import '../styles/page.css'; // Import the CSS file for the Home component
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGraduationCap, faUniversity, faStar, faCalendarAlt } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope, faPhone, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
 
@@ -59,7 +60,7 @@ const Home: React.FC = () => {
     { id: 'AboutMe', title: 'About Me' },
     { id: 'Education', title: 'Education' },
     { id: 'Skills', title: 'Skills' },
-    { id: 'Experience', title: 'Experience' },
+    // { id: 'Experience', title: 'Experience' },
     { id: 'Projects', title: 'Projects' },
     { id: 'Contact', title: 'Contact' },
   ];
@@ -70,13 +71,27 @@ const Home: React.FC = () => {
       <section id="Intro" className="section" style={{ backgroundColor }}>
         <div className="wrapper">
 
-          <div className={`typing-demo ${isVisible ? 'visible' : ''}`}>
-            Kousha Amouzesh
+          <div style = {{marginBottom: "25px"}} className={`typing-demo ${isVisible ? 'visible' : ''}`}>
+            <strong>Kousha Amouzesh</strong>
           </div>
           <div className={`typing-demo-2 ${isVisible ? 'visible' : ''}`}>
-            <p>I am a software developer</p>
+            <p style = {{marginLeft:"18%", marginRight:"30%",fontSize: "25px"}}>I am a software developer  💻 </p>
+            <div className="spinner-box" style = {{marginTop: "-90%"}}>
+              <div className="blue-orbit leo"></div>
+
+              <div className="green-orbit leo"> </div>
+              
+              <div className="red-orbit leo"></div>
+              
+              <div className="white-orbit w1 leo"></div>
+              <div className="white-orbit w2 leo"></div>
+              <div className="white-orbit w3 leo"></div>
+            </div>
           </div>
         </div>
+
+        
+        
       </section>
 
       <section id="AboutMe" className="section" style={{ backgroundColor }}>
@@ -96,202 +111,222 @@ const Home: React.FC = () => {
             src="https://github.com/KoushaAm/Portfolio/blob/master/Screenshot%202023-05-28%20at%209.43.43%20PM.png?raw=true"
             alt="About Me"
             className="about-image"
-            style={{ width: "400px", height: "auto", padding: "40px" , justifyContent:"center"}}
+            style={{ width: "400px", height: "auto", padding: "40px" , justifyContent:"center", borderRadius: "80px"}}
           />
         </div>
       </section>
 
       <section id="Education" className="section" style={{ backgroundColor }}>
-        <div className="education-content" style={{ lineHeight: "1.2" }}>
-          <h1 style={{ textAlign: 'center' }}><strong>Education</strong></h1>
-          <div className="education-item">
-            <p style={{ marginLeft: '20px', fontSize: '25px', textAlign: 'left' }}><strong>Computer Science BSc</strong></p>
-            <p style={{ marginLeft: '50px', textAlign: 'left' }}>Simon Fraser University</p>
-            <p style={{ marginLeft: '50px', textAlign: 'left' }}>GPA: (A) 3.92/4.33</p>
-            <p style={{ marginLeft: '50px', textAlign: 'left' }}>Expected Graduation: December 2025</p>
-          </div>
-          <div className="education-item" style={{ lineHeight: "1.2" }}>
-            <h1 style={{ marginTop: '0px', marginLeft: '20px', textAlign: 'left' }}>Academic Objectives</h1>
-            <p style={{ marginTop: '0px', marginLeft: '20px', textAlign: 'left' }}>My academic objectives are to pursue a graduate degree in Computer Science with a focus on Machine Learning studies.</p>
-            <p style={{ marginTop: '0px', marginLeft: '20px', textAlign: 'left' }}>I plan to achieve this goal after gaining practical industry skills through co-op and full-time software development/engineering positions.</p>
-          </div>
-        </div>
-      </section>
-
-      <section id="Skills" className="section" style={{ backgroundColor }}>
-      <div className="skills-section">
-  <h2 className="skills-heading">Skills</h2>
-  <div className="skills-table">
-    <div className="skills-column">
-      <h3 className="skills-category">Languages</h3>
-      <ul className="skills-list">
-        <li>
-          <span className="skill-name">Java</span>
-          <div className="skill-bar">
-            <div className="skill-progress" style= {{width: "99%"}}></div>
-          </div>
-        </li>
-        <li>
-          <span className="skill-name">Python</span>
-          <div className="skill-bar">
-            <div className="skill-progress" style= {{width: "90%"}}></div>
-          </div>
-        </li>
-        <li>
-          <span className="skill-name">JavaScript</span>
-          <div className="skill-bar">
-            <div className="skill-progress" style= {{width: "85%"}}></div>
-          </div>
-        </li>
-        <li>
-          <span className="skill-name">C</span>
-          <div className="skill-bar">
-            <div className="skill-progress" style= {{width: "60%"}}></div>
-          </div>
-        </li>
-        <li>
-          <span className="skill-name">C++</span>
-          <div className="skill-bar">
-            <div className="skill-progress" style= {{width: "80%"}}></div>
-          </div>
-        </li>
-        <li>
-          <span className="skill-name">R</span>
-          <div className="skill-bar">
-            <div className="skill-progress" style= {{width: "80%"}}></div>
-          </div>
-        </li>
-        <li>
-          <span className="skill-name">HTML</span>
-          <div className="skill-bar">
-            <div className="skill-progress" style= {{width: "100%"}}></div>
-          </div>
-        </li>
-        <li>
-          <span className="skill-name">CSS</span>
-          <div className="skill-bar">
-            <div className="skill-progress" style= {{width: "80%"}}></div>
-          </div>
-        </li>
-      </ul>
-    </div>
-    <div className="skills-column">
-      <h3 className="skills-category">Tools</h3>
-      <ul className="skills-list">
-      <li>
-          <span className="skill-name">Node.js</span>
-          <div className="skill-bar">
-            <div className="skill-progress" style= {{width: "95%"}}></div>
-          </div>
-        </li>
-        <li>
-          <span className="skill-name">React.js</span>
-          <div className="skill-bar">
-            <div className="skill-progress" style= {{width: "85%"}}></div>
-          </div>
-        </li>
-        <li>
-          <span className="skill-name">Next.js</span>
-          <div className="skill-bar">
-            <div className="skill-progress" style= {{width: "80%"}}></div>
-          </div>
-        </li>
-        <li>
-          <span className="skill-name">EJS</span>
-          <div className="skill-bar">
-            <div className="skill-progress" style= {{width: "95%"}}></div>
-          </div>
-        </li>
-        <li>
-          <span className="skill-name">PyTorch</span>
-          <div className="skill-bar">
-            <div className="skill-progress" style= {{width: "60%"}}></div>
-          </div>
-        </li>
-        <li>
-          <span className="skill-name">Tensorflow</span>
-          <div className="skill-bar">
-            <div className="skill-progress" style= {{width: "75%"}}></div>
-          </div>
-        </li>
-        <li>
-          <span className="skill-name">Firebase</span>
-          <div className="skill-bar">
-            <div className="skill-progress" style= {{width: "85%"}}></div>
-          </div>
-        </li>
-        <li>
-          <span className="skill-name">Web APIs</span>
-          <div className="skill-bar">
-            <div className="skill-progress" style= {{width: "99%"}}></div>
-          </div>
-        </li>
-      </ul>
-    </div>
-    <div className="skills-column">
-      <h3 className="skills-category">Soft Skills</h3>
-      <ul className="skills-list">
-      <li>
-          <span className="skill-name">Leadership</span>
-          <div className="skill-bar">
-            <div className="skill-progress" style= {{width: "90%"}}></div>
-          </div>
-        </li>
-        <li>
-          <span className="skill-name">Teamwork</span>
-          <div className="skill-bar">
-            <div className="skill-progress" style= {{width: "99%"}}></div>
-          </div>
-        </li>
-        <li>
-          <span className="skill-name">Planning</span>
-          <div className="skill-bar">
-            <div className="skill-progress" style= {{width: "95%"}}></div>
-          </div>
-        </li>
-        <li>
-          <span className="skill-name">Public Speaking</span>
-          <div className="skill-bar">
-            <div className="skill-progress" style= {{width: "99%"}}></div>
-          </div>
-        </li>
-        <li>
-          <span className="skill-name">Communication</span>
-          <div className="skill-bar">
-            <div className="skill-progress" style= {{width: "99%"}}></div>
-          </div>
-        </li>
-        <li>
-          <span className="skill-name">Agile Development</span>
-          <div className="skill-bar">
-            <div className="skill-progress" style= {{width: "95%"}}></div>
-          </div>
-        </li>
-        <li>
-          <span className="skill-name">Fluent in Farsi</span>
-          <div className="skill-bar">
-            <div className="skill-progress" style= {{width: "100%"}}></div>
-          </div>
-        </li>
-        <li>
-          <span className="skill-name">Teaching</span>
-          <div className="skill-bar">
-            <div className="skill-progress" style= {{width: "80%"}}></div>
-          </div>
-        </li>
-      </ul>
+  <div className="education-content" style={{ lineHeight: "1.2", padding: "20px" }}>
+    <div className="card" style={{ background: "rgba(255, 255, 255, 0.5)", border: "none", borderRadius:"30px", boxShadow: "0 2px 4px rgba(0, 0, 0, 0.1)", padding: "20px", textAlign: "center" }}>
+      <h1 style={{ textAlign: 'center', marginBottom: "20px" }}><strong>Education</strong></h1>
+      <div className="education-item" style={{ marginBottom: "10px" }}>
+        <p style={{ fontSize: '30px', fontWeight: "bold", marginBottom: "5px" }}>
+          <FontAwesomeIcon icon={faGraduationCap} style={{ marginRight: "10px"}} />
+          Computer Science BSc
+        </p>
+        <p style={{ marginBottom: "5px" }}>
+          <FontAwesomeIcon icon={faUniversity} style={{ marginRight: "10px" }} />
+          Simon Fraser University
+        </p>
+        <p style={{ marginBottom: "5px" }}>
+          <FontAwesomeIcon icon={faStar} style={{ marginRight: "10px" }} />
+          GPA: (A) 3.92/4.33
+        </p>
+        <p style={{ marginBottom: "5px" }}>
+          <FontAwesomeIcon icon={faCalendarAlt} style={{ marginRight: "10px" }} />
+          Expected Graduation: December 2025
+        </p>
+      </div>
+      <div className="education-item">
+        <p style={{ fontSize: '30px', fontWeight: "bold", marginBottom: "5px" }}>Academic Objectives</p>
+        <p style={{ textAlign: 'center' }}>My academic objectives are to pursue a graduate degree in Computer Science with a focus on Machine Learning studies.</p>
+        <p style={{ textAlign: 'center' }}>I plan to achieve this goal after gaining practical industry skills through co-op and full-time software development/engineering positions.</p>
+      </div>
     </div>
   </div>
-</div>
+</section>
+
+
+
+
+
+
+
+      <section id="Skills" className="section" style={{ backgroundColor }}>
+        <div className="skills-section">
+          <h2 className="skills-heading">Skills</h2>
+          <div className="skills-table">
+            <div className="skills-column">
+              <h3 className="skills-category">Languages</h3>
+              <ul className="skills-list">
+                <li>
+                  <span className="skill-name">Java</span>
+                  <div className="skill-bar">
+                    <div className="skill-progress" style= {{width: "99%"}}></div>
+                  </div>
+                </li>
+                <li>
+                  <span className="skill-name">Python</span>
+                  <div className="skill-bar">
+                    <div className="skill-progress" style= {{width: "90%"}}></div>
+                  </div>
+                </li>
+                <li>
+                  <span className="skill-name">JavaScript</span>
+                  <div className="skill-bar">
+                    <div className="skill-progress" style= {{width: "85%"}}></div>
+                  </div>
+                </li>
+                <li>
+                  <span className="skill-name">C</span>
+                  <div className="skill-bar">
+                    <div className="skill-progress" style= {{width: "60%"}}></div>
+                  </div>
+                </li>
+                <li>
+                  <span className="skill-name">C++</span>
+                  <div className="skill-bar">
+                    <div className="skill-progress" style= {{width: "80%"}}></div>
+                  </div>
+                </li>
+                <li>
+                  <span className="skill-name">R</span>
+                  <div className="skill-bar">
+                    <div className="skill-progress" style= {{width: "80%"}}></div>
+                  </div>
+                </li>
+                <li>
+                  <span className="skill-name">HTML</span>
+                  <div className="skill-bar">
+                    <div className="skill-progress" style= {{width: "100%"}}></div>
+                  </div>
+                </li>
+                <li>
+                  <span className="skill-name">CSS</span>
+                  <div className="skill-bar">
+                    <div className="skill-progress" style= {{width: "80%"}}></div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div className="skills-column">
+              <h3 className="skills-category">Tools</h3>
+              <ul className="skills-list">
+              <li>
+                  <span className="skill-name">Node.js</span>
+                  <div className="skill-bar">
+                    <div className="skill-progress" style= {{width: "95%"}}></div>
+                  </div>
+                </li>
+                <li>
+                  <span className="skill-name">React.js</span>
+                  <div className="skill-bar">
+                    <div className="skill-progress" style= {{width: "85%"}}></div>
+                  </div>
+                </li>
+                <li>
+                  <span className="skill-name">Next.js</span>
+                  <div className="skill-bar">
+                    <div className="skill-progress" style= {{width: "80%"}}></div>
+                  </div>
+                </li>
+                <li>
+                  <span className="skill-name">EJS</span>
+                  <div className="skill-bar">
+                    <div className="skill-progress" style= {{width: "95%"}}></div>
+                  </div>
+                </li>
+                <li>
+                  <span className="skill-name">PyTorch</span>
+                  <div className="skill-bar">
+                    <div className="skill-progress" style= {{width: "60%"}}></div>
+                  </div>
+                </li>
+                <li>
+                  <span className="skill-name">Tensorflow</span>
+                  <div className="skill-bar">
+                    <div className="skill-progress" style= {{width: "75%"}}></div>
+                  </div>
+                </li>
+                <li>
+                  <span className="skill-name">Firebase</span>
+                  <div className="skill-bar">
+                    <div className="skill-progress" style= {{width: "85%"}}></div>
+                  </div>
+                </li>
+                <li>
+                  <span className="skill-name">Web APIs</span>
+                  <div className="skill-bar">
+                    <div className="skill-progress" style= {{width: "99%"}}></div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div className="skills-column">
+              <h3 className="skills-category">Soft Skills</h3>
+              <ul className="skills-list">
+              <li>
+                  <span className="skill-name">Leadership</span>
+                  <div className="skill-bar">
+                    <div className="skill-progress" style= {{width: "90%"}}></div>
+                  </div>
+                </li>
+                <li>
+                  <span className="skill-name">Teamwork</span>
+                  <div className="skill-bar">
+                    <div className="skill-progress" style= {{width: "99%"}}></div>
+                  </div>
+                </li>
+                <li>
+                  <span className="skill-name">Planning</span>
+                  <div className="skill-bar">
+                    <div className="skill-progress" style= {{width: "95%"}}></div>
+                  </div>
+                </li>
+                <li>
+                  <span className="skill-name">Public Speaking</span>
+                  <div className="skill-bar">
+                    <div className="skill-progress" style= {{width: "99%"}}></div>
+                  </div>
+                </li>
+                <li>
+                  <span className="skill-name">Communication</span>
+                  <div className="skill-bar">
+                    <div className="skill-progress" style= {{width: "99%"}}></div>
+                  </div>
+                </li>
+                <li>
+                  <span className="skill-name">Agile Development</span>
+                  <div className="skill-bar">
+                    <div className="skill-progress" style= {{width: "95%"}}></div>
+                  </div>
+                </li>
+                <li>
+                  <span className="skill-name">Fluent in Farsi</span>
+                  <div className="skill-bar">
+                    <div className="skill-progress" style= {{width: "100%"}}></div>
+                  </div>
+                </li>
+                <li>
+                  <span className="skill-name">Teaching</span>
+                  <div className="skill-bar">
+                    <div className="skill-progress" style= {{width: "80%"}}></div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
 
       </section>
 
-      <section id="Experience" className="section" style={{ backgroundColor }}>
+      {/* <section id="Experience" className="section" style={{ backgroundColor }}>
       <h2 className="skills-heading">Experience</h2>
        <p> to be completed ...</p>
-      </section>
+      </section> */}
 
-      <section id="Projects" className="section-project" style={{ backgroundColor }}>
+      <section id="Projects" className="section-project" style={{ backgroundColor , marginTop: "0px", marginBottom:"0px"}}>
           
           <h2 style = {{fontSize:"60px", marginLeft: "40px"}}>Projects</h2>
           <div className="projects-row" style={{ fontSize: "60px"}}>
@@ -359,7 +394,7 @@ const Home: React.FC = () => {
               <div className="project-card">
                   <h2>Deep Learning</h2>
                   <img src= "https://github.com/KoushaAm/KoushaAmouzesh-Portfolio/blob/main/deeplearning.png?raw=true" style = {{height: "200px"}}></img>
-                  <p> I have also worked on several other multi-class & Binary classification projects with raw and processed using tensorflow</p>
+                  <p> I have also worked on several other multi-class & Binary classification projects with raw and processed data using tensorflow</p>
                   <a href="https://github.com/KoushaAm/Deeplearning">
                         <button>learn more</button>
                       </a> 
@@ -369,7 +404,7 @@ const Home: React.FC = () => {
     </section>
 
 
-      <section className="section" id="Contact" style={{ backgroundColor }}>
+      <section className="section" id="Contact" style={{ backgroundColor, marginTop: "0px"}}>
       <div className="container-contact">
         <h1>Contact</h1>
         <div className="contact-content">

@@ -57,9 +57,9 @@ const Header: React.FC = () => {
             <a href="#Skills" onClick={(e) => scrollToSection(e, 'Skills')}>
               <li>Skills</li>
             </a>
-            <a href="#Experience" onClick={(e) => scrollToSection(e, 'Experience')}>
+            {/* <a href="#Experience" onClick={(e) => scrollToSection(e, 'Experience')}>
               <li>Experience</li>
-            </a>
+            </a> */}
             <a href="#Projects" onClick={(e) => scrollToSection(e, 'Projects')}>
               <li>Projects</li>
             </a>
@@ -80,9 +80,9 @@ const Header: React.FC = () => {
           <a href="#Skills" onClick={(e) => scrollToSection(e, 'Skills')}>
             <li>Skills</li>
           </a>
-          <a href="#Experience" onClick={(e) => scrollToSection(e, 'Experience')}>
+          {/* <a href="#Experience" onClick={(e) => scrollToSection(e, 'Experience')}>
             <li>Experience</li>
-          </a>
+          </a> */}
           <a href="#Projects" onClick={(e) => scrollToSection(e, 'Projects')}>
             <li>Projects</li>
           </a>
