@@ -2,7 +2,7 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
 import Header from './header';
-import '../styles/page.css'; // Import the CSS file for the Home component
+import '../styles/page.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGraduationCap, faUniversity, faStar, faCalendarAlt } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
