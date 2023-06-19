@@ -496,7 +496,7 @@ max-width: 500px;
 .green-orbit {
   width: 500px;
   height: 500px;
-  border: 1px solid #91ffbfa5;
+  border: 5px solid #91ffbfa5;
   animation: spin3D 10s linear 0s infinite;
 }
 
@@ -522,3 +522,52 @@ max-width: 500px;
     transform: rotateX(1turn) rotateY(1turn) rotateZ(1turn);
   }
 }
+
+
+   .section-project {
+      background-color: #f9f9f9;
+      margin-top: 0;
+      margin-bottom: 0;
+   }
+
+    .slideshow-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .project-card {
+      margin: 40px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      width: 400px;
+    }
+
+    .project-image {
+      width: 100%;
+      max-width: 400px;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .project-card h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .project-card p {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    .project-card button {
+      font-size: 16px;
+      padding: 8px 16px;
+      background-color: #2a2c2e;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }

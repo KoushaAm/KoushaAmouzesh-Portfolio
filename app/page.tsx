@@ -7,6 +7,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGraduationCap, faUniversity, faStar, faCalendarAlt } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope, faPhone, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
+import { faDownload } from '@fortawesome/free-solid-svg-icons';
+
 
 
 
@@ -65,6 +67,22 @@ const Home: React.FC = () => {
     {id : 'Resume', title: 'Resume'},
     { id: 'Contact', title: 'Contact' },
   ];
+
+  useEffect(() => {
+    const slides = document.querySelectorAll('.slide');
+    let currentSlide = 0;
+    const slideInterval = setInterval(nextSlide, 5000);
+
+    function nextSlide() {
+      if (slides[currentSlide]) {
+        slides[currentSlide].classList.remove('active');
+        currentSlide = (currentSlide + 1) % slides.length;
+        slides[currentSlide].classList.add('active');
+      }
+    }
+
+    return () => clearInterval(slideInterval);
+  }, []);
 
   return (
     <main>
@@ -329,88 +347,89 @@ const Home: React.FC = () => {
 
       <section id="Projects" className="section-project" style={{ backgroundColor , marginTop: "0px", marginBottom:"0px"}}>
           
-          <h2 style = {{fontSize:"60px", marginLeft: "40px"}}>Projects</h2>
-          <div className="projects-row" style={{ fontSize: "60px"}}>
-              
-              <div className="project-card active">
-                  <h2>Job Seeking Platform</h2>
-                  <img src="https://user-images.githubusercontent.com/67440795/241589813-a326679b-9c23-4e99-aa57-4be48f5f3502.png" alt="Job Seeking Platform" className="project-image"></img>
-                  <p>A website where users can search for jobs at their location 
-                      and save or apply for their desired jobs. A fully working data
-                        base to keep track of job records.</p>
-                        <a href = "https://github.com/KoushaAm/JobSearch">
-                          <button>Learn More</button>
-                        </a>
-              </div>
-              
-              <div className="project-card">
-                  <h2>Math2Latex</h2>
-                  <img src = "https://github.com/KoushaAm/KoushaAmouzesh-Portfolio/blob/main/Math2Latex.png?raw=true" className="project-image"></img>
-                  <p>Uses deep learning CNN model with pytorch to predict the mathematical symbol
-                        and predict upon the input image.</p>
-                        <a href="https://github.com/KoushaAm/Math2Latex">
-                          <button>learn more</button>
-                        </a> 
-                  
-              </div>
-  
-              <div className="project-card">
-                  <h2>Survey Manager</h2>
-                  <img src= "https://github.com/KoushaAm/KoushaAmouzesh-Portfolio/blob/main/survey.png?raw=true"   className="project-image"></img>
-                  <p>A Java based windows application to manage the created survey by users.
-                        The application provides users with opportunites to collect data from their custom surveys and edit them as desired</p>
-                        <a href="https://github.com/KoushaAm/SurveyManager">
-                          <button>learn more</button>
-                        </a> 
-              </div>
-  
-              <div className="project-card">
-                  <h2>Path Finding Algorithm Visulization</h2>
-                  <img src = "https://user-images.githubusercontent.com/67440795/215621916-7579fa95-db66-4c12-952d-21064264bc0c.png" className = "project-image"></img>
-                  <p>A C++ program to shortest path between two points in an input image.
-                        The app contains comprehensiv unit testing and OOP structure of various
-                        common data structures</p>
-                        <a href="https://github.com/KoushaAm/Path-Finding">
-                          <button>learn more</button>
-                        </a> 
-              </div>
-              <div className="project-card">
-                  <h2>Food Prediction Model</h2>
-                  <img src= "https://github.com/KoushaAm/KoushaAmouzesh-Portfolio/blob/main/foodPred.png?raw=true" className="project-image"></img>
-                  <p>Built a CNN model on tensorflow to predict the name of 10 different dishes based
-                        on their images. The model is trained on 10,000 images</p>
-                      <a href="https://github.com/KoushaAm/Deeplearning">
-                        <button>learn more</button>
-                      </a> 
-              </div>
-              <div className="project-card">
-                  <h2>Word Soduko App</h2>
-                  <img src = "https://github.com/KoushaAm/KoushaAmouzesh-Portfolio/blob/main/sudoku.png?raw=true" style = {{height: "200px"}}></img>
-                  <p>Created a Java-based Android Sudoku game with multiple language levels and modes, utilizing a vast word database for translations.</p>
-                      <a href="https://github.com/KoushaAm/WordSudoku">
-                        <button>learn more</button>
-                      </a> 
-              </div>
+          <h2 style = {{fontSize:"60px", marginLeft: "40px"}}><strong>Projects</strong></h2>
 
-              <div className="project-card">
-                  <h2>Deep Learning</h2>
-                  <img src= "https://github.com/KoushaAm/KoushaAmouzesh-Portfolio/blob/main/deeplearning.png?raw=true" style = {{height: "200px"}}></img>
-                  <p> I have also worked on several other multi-class & Binary classification projects with raw and processed data using tensorflow</p>
-                  <a href="https://github.com/KoushaAm/Deeplearning">
-                        <button>learn more</button>
-                      </a> 
-              </div>
+          <div className="slideshow-container">
+            <div className="project-card slide active">
+              <h2>Job Seeking Platform</h2>
+              <img src="https://user-images.githubusercontent.com/67440795/241589813-a326679b-9c23-4e99-aa57-4be48f5f3502.png" alt="Job Seeking Platform" className="project-image" />
+              <p>A website where users can search for jobs at their location and save or apply for their desired jobs. A fully working database to keep track of job records.</p>
+              <a href="https://github.com/KoushaAm/JobSearch">
+                <button>Learn More</button>
+              </a>
+            </div>
+
+            <div className="project-card slide">
+              <h2>Math2Latex</h2>
+              <img src="https://github.com/KoushaAm/KoushaAmouzesh-Portfolio/blob/main/Math2Latex.png?raw=true" className="project-image" />
+              <p>Uses deep learning CNN model with PyTorch to predict the mathematical symbol and predict upon the input image.</p>
+              <a href="https://github.com/KoushaAm/Math2Latex">
+                <button>Learn More</button>
+              </a>
+            </div>
+
+            <div className="project-card slide">
+              <h2>Survey Manager</h2>
+              <img src="https://github.com/KoushaAm/KoushaAmouzesh-Portfolio/blob/main/survey.png?raw=true" className="project-image" />
+              <p>A Java-based windows application to manage the created survey by users. The application provides users with opportunities to collect data from their custom surveys and edit them as desired</p>
+              <a href="https://github.com/KoushaAm/SurveyManager">
+                <button>Learn More</button>
+              </a>
+            </div>
+
+            <div className="project-card slide">
+              <h2>Path Finding Algorithm Visualization</h2>
+              <img src="https://user-images.githubusercontent.com/67440795/215621916-7579fa95-db66-4c12-952d-21064264bc0c.png" className="project-image" />
+              <p>A C++ program to find the shortest path between two points in an input image. The app contains comprehensive unit testing and an OOP structure of various common data structures</p>
+              <a href="https://github.com/KoushaAm/Path-Finding">
+                <button>Learn More</button>
+              </a>
+            </div>
+
+            <div className="project-card slide">
+              <h2>Food Prediction Model</h2>
+              <img src="https://github.com/KoushaAm/KoushaAmouzesh-Portfolio/blob/main/foodPred.png?raw=true" className="project-image" />
+              <p>Built a CNN model on TensorFlow to predict the name of 10 different dishes based on their images. The model is trained on 10,000 images</p>
+              <a href="https://github.com/KoushaAm/Deeplearning">
+                <button>Learn More</button>
+              </a>
+            </div>
+
+            <div className="project-card slide">
+              <h2>Word Sudoku App</h2>
+              <img src="https://github.com/KoushaAm/KoushaAmouzesh-Portfolio/blob/main/sudoku.png?raw=true" style={{ height: "200px" }} />
+              <p>Created a Java-based Android Sudoku game with multiple language levels and modes, utilizing a vast word database for translations.</p>
+              <a href="https://github.com/KoushaAm/WordSudoku">
+                <button>Learn More</button>
+              </a>
+            </div>
+
+            <div className="project-card slide">
+              <h2>Deep Learning</h2>
+              <img src="https://github.com/KoushaAm/KoushaAmouzesh-Portfolio/blob/main/deeplearning.png?raw=true" style={{ height: "200px" }} />
+              <p>I have also worked on several other multi-class &amp; Binary classification projects with raw and processed data using TensorFlow</p>
+              <a href="https://github.com/KoushaAm/Deeplearning">
+                <button>Learn More</button>
+              </a>
+            </div>
           </div>
         
     </section>
 
     <section id="Resume" className="section" style={{ backgroundColor }}>
-    <h1 style={{fontSize: "40px", marginTop: "0px", marginLeft: "70px"}}>
-          <strong>My Resume</strong>
-    </h1>
-    <embed src="https://github.com/KoushaAm/KoushaAmouzesh-Portfolio/blob/21c1b9807c37a53b852f716f93572ad6b71439de/Resume-Complete.pdf"/>
-
-    </section>
+      <h1 style={{ fontSize: "40px", marginTop: "0px", marginLeft: "70px" }}>
+        <strong>My Resume</strong>
+        
+      </h1>
+      <div style={{ marginLeft: "70px", marginTop: "20px" }}>
+        <a href="https://github.com/KoushaAm/KoushaAmouzesh-Portfolio/blob/main/Resume-Complete.pdf?raw=true" download>
+          <FontAwesomeIcon icon={faDownload} style={{ marginRight: "8px" }} />
+          Download Resume
+        </a>
+      </div>
+      <img src="https://github.com/KoushaAm/KoushaAmouzesh-Portfolio/blob/main/Resume-Complete.jpg?raw=true" style={{ padding: "80px" }}></img>
+      
+</section>
 
 
 
@@ -452,11 +471,7 @@ const Home: React.FC = () => {
       </div>
     </section>
 
-    <footer>
-      <div className="footer">
-        <p style={{ marginTop: "0px", marginLeft: "20px"}}>Developed by Kousha Amouzesh</p>
-      </div>
-    </footer>
+
     </main>
   );
 };
