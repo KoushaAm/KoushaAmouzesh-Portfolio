@@ -117,35 +117,35 @@ const Home: React.FC = () => {
       </section>
 
       <section id="Education" className="section" style={{ backgroundColor }}>
-  <div className="education-content" style={{ lineHeight: "1.2", padding: "20px" }}>
-    <div className="card" style={{ background: "rgba(255, 255, 255, 0.5)", border: "none", borderRadius:"30px", boxShadow: "0 2px 4px rgba(0, 0, 0, 0.1)", padding: "20px", textAlign: "center" }}>
-      <h1 style={{ textAlign: 'center', marginBottom: "20px" }}><strong>Education</strong></h1>
-      <div className="education-item" style={{ marginBottom: "10px" }}>
-        <p style={{ fontSize: '30px', fontWeight: "bold", marginBottom: "5px" }}>
-          <FontAwesomeIcon icon={faGraduationCap} style={{ marginRight: "10px"}} />
-          Computer Science BSc
-        </p>
-        <p style={{ marginBottom: "5px" }}>
-          <FontAwesomeIcon icon={faUniversity} style={{ marginRight: "10px" }} />
-          Simon Fraser University
-        </p>
-        <p style={{ marginBottom: "5px" }}>
-          <FontAwesomeIcon icon={faStar} style={{ marginRight: "10px" }} />
-          GPA: (A) 3.92/4.33
-        </p>
-        <p style={{ marginBottom: "5px" }}>
-          <FontAwesomeIcon icon={faCalendarAlt} style={{ marginRight: "10px" }} />
-          Expected Graduation: December 2025
-        </p>
-      </div>
-      <div className="education-item">
-        <p style={{ fontSize: '30px', fontWeight: "bold", marginBottom: "5px" }}>Academic Objectives</p>
-        <p style={{ textAlign: 'center' }}>My academic objectives are to pursue a graduate degree in Computer Science with a focus on Machine Learning studies.</p>
-        <p style={{ textAlign: 'center' }}>I plan to achieve this goal after gaining practical industry skills through co-op and full-time software development/engineering positions.</p>
-      </div>
-    </div>
-  </div>
-</section>
+        <div className="education-content" style={{ lineHeight: "1.2", padding: "20px" }}>
+          <div className="card" style={{textAlign: "center" }}>
+            <h1 style={{ textAlign: 'center', marginBottom: "20px" }}><strong>Education</strong></h1>
+            <div className="education-item" style={{ marginBottom: "10px" }}>
+              <p style={{ fontSize: '30px', fontWeight: "bold", marginBottom: "5px" }}>
+                <FontAwesomeIcon icon={faGraduationCap} style={{ marginRight: "10px"}} />
+                Computer Science BSc
+              </p>
+              <p style={{ marginBottom: "5px" }}>
+                <FontAwesomeIcon icon={faUniversity} style={{ marginRight: "10px" }} />
+                Simon Fraser University
+              </p>
+              <p style={{ marginBottom: "5px" }}>
+                <FontAwesomeIcon icon={faStar} style={{ marginRight: "10px" }} />
+                GPA: (A) 3.92/4.33
+              </p>
+              <p style={{ marginBottom: "5px" }}>
+                <FontAwesomeIcon icon={faCalendarAlt} style={{ marginRight: "10px" }} />
+                Expected Graduation: December 2025
+              </p>
+            </div>
+            <div className="education-item">
+              <p style={{ fontSize: '30px', fontWeight: "bold", marginBottom: "5px" }}>Academic Objectives</p>
+              <p style={{ textAlign: 'center' }}>My academic objectives are to pursue a graduate degree in Computer Science with a focus on Machine Learning studies.</p>
+              <p style={{ textAlign: 'center' }}>I plan to achieve this goal after gaining practical industry skills through co-op and full-time software development/engineering positions.</p>
+            </div>
+          </div>
+        </div>
+    </section>
 
 
 
