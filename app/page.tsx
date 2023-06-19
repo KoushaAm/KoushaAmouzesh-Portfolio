@@ -62,6 +62,7 @@ const Home: React.FC = () => {
     { id: 'Skills', title: 'Skills' },
     // { id: 'Experience', title: 'Experience' },
     { id: 'Projects', title: 'Projects' },
+    {id : 'Resume', title: 'Resume'},
     { id: 'Contact', title: 'Contact' },
   ];
 
@@ -402,6 +403,15 @@ const Home: React.FC = () => {
           </div>
         
     </section>
+
+    <section id="Resume" className="section" style={{ backgroundColor }}>
+    <h1 style={{fontSize: "40px", marginTop: "0px", marginLeft: "70px"}}>
+          <strong>My Resume</strong>
+    </h1>
+    <embed src="https://github.com/KoushaAm/KoushaAmouzesh-Portfolio/blob/21c1b9807c37a53b852f716f93572ad6b71439de/Resume-Complete.pdf"/>
+
+    </section>
+
 
 
       <section className="section" id="Contact" style={{ backgroundColor, marginTop: "0px"}}>
