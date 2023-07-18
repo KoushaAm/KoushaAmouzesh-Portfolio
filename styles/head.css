@@ -1,6 +1,7 @@
 .transparent-header {
     position: relative;
-    font-family: 'Times New Roman', Times, serif;
+    /* font-family: 'Times New Roman', Times, serif; */
+    font-family: 'Oswald', sans-serif;
     padding: 20px;
     
 }

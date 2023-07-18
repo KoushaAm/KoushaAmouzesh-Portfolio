@@ -86,15 +86,16 @@ const Home: React.FC = () => {
 
   return (
     <main>
+      <link href="https://fonts.googleapis.com/css?family=Cardo:400,700|Oswald" rel="stylesheet"></link>
       <Header />
       <section id="Intro" className="section" style={{ backgroundColor }}>
         <div className="wrapper">
 
-          <div style = {{marginBottom: "25px"}} className={`typing-demo ${isVisible ? 'visible' : ''}`}>
+          <div style = {{marginBottom: "15px"}} className={`typing-demo ${isVisible ? 'visible' : ''}`}>
             <strong>Kousha Amouzesh</strong>
           </div>
           <div className={`typing-demo-2 ${isVisible ? 'visible' : ''}`}>
-            <p style = {{marginLeft:"18%", marginRight:"30%",fontSize: "25px"}}>I am a software developer  💻 </p>
+            <p style = {{marginLeft:"15%", marginRight:"30%",fontSize: "25px"}}>I am a software developer  💻 </p>
             <div className="spinner-box" style = {{marginTop: "-90%"}}>
               <div className="blue-orbit leo"></div>
 
