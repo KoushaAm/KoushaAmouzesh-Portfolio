@@ -4,6 +4,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Oswald', sans-serif;
   text-transform: uppercase;
 }
+
 .section {
   min-height: 100vh;
   background-color: black;
@@ -113,7 +114,7 @@ max-width: 500px;
     display: grid;
     padding: 20px;
     place-items: center;
-    grid-gap: 20px;
+    text-align: center;
     font-size: 30px;
   }
   
@@ -126,7 +127,7 @@ max-width: 500px;
     border-right: 3px solid;
     font-family: 'Archivo Black', sans-serif;
     text-transform: uppercase;
-    font-size: 45px;
+    font-size: 40px;
     animation-fill-mode: forwards;
     margin-bottom: -200px; /* Adjust the margin-bottom value */
   }
@@ -182,8 +183,8 @@ max-width: 500px;
     color: #000;
     border-radius: 5px;
     padding:20px;
-    max-width: 1000px; /* Adjust the max-width to make the box smaller */
-    margin: 0 auto; /* Center the box horizontally */
+    max-width: 1000px; 
+    margin: 0 auto; 
     border-radius: 10px;
     background: #e0e0e0;
     box-shadow:  20px 20px 60px #171717,
@@ -209,21 +210,21 @@ max-width: 500px;
     display: flex;
     flex-direction: column;
     gap: 10px;
-    text-align: left; /* Adjust the text alignment to left */
+    text-align: left; 
   }
   
   .contact-item {
-    margin-bottom: 10px; /* Reduce the margin-bottom */
+    margin-bottom: 10px; 
   }
   
 
   .section h1 {
-    margin-top: 10px; /* Reduce the margin-top */
-    margin-bottom: 10px; /* Reduce the margin-bottom */
+    margin-top: 10px; 
+    margin-bottom: 10px; 
   }
   
   .section p {
-    margin-bottom: 10px; /* Reduce the margin-bottom */
+    margin-bottom: 10px; 
   }
   
   .about-content {
@@ -476,8 +477,8 @@ max-width: 500px;
 /* the intro animation */
 /* Thanks to https://codepen.io/AlexWarnes/pen/jXYYKL */
 .spinner-box {
-  width: 500px;
-  height: 500px;
+  width: 400px;
+  height: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -500,8 +501,8 @@ max-width: 500px;
 }
 
 .green-orbit {
-  width: 700px;
-  height: 700px;
+  width: 550px;
+  height: 550px;
   border: 1px solid #91ffbfa5;
   animation: spin3D 10s linear 0s infinite;
 }

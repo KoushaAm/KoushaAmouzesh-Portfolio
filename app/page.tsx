@@ -84,18 +84,20 @@ const Home: React.FC = () => {
     return () => clearInterval(slideInterval);
   }, []);
 
+  
+
   return (
     <main>
       <link href="https://fonts.googleapis.com/css?family=Cardo:400,700|Oswald" rel="stylesheet"></link>
       <Header />
-      <section id="Intro" className="section" style={{ backgroundColor }}>
+      <section id="Intro" className="section" style={{ backgroundColor , alignContent: "center"}}>
         <div className="wrapper">
 
-          <div style = {{marginBottom: "15px"}} className={`typing-demo ${isVisible ? 'visible' : ''}`}>
+          <div style = {{alignContent: "center" , marginBottom: "15px"}} className={`typing-demo ${isVisible ? 'visible' : ''}`}>
             <strong>Kousha Amouzesh</strong>
           </div>
-          <div className={`typing-demo-2 ${isVisible ? 'visible' : ''}`}>
-            <p style = {{marginLeft:"15%", marginRight:"30%",fontSize: "25px"}}>I am a software developer  💻 </p>
+          <div  className={`typing-demo-2 ${isVisible ? 'visible' : ''}`}>
+            <p style = {{fontSize: "25px"}}>I am a software developer  💻 </p>
             <div className="spinner-box" style = {{marginTop: "-90%"}}>
               <div className="blue-orbit leo"></div>
 
@@ -119,7 +121,7 @@ const Home: React.FC = () => {
           <strong>About me...</strong>
         </h1>
         <div className="about-content">
-          <div className="about-text" style={{ margin: "40px" }}>
+          <div className="about-text" style={{ margin: "10px"}}>
             <p className="about-paragraph">
               I am a 20-year-old Computer Science student at Simon Fraser University in Burnaby, British Columbia. Since a young age, I have been fascinated by the potential of computer science and mathematics, starting with the first spaceship game I developed at the age of 14. As I progress in my academic journey, I am constantly inspired by projects that bridge the vast world of mathematics with computer science. Currently, I am actively seeking a co-op position for the remainder of 2023.
             </p>
@@ -131,7 +133,7 @@ const Home: React.FC = () => {
             src="https://github.com/KoushaAm/Portfolio/blob/master/Screenshot%202023-05-28%20at%209.43.43%20PM.png?raw=true"
             alt="About Me"
             className="about-image"
-            style={{ width: "400px", height: "auto", padding: "40px" , justifyContent:"center", borderRadius: "80px"}}
+            style={{ width: "400px", height: "auto", padding: "10px", marginLeft: "15%",marginRight: "10%", justifyContent:"center", borderRadius: "80px"}}
           />
         </div>
       </section>

@@ -6,6 +6,15 @@
     
 }
 
+.header.visible {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999; /* Adjust the z-index if needed to ensure the header is above other elements */
+    /* Add any other styles you want to apply when the header is visible */
+  }
+
 /*change the background color of li text when hovered */
 .transparent-header-nav li:hover {
     color: #555;
