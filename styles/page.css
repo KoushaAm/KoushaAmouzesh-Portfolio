@@ -129,8 +129,8 @@ max-width: 500px;
     text-transform: uppercase;
     font-size: 40px;
     animation-fill-mode: forwards;
-    margin-bottom: -200px; /* Adjust the margin-bottom value */
   }
+  
   
   .typing-demo-2 {
     color: #959595;
@@ -141,6 +141,20 @@ max-width: 500px;
     margin-top: -200px; /* Adjust the margin-top value */
     opacity: 0;
     transition: opacity 1s ease-in-out;
+  }
+
+  @media (max-width: 768px) {
+    .typing-demo {
+      font-size: 35px;
+      margin-top: 400px;
+    }
+    
+  }
+
+  @media (max-width: 768px) {
+    .typing-demo-2 {
+      font-size: 20px;
+    }
   }
   
   .typing-demo-2.visible {
@@ -231,16 +245,35 @@ max-width: 500px;
     font-size: 30px; /* Reduce the font size */
   }
   
-  .about-image {
-    margin-right: 10px; /* Reduce the margin-right */
+  .image-container {
+    justify-content: center;
+    display: flex;
   }
   
+  .about-image {
+    width: 400px;
+    height: auto;
+    margin-right: 30%;
+    border-radius: 80px;
+  }
+  
+  @media (max-width: 768px) {
+    .about-image {
+      width: 180px;
+      height: 250px;
+      border-radius: 20px;
+      margin-bottom:100px;
+
+    }
+  }
+
+
   .about-text {
-    padding: 20px; /* Increase the padding for more space between paragraphs */
+    padding: 20px; 
   }
   
   .about-paragraph {
-    margin-bottom: 10px; /* Reduce the margin-bottom */
+    margin-bottom: 10px; 
   }
   
   .section-box {
@@ -415,6 +448,13 @@ max-width: 500px;
   gap: 20px;
 }
 
+@media (max-width: 768px) {
+  .skills-table {
+    flex-direction: column;
+    padding:80px;
+  }
+}
+
 .skills-column {
   flex-basis: 30%;
   
@@ -463,27 +503,28 @@ max-width: 500px;
   }
 }
 
-/* Adjust margins and heights for contact and project sections */
 .section-contact {
-  min-height: 150vh; /* Adjust the height as desired */
-  margin-bottom: -100vh; /* Overlap the section below */
+  min-height: 150vh; 
+  min-width: 100vh;
+  margin-bottom: -100vh; 
 }
 
 .section-project {
-  min-height: 250vh; /* Adjust the height as desired */
-  margin-top: -100vh; /* Overlap the section above */
+  min-height: 250vh; 
+  margin-top: -100vh;
 }
 
 /* the intro animation */
 /* Thanks to https://codepen.io/AlexWarnes/pen/jXYYKL */
 .spinner-box {
-  width: 400px;
-  height: 400px;
+  width: 500px;
+  height: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: transparent;
 }
+
 
 .leo {
   position: absolute;
@@ -493,16 +534,17 @@ max-width: 500px;
   border-radius: 50%;
 }
 
+
 .blue-orbit {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   border: 1px solid #91daffa5;
   animation: spin3D 3s linear .2s infinite;
 }
 
 .green-orbit {
-  width: 550px;
-  height: 550px;
+  width: 500px;
+  height: 500px;
   border: 1px solid #91ffbfa5;
   animation: spin3D 10s linear 0s infinite;
 }
@@ -529,6 +571,75 @@ max-width: 500px;
     transform: rotateX(1turn) rotateY(1turn) rotateZ(1turn);
   }
 }
+
+/* For the blue orbit */
+.blue-orbit {
+  width: 150px;
+  height: 150px;
+  border: 1px solid #91daffa5;
+  animation: spin3D 3s linear .2s infinite;
+}
+@media (max-width: 768px) {
+  .leo {
+    margin-top: -300px;
+  }
+}
+
+/* For mobile view */
+@media (max-width: 768px) {
+  .blue-orbit {
+    width: 75px; 
+    height: 75px;
+  }
+}
+
+/* For the green orbit */
+.green-orbit {
+  width: 500px;
+  height: 500px;
+  border: 1px solid #91ffbfa5;
+  animation: spin3D 10s linear 0s infinite;
+}
+
+/* For mobile view */
+@media (max-width: 768px) {
+  .green-orbit {
+    width: 250px; 
+    height: 250px; 
+  }
+}
+
+/* For the red orbit */
+.red-orbit {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #ffca91a5;
+  animation: spin3D 10s linear 0s infinite;
+}
+
+/* For mobile view */
+@media (max-width: 768px) {
+  .red-orbit {
+    width: 25px; 
+    height: 25px; 
+  }
+}
+
+.white-orbit {
+  width: 300px;
+  height: 300px;
+  border: 1px solid #ffffff;
+  animation: spin3D 10s linear 0s infinite;
+}
+
+/* For mobile view */
+@media (max-width: 768px) {
+  .white-orbit {
+    width: 150px; 
+    height: 150px; 
+  }
+}
+
 
 
    .section-project {

@@ -97,7 +97,7 @@ const Home: React.FC = () => {
             <strong>Kousha Amouzesh</strong>
           </div>
           <div  className={`typing-demo-2 ${isVisible ? 'visible' : ''}`}>
-            <p style = {{fontSize: "25px"}}>I am a software developer  💻 </p>
+            I am a software developer  💻 
             <div className="spinner-box" style = {{marginTop: "-90%"}}>
               <div className="blue-orbit leo"></div>
 
@@ -129,12 +129,13 @@ const Home: React.FC = () => {
               Besides my passion for technology and academia, I have a strong drive for sports and thrive in competitive environments. I have been involved in competitive swimming for 8 years and also enjoy the complexity and excitement of recreational soccer. Additionally, I have a musical background and play the Persian Tombak, piano, and drums.
             </p>
           </div>
-          <img
-            src="https://github.com/KoushaAm/Portfolio/blob/master/Screenshot%202023-05-28%20at%209.43.43%20PM.png?raw=true"
-            alt="About Me"
-            className="about-image"
-            style={{ width: "400px", height: "auto", padding: "10px", marginLeft: "15%",marginRight: "10%", justifyContent:"center", borderRadius: "80px"}}
-          />
+            <div className="image-container">
+              <img
+                src="https://github.com/KoushaAm/Portfolio/blob/master/Screenshot%202023-05-28%20at%209.43.43%20PM.png?raw=true"
+                alt="About Me"
+                className="about-image"
+              />
+            </div>
         </div>
       </section>
 
