@@ -45,9 +45,9 @@ const Header: React.FC = () => {
 
   return (
     <header
-      className={`transparent-header ${isSidebarOpen && isMobileView ? "sidebar-open" : ""} ${isScrolled ? "scrolled" : ""}`}
+      className={`transparent-header ${(isSidebarOpen && isMobileView) ? "sidebar-open" : ""} ${isScrolled ? "scrolled" : ""}`}
     >
-      {isMobileView ? (
+      {isMobileView  ? (
         // Mobile view sidebar toggle
         <div className="sidebar-toggle" onClick={toggleSidebar}>
           <span></span>
@@ -81,7 +81,7 @@ const Header: React.FC = () => {
         </nav>
       )}
       {/* Mobile view sidebar */}
-      <nav className={`sidebar ${isSidebarOpen && isMobileView ? "open" : ""}`}>
+      <nav className={`sidebar ${(isSidebarOpen && isMobileView) || (isSidebarOpen && isScrolled)? "open" : ""}`}>
         <ul>
           {/* Sidebar links */}
           <a href="#AboutMe" onClick={(e) => scrollToSection(e, 'AboutMe')}>
