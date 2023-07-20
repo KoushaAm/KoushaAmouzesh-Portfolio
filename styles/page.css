@@ -115,9 +115,16 @@ max-width: 500px;
     /*This part is important for centering*/
     display: grid;
     padding: 20px;
+    margin-top : 15%;
     place-items: center;
     text-align: center;
     font-size: 30px;
+  }
+
+  @media (max-width: 768px) {
+    .wrapper {
+        margin-top: 10px;
+    }
   }
   
   .typing-demo {
