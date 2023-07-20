@@ -87,7 +87,7 @@ const Home: React.FC = () => {
   
 
   return (
-    <main>
+    <main style = {{backgroundColor}}>
       <link href="https://fonts.googleapis.com/css?family=Cardo:400,700|Oswald" rel="stylesheet"></link>
       <Header />
       <section id="Intro" className="section" style={{ backgroundColor , alignContent: "center"}}>
