@@ -121,7 +121,6 @@ max-width: 500px;
   }
   
   .typing-demo {
-    padding: 0px;
     width: 0;
     animation: typing 2s steps(22), blink .5s step-end infinite alternate;
     white-space: nowrap;
@@ -131,16 +130,15 @@ max-width: 500px;
     text-transform: uppercase;
     font-size: 40px;
     animation-fill-mode: forwards;
+    margin-bottom: 10px;
   }
   
   
   .typing-demo-2 {
     color: #959595;
-    padding: 0px;
     white-space: nowrap;
     overflow: hidden;
     font-size: 25px;
-    margin-top: -200px; /* Adjust the margin-top value */
     opacity: 0;
     transition: opacity 1s ease-in-out;
   }
@@ -148,13 +146,14 @@ max-width: 500px;
   @media (max-width: 768px) {
     .typing-demo {
       font-size: 35px;
-      margin-top: 400px;
+      margin-top: 450px;
     }
     
   }
 
   @media (max-width: 768px) {
     .typing-demo-2 {
+      margin-top: 10px;
       font-size: 20px;
     }
   }
@@ -261,11 +260,11 @@ max-width: 500px;
   
   @media (max-width: 768px) {
     .about-image {
-      width: 180px;
-      height: 250px;
-      border-radius: 20px;
+ 
+      border-radius: 20px; 
       margin-bottom:100px;
-
+      width: 200px;
+      height: 270px;
     }
   }
 
@@ -583,7 +582,7 @@ max-width: 500px;
 }
 @media (max-width: 768px) {
   .leo {
-    margin-top: -300px;
+    margin-top: -500px;
   }
 }
 
