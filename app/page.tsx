@@ -8,6 +8,8 @@ import { faGraduationCap, faUniversity, faStar, faCalendarAlt } from "@fortaweso
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope, faPhone, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
 import { faDownload } from '@fortawesome/free-solid-svg-icons';
+import { Analytics } from '@vercel/analytics/react';
+
 
 
 
@@ -88,6 +90,8 @@ const Home: React.FC = () => {
 
   return (
     <main style = {{backgroundColor}}>
+      <Analytics />
+
       <link href="https://fonts.googleapis.com/css?family=Cardo:400,700|Oswald" rel="stylesheet"></link>
       <Header />
       <section id="Intro" className="section" style={{ backgroundColor , alignContent: "center"}}>
