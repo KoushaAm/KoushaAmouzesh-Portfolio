@@ -358,6 +358,16 @@ const Home: React.FC = () => {
           <h2 style = {{fontSize:"60px", marginLeft: "40px"}}><strong>Projects</strong></h2>
 
           <div className="slideshow-container">
+
+          <div className="project-card slide active">
+              <h2>Party-Nav</h2>
+              <img src="https://user-images.githubusercontent.com/67440795/252758463-29ce8d6e-a6f4-40f9-ae0f-63c774fabb1d.png" alt="Job Seeking Platform" className="project-image" />
+              <p>Created social networking website with React and Node.js for people in Vancouver to find or announce parties and talk to friends about the events in real-time chatroom using Firebase</p>
+              <a href="https://github.com/KoushaAm/PartyNav-react">
+                <button>Learn More</button>
+              </a>
+            </div>
+
             <div className="project-card slide active">
               <h2>Job Seeking Platform</h2>
               <img src="https://user-images.githubusercontent.com/67440795/241589813-a326679b-9c23-4e99-aa57-4be48f5f3502.png" alt="Job Seeking Platform" className="project-image" />
