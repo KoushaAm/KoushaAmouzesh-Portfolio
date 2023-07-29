@@ -430,12 +430,13 @@ const Home: React.FC = () => {
         
       </h1>
       <div style={{ marginLeft: "70px", marginTop: "20px" }}>
-        <a href="https://github.com/KoushaAm/KoushaAmouzesh-Portfolio/blob/main/Resume-Complete.pdf?raw=true" download>
+      
+        <a href="https://github.com/KoushaAm/KoushaAmouzesh-Portfolio/blob/main/resume.pdf?raw=true" download>
           <FontAwesomeIcon icon={faDownload} style={{ marginRight: "8px" }} />
           Download Resume
         </a>
       </div>
-      <img src="https://github.com/KoushaAm/KoushaAmouzesh-Portfolio/blob/main/Resume-Complete.jpg?raw=true" style={{ padding: "80px" }}></img>
+      <img src="https://github.com/KoushaAm/KoushaAmouzesh-Portfolio/blob/main/resume-image.png?raw=true" style={{ padding: "80px" }}></img>
       
 </section>
 
