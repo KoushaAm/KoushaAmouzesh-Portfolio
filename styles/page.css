@@ -562,7 +562,7 @@ max-width: 500px;
 .green-orbit {
   width: 500px;
   height: 500px;
-  border: 1px solid #91ffbf5b;
+  border: 1px solid #91ffbf42;
   animation: spin3D 20s linear 0s infinite;
 }
 
@@ -701,7 +701,6 @@ max-width: 500px;
   width: 40px;
   height: 40px;
   top: 80%;
-  
   position: absolute;
   transform: rotate(45deg);
   border-left: none;
@@ -744,6 +743,8 @@ max-width: 500px;
   .arrow {
     top: 90%;
     margin: -20px 0 0 -20px;
+    margin-top: -250px;
+
   }
 
 
