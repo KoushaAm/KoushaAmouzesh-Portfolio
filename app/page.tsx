@@ -159,7 +159,7 @@ const Home: React.FC = () => {
               </p>
               <p style={{ marginBottom: "5px" }}>
                 <FontAwesomeIcon icon={faStar} style={{ marginRight: "10px" }} />
-                GPA: (A) 3.92/4.33
+                GPA: (A+) 4.00/4.33
               </p>
               <p style={{ marginBottom: "5px" }}>
                 <FontAwesomeIcon icon={faCalendarAlt} style={{ marginRight: "10px" }} />

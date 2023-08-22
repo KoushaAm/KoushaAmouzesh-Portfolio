@@ -555,28 +555,28 @@ max-width: 500px;
 .blue-orbit {
   width: 150px;
   height: 150px;
-  border: 1px solid #91daffa5;
-  animation: spin3D 3s linear .2s infinite;
+  border: 1px solid #91daff4c;
+  animation: spin3D 30s linear .2s infinite;
 }
 
 .green-orbit {
   width: 500px;
   height: 500px;
-  border: 1px solid #91ffbfa5;
-  animation: spin3D 10s linear 0s infinite;
+  border: 1px solid #91ffbf5b;
+  animation: spin3D 20s linear 0s infinite;
 }
 
 .red-orbit {
   width: 50px;
   height: 50px;
-  border: 1px solid #ffca91a5;
+  border: 2px solid #ffca9145;
   animation: spin3D 10s linear 0s infinite;
 }
 
 .white-orbit {
   width: 300px;
   height: 300px;
-  border: 1px solid #ffffff;
+  border: 2px solid #33333367;
   animation: spin3D 10s linear 0s infinite;
 }
 
@@ -590,12 +590,7 @@ max-width: 500px;
 }
 
 /* For the blue orbit */
-.blue-orbit {
-  width: 150px;
-  height: 150px;
-  border: 1px solid #91daffa5;
-  animation: spin3D 3s linear .2s infinite;
-}
+
 @media (max-width: 1000px) {
   .leo {
     margin-top: -300px;
@@ -611,12 +606,7 @@ max-width: 500px;
 }
 
 /* For the green orbit */
-.green-orbit {
-  width: 500px;
-  height: 500px;
-  border: 1px solid #91ffbfa5;
-  animation: spin3D 10s linear 0s infinite;
-}
+
 
 /* For mobile view */
 @media (max-width: 1000px) {
@@ -627,12 +617,7 @@ max-width: 500px;
 }
 
 /* For the red orbit */
-.red-orbit {
-  width: 50px;
-  height: 50px;
-  border: 1px solid #ffca91a5;
-  animation: spin3D 10s linear 0s infinite;
-}
+
 
 /* For mobile view */
 @media (max-width: 1000px) {
@@ -642,12 +627,7 @@ max-width: 500px;
   }
 }
 
-.white-orbit {
-  width: 300px;
-  height: 300px;
-  border: 1px solid #ffffff;
-  animation: spin3D 10s linear 0s infinite;
-}
+
 
 /* For mobile view */
 @media (max-width: 1000px) {
@@ -713,13 +693,15 @@ max-width: 500px;
   .arrow,
 .arrow:before {
   position: absolute;
-  left: 50%;
+  margin-left:50%;
+  margin-right:50%;
 }
 
 .arrow {
   width: 40px;
   height: 40px;
   top: 80%;
+  
   position: absolute;
   transform: rotate(45deg);
   border-left: none;
@@ -734,8 +716,6 @@ max-width: 500px;
   height: 20px;
   top: 50%;
   margin: -10px 0 0 -10px;
-  border-left: none;
-  border-top: none;
   border-right: 1px #fff solid;
   border-bottom: 1px #fff solid;
   animation-duration: 2s;
