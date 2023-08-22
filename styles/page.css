@@ -743,7 +743,8 @@ max-width: 500px;
   .arrow {
     top: 90%;
     margin: -20px 0 0 -20px;
-    margin-top: -250px;
+    /* make hidden */
+    opacity: 0;
 
   }
 
