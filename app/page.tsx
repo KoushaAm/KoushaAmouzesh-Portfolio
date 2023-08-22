@@ -114,6 +114,7 @@ const Home: React.FC = () => {
               <div className="white-orbit w3 leo"></div>
             </div>
           </div>
+          <div className='arrow'></div>
         </div>
 
         
@@ -441,12 +442,12 @@ const Home: React.FC = () => {
       </h1>
       <div style={{ marginLeft: "70px", marginTop: "20px" }}>
       
-        <a href="https://github.com/KoushaAm/KoushaAmouzesh-Portfolio/blob/main/resume.pdf?raw=true" download>
+        <a href="https://github.com/KoushaAm/KoushaAmouzesh-Portfolio/blob/main/resume-KoushaAmouzesh.pdf?raw=true" download>
           <FontAwesomeIcon icon={faDownload} style={{ marginRight: "8px" }} />
           Download Resume
         </a>
       </div>
-      <img src="https://github.com/KoushaAm/KoushaAmouzesh-Portfolio/blob/main/resume-image.png?raw=true" style={{ padding: "80px" }}></img>
+      <img src="https://github.com/KoushaAm/KoushaAmouzesh-Portfolio/blob/main/resume.png?raw=true" style={{ padding: "80px" }}></img>
       
 </section>
 

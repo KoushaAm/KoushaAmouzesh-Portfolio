@@ -116,6 +116,7 @@ max-width: 500px;
 
 
 .wrapper {
+    
     min-height: 50vh;
     /*This part is important for centering*/
     display: grid;
@@ -126,7 +127,7 @@ max-width: 500px;
     font-size: 30px;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 1000px) {
     .wrapper {
         margin-top: 10px;
     }
@@ -155,7 +156,7 @@ max-width: 500px;
     transition: opacity 1s ease-in-out;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 1000px) {
     .typing-demo {
       font-size: 35px;
       margin-top: 450px;
@@ -163,7 +164,7 @@ max-width: 500px;
     
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 1000px) {
     .typing-demo-2 {
       margin-top: 10px;
       font-size: 20px;
@@ -595,14 +596,14 @@ max-width: 500px;
   border: 1px solid #91daffa5;
   animation: spin3D 3s linear .2s infinite;
 }
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .leo {
     margin-top: -300px;
   }
 }
 
 /* For mobile view */
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .blue-orbit {
     width: 75px; 
     height: 75px;
@@ -618,7 +619,7 @@ max-width: 500px;
 }
 
 /* For mobile view */
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .green-orbit {
     width: 250px; 
     height: 250px; 
@@ -634,7 +635,7 @@ max-width: 500px;
 }
 
 /* For mobile view */
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .red-orbit {
     width: 25px; 
     height: 25px; 
@@ -649,7 +650,7 @@ max-width: 500px;
 }
 
 /* For mobile view */
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .white-orbit {
     width: 150px; 
     height: 150px; 
@@ -705,3 +706,67 @@ max-width: 500px;
       border-radius: 4px;
       cursor: pointer;
     }
+
+
+
+  /* arrow down */
+  .arrow,
+.arrow:before {
+  position: absolute;
+  left: 50%;
+}
+
+.arrow {
+  width: 40px;
+  height: 40px;
+  top: 80%;
+  position: absolute;
+  transform: rotate(45deg);
+  border-left: none;
+  border-top: none;
+  border-right: 2px #fff solid;
+  border-bottom: 2px #fff solid;
+}
+
+.arrow:before {
+  content: '';
+  width: 20px;
+  height: 20px;
+  top: 50%;
+  margin: -10px 0 0 -10px;
+  border-left: none;
+  border-top: none;
+  border-right: 1px #fff solid;
+  border-bottom: 1px #fff solid;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-name: arrow;
+}
+
+@keyframes arrow {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-10px, -10px);
+  }
+}
+
+
+/* at small screen change the position of the arrow */
+@media (max-width: 1000px) {
+  .arrow,
+  .arrow:before {
+    left: 50%;
+    right:50%;
+  }
+  .arrow {
+    top: 90%;
+    margin: -20px 0 0 -20px;
+  }
+
+
+
+
+}
