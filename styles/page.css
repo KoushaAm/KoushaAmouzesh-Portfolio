@@ -5,6 +5,12 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
 }
 
+body {
+    /* avoid horizontal scroll */
+    overflow-x: hidden;
+    margin: 0;
+}
+
 .button {
   font-family: 'Oswald', sans-serif;
   font-size: 300;
