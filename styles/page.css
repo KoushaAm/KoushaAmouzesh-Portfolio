@@ -27,6 +27,7 @@ body {
   max-width: 120%;
   background-color: black;
   color: white;
+  margin-bottom: 100px;
   
 }
 
@@ -119,7 +120,6 @@ padding: 20px;
 
 .wrapper {
     
-    min-height: 50vh;
     /*This part is important for centering*/
     display: grid;
     padding: 20px;
@@ -131,7 +131,7 @@ padding: 20px;
 
   @media (max-width: 1000px) {
     .wrapper {
-        margin-top: 10px;
+        margin-top: -150px;
     }
   }
   
@@ -450,6 +450,8 @@ padding: 20px;
 
 
 
+
+
 .skills-section {
   max-width: 800px;
   margin: 0 auto;
@@ -692,23 +694,26 @@ padding: 20px;
 
 
   /* arrow down */
-  .arrow,
+.arrow,
 .arrow:before {
   position: absolute;
-  margin-left:50%;
-  margin-right:50%;
+  margin-bottom: 30px;
+  margin-left: 50%; 
+  margin-right: 50%; 
+  
 }
 
 .arrow {
   width: 40px;
   height: 40px;
-  top: 70%;
+  top: 60%;
   position: absolute;
   transform: rotate(45deg);
   border-left: none;
   border-top: none;
   border-right: 2px #fff solid;
   border-bottom: 2px #fff solid;
+  
 }
 
 .arrow:before {
@@ -743,10 +748,10 @@ padding: 20px;
     right:50%;
   }
   .arrow {
-    top: 90%;
+    top: 80%;
     margin: -20px 0 0 -20px;
+    
     /* make hidden */
-    opacity: 0;
 
   }
 

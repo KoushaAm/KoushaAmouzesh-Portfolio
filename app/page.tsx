@@ -102,9 +102,9 @@ const Home: React.FC = () => {
           </div>
           <div  className={`typing-demo-2 ${isVisible ? 'visible' : ''}`}>
             I am a software developer  💻 
-
           </div>
           <div className='arrow'></div>
+          
         </div>
 
         
