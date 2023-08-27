@@ -694,7 +694,9 @@ padding: 20px;
 .arrow,
 .arrow:before {
   position: absolute;
-  margin-bottom: 30px;
+  margin-bottom: 200px;
+  left: 50%;
+  right: 50%;
 
   
 }
@@ -702,22 +704,25 @@ padding: 20px;
 .arrow {
   width: 40px;
   height: 40px;
-  top: 60%;
   position: absolute;
-  transform: rotate(45deg);
+  left: 50%;
+  bottom: 20px; /* Adjust as needed */
+  transform: translateX(-10%) rotate(45deg);
   border-left: none;
   border-top: none;
   border-right: 2px #fff solid;
   border-bottom: 2px #fff solid;
-  
 }
 
 .arrow:before {
   content: '';
   width: 20px;
   height: 20px;
-  top: 50%;
+  position: absolute;
+  left: 50%;
+  bottom: 50%; /* Adjust as needed */
   margin: -10px 0 0 -10px;
+  margin-bottom: -10px;
   border-right: 1px #fff solid;
   border-bottom: 1px #fff solid;
   animation-duration: 2s;
