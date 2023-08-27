@@ -443,7 +443,7 @@ const Home: React.FC = () => {
 
 
 
-      <section className="section" id="Contact" style={{ backgroundColor, marginTop: "0px"}}>
+      <section className="section-contact" id="Contact" style={{ backgroundColor, marginTop: "0px"}}>
       <div className="container-contact">
         <h1>Contact</h1>
         <div className="contact-content">

@@ -43,7 +43,8 @@ p {
   font-size: 300;
 }
   
-.section h1 {
+.section h1, 
+.section-contact h1 {
   font-size: 40px;
   margin-left: 25px;
   margin-top: 25px;
@@ -51,7 +52,8 @@ p {
   margin-right: 25px;
 }
 
-.section p {
+.section p, 
+.section-contact p {
 font-size: 20px; /* Set the font size for section paragraphs */
 padding: 20px;
 }
@@ -451,7 +453,6 @@ padding: 20px;
 
 
 
-
 .skills-section {
   max-width: 800px;
   margin: 0 auto;
@@ -524,11 +525,7 @@ padding: 20px;
   }
 }
 
-.section-contact {
-  min-height: 150vh; 
-  min-width: 100vh;
-  margin-bottom: -100vh; 
-}
+
 
 .section-project {
   min-height: 250vh; 
@@ -755,7 +752,13 @@ padding: 20px;
 
   }
 
+}
 
 
-
+.section-contact {
+  min-height: 100vh;
+  width: 100%;
+  max-width: 120%;
+  background-color: black;
+  color: white;
 }
