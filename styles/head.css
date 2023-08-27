@@ -1,9 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.icon {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    margin-right: 10px;
+}
+
+.logo {
+    display: flex; /* Use flex display */
+    align-items: center; /* Vertically align the items */
+  }
+
+  
+  .software-title {
+    font-size: 1.5rem; /* Adjust font size as needed */
+    margin: 0; /* Remove margin from h1 element */
+  }
+
+
 .transparent-header {
     position: relative;
     /* font-family: 'Times New Roman', Times, serif; */
     font-family: 'Oswald', sans-serif;
     padding: 20px;
     
+}
+
+.sidebar-icon{
+   /* center */
+    display: flex;
+    justify-content: center;
 }
 
 .header.visible {
@@ -23,6 +52,16 @@
 .transparent-header-nav {
     display: none;
     font-size:25px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000; /* Adjust the z-index as needed */
+    /* add transparency  */
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    left:0;
+    right: 0;
+    top: 0;
+
 }
 
 
@@ -75,7 +114,7 @@
 
 .sidebar.open {
     transform: translateX(0);
-    height: 150vh;
+    height: 100%;
 }
 
 .sidebar ul {
@@ -86,7 +125,7 @@
 
 .sidebar li {
     font-size: 30px;
-    padding: 10px;
+    padding: 20px;
 }
 
 .sidebar li:hover {

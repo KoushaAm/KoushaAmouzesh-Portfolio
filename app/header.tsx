@@ -1,5 +1,11 @@
 import React, { useState, useEffect } from "react";
 import "../styles/head.css";
+import { styles } from "./styles";
+
+// import  image
+import logo from "./assets/logo.png";
+import Image from 'next/image'; // Import the Image component
+
 
 const Header: React.FC = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -49,14 +55,34 @@ const Header: React.FC = () => {
     >
       {isMobileView  ? (
         // Mobile view sidebar toggle
-        <div className="sidebar-toggle" onClick={toggleSidebar}>
-          <span></span>
-          <span></span>
-          <span></span>
+        <div className = "sidebar-icon">
+          <div className="logo">
+                   
+              <div className="icon">
+                <Image src={logo} alt="logo" />
+              </div>
+            <h1 className="software-title">Kousha</h1>
+          </div>
+
+          <div className="sidebar-toggle" onClick={toggleSidebar}>
+            <span></span>
+            <span></span>
+            <span></span>
+
+            
+          </div>
         </div>
+        
       ) : (
         // Desktop view navigation
         <nav className="transparent-header-nav">
+          <div className="logo">
+                   
+            <div className="icon">
+              <Image src={logo} alt="logo" />
+            </div>
+            <h1 className="software-title">Kousha | Software Developer</h1>
+          </div>
           <ul>
             {/* Navigation links */}
             <a href="#AboutMe" onClick={(e) => scrollToSection(e, 'AboutMe')}>
@@ -81,8 +107,11 @@ const Header: React.FC = () => {
         </nav>
       )}
       {/* Mobile view sidebar */}
+      
       <nav className={`sidebar ${(isSidebarOpen && isMobileView) || (isSidebarOpen && isScrolled)? "open" : ""}`}>
+        
         <ul>
+          
           {/* Sidebar links */}
           <a href="#AboutMe" onClick={(e) => scrollToSection(e, 'AboutMe')}>
             <li>Me</li>

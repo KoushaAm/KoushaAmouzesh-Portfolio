@@ -9,7 +9,7 @@ import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope, faPhone, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
 import { faDownload } from '@fortawesome/free-solid-svg-icons';
 import { Analytics } from '@vercel/analytics/react';
-
+import {styles} from './styles'
 
 
 
@@ -102,17 +102,7 @@ const Home: React.FC = () => {
           </div>
           <div  className={`typing-demo-2 ${isVisible ? 'visible' : ''}`}>
             I am a software developer  💻 
-            <div className="spinner-box" style = {{marginTop: "-90%"}}>
-              <div className="blue-orbit leo"></div>
 
-              <div className="green-orbit leo"> </div>
-              
-              <div className="red-orbit leo"></div>
-              
-              <div className="white-orbit w1 leo"></div>
-              <div className="white-orbit w2 leo"></div>
-              <div className="white-orbit w3 leo"></div>
-            </div>
           </div>
           <div className='arrow'></div>
         </div>
@@ -180,7 +170,7 @@ const Home: React.FC = () => {
 
 
 
-
+      
       <section id="Skills" className="section" style={{ backgroundColor }}>
         <div className="skills-section">
           <h2 className="skills-heading">Skills</h2>
