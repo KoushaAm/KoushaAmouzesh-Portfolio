@@ -94,7 +94,7 @@ const Home: React.FC = () => {
 
       <link href="https://fonts.googleapis.com/css?family=Cardo:400,700|Oswald" rel="stylesheet"></link>
       <Header />
-      <section id="Intro" className="section" style={{ backgroundColor , alignContent: "center"}}>
+      <section id="Intro" className="hero-section" style={{ backgroundColor , alignContent: "center"}}>
         <div className="wrapper">
 
           <div style = {{alignContent: "center" , marginBottom: "15px"}} className={`typing-demo ${isVisible ? 'visible' : ''}`}>

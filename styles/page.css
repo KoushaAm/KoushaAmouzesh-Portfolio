@@ -21,14 +21,42 @@ body {
   font-size: 300;
 }
 
-.section {
+
+.section,
+.hero-section {
   min-height: 100vh;
   width: 100%;
   max-width: 120%;
   background-color: black;
   color: white;
   margin-bottom: 100px;
+  background-color: #04051F;
+  background-color: #020311;
+  position: relative; 
+  background-color: black;
+}
+
+.hero-section {
+  background-image: url('./circuit.svg');
+    
+}
+
+.hero-section::after {
+  content: "";
+  position: absolute;
+  bottom:0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height:130%;
   
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.9) 0%, /* Darker fading effect */
+    rgba(0, 0, 0, 0.7) 50%, /* Medium opacity in the middle */
+    rgba(0, 0, 0, 0) 100% /* Transparent at the top */
+  );
+  pointer-events: none; /* Allow interaction with content behind the overlay */
 }
 
 p {
@@ -41,6 +69,25 @@ p {
   background-color: black;
   font-family: 'Oswald', sans-serif;
   font-size: 300;
+  
+}
+
+.section-.section-project {
+  content: "";
+  position: absolute;
+  bottom:0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height:130%;
+  
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.9) 0%, /* Darker fading effect */
+    rgba(0, 0, 0, 0.7) 50%, /* Medium opacity in the middle */
+    rgba(0, 0, 0, 0) 100% /* Transparent at the top */
+  );
+  pointer-events: none; /* Allow interaction with content behind the overlay */
 }
   
 .section h1, 
@@ -133,7 +180,7 @@ padding: 20px;
 
   @media (max-width: 1000px) {
     .wrapper {
-        margin-top: -150px;
+        margin-top: 0;
     }
   }
   
@@ -152,7 +199,7 @@ padding: 20px;
   
   
   .typing-demo-2 {
-    color: #959595;
+    color: #e2e0e0;
     white-space: nowrap;
     overflow: hidden;
     font-size: 25px;
@@ -163,7 +210,7 @@ padding: 20px;
   @media (max-width: 1000px) {
     .typing-demo {
       font-size: 35px;
-      margin-top: 450px;
+      margin-top: 250px;
     }
     
   }
@@ -441,8 +488,8 @@ padding: 20px;
 }
 
 .project-image {
-  width: 700px;
-  height: 200px; /* Adjust the image height as desired */
+  max-width: 700px;
+  max-height: 200px; /* Adjust the image height as desired */
   object-fit: contain;
   border-radius: 4px;
 }
@@ -710,8 +757,8 @@ padding: 20px;
   transform: translateX(-10%) rotate(45deg);
   border-left: none;
   border-top: none;
-  border-right: 2px #fff solid;
-  border-bottom: 2px #fff solid;
+  border-right: 4px #fff solid;
+  border-bottom: 4px #fff solid;
 }
 
 .arrow:before {
@@ -723,8 +770,8 @@ padding: 20px;
   bottom: 50%; /* Adjust as needed */
   margin: -10px 0 0 -10px;
   margin-bottom: -10px;
-  border-right: 1px #fff solid;
-  border-bottom: 1px #fff solid;
+  border-right: 3px #fff solid;
+  border-bottom: 3px #fff solid;
   animation-duration: 2s;
   animation-iteration-count: infinite;
   animation-name: arrow;
@@ -749,7 +796,7 @@ padding: 20px;
     right:50%;
   }
   .arrow {
-    top: 80%;
+    top: 70%;
     margin: -20px 0 0 -20px;
     
     /* make hidden */
