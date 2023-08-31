@@ -352,7 +352,7 @@ const Home: React.FC = () => {
 
           <div className="project-card slide active">
               <h2>Handwritten Digit Recognizer</h2>
-              <img src="https://user-images.githubusercontent.com/67440795/264207443-198a4a45-dcee-4cfc-8c1e-6dc578d6a0a0.png" />
+              <img src="https://user-images.githubusercontent.com/67440795/264206533-2eaa0b15-6ab9-49a7-a2d5-79ac4d815a67.png" alt="Job Seeking Platform" className="project-image"/>
               <p style = {{fontSize : "15px"}}>Developed a Convolutional Neural Network (CNN) AI model to identify numbers within images. Integrated the model into a React.js frontend, enabling users to draw numbers. The model's performance is visualized using an animated bar chart, to show AI's accuracy</p>
               <a href="https://github.com/KoushaAm/Handwritten-Digit-Recognizer">
                 <button>Learn More</button>
