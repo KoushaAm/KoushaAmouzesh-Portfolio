@@ -362,6 +362,14 @@ const Home: React.FC = () => {
             </div>
 
             <div className="project-card slide active">
+              <h2>Handwritten Digit Recognizer</h2>
+              <p>Created social networking website with React and Node.js for people in Vancouver to find or announce parties and talk to friends about the events in real-time chatroom using Firebase</p>
+              <a href="#">
+                <button>Learn More</button>
+              </a>
+            </div>
+
+            <div className="project-card slide active">
               <h2>Job Seeking Platform</h2>
               <img src="https://user-images.githubusercontent.com/67440795/241589813-a326679b-9c23-4e99-aa57-4be48f5f3502.png" alt="Job Seeking Platform" className="project-image" />
               <p>A website where users can search for jobs at their location and save or apply for their desired jobs. A fully working database to keep track of job records.</p>
