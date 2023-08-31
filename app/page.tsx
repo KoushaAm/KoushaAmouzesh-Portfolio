@@ -94,7 +94,7 @@ const Home: React.FC = () => {
 
       <link href="https://fonts.googleapis.com/css?family=Cardo:400,700|Oswald" rel="stylesheet"></link>
       <Header />
-      <section id="Intro" className="section" style={{ backgroundColor , alignContent: "center"}}>
+      <section id="Intro" className="hero-section" style={{ backgroundColor , alignContent: "center"}}>
         <div className="wrapper">
 
           <div style = {{alignContent: "center" , marginBottom: "15px"}} className={`typing-demo ${isVisible ? 'visible' : ''}`}>
@@ -351,6 +351,16 @@ const Home: React.FC = () => {
           <div className="slideshow-container">
 
           <div className="project-card slide active">
+              <h2>Handwritten Digit Recognizer</h2>
+              <img src="https://github.com/KoushaAm/KoushaAmouzesh-Portfolio/blob/main/app/assets/projects/handwritten.png?raw=true" alt="Job Seeking Platform" className="project-image" />
+              <p style = {{fontSize: "14px"}}>Developed a Convolutional Neural Network (CNN) AI model to identify numbers within images. Integrated the model into a React.js frontend, enabling users to draw numbers. The model's performance is visualized using an animated bar chart, to show AI's</p>
+              <a href="https://github.com/KoushaAm/Handwritten-Digit-Recognizer">
+                <button>Learn More</button>
+              </a>
+            </div>
+
+
+          <div className="project-card slide active">
               <h2>Party-Nav</h2>
               <img src="https://user-images.githubusercontent.com/67440795/252758463-29ce8d6e-a6f4-40f9-ae0f-63c774fabb1d.png" alt="Job Seeking Platform" className="project-image" />
               <p>Created social networking website with React and Node.js for people in Vancouver to find or announce parties and talk to friends about the events in real-time chatroom using Firebase</p>
@@ -370,7 +380,7 @@ const Home: React.FC = () => {
 
             <div className="project-card slide">
               <h2>Math2Latex</h2>
-              <img src="https://github.com/KoushaAm/KoushaAmouzesh-Portfolio/blob/main/Math2Latex.png?raw=true" className="project-image" />
+              <img src="https://github.com/KoushaAm/KoushaAmouzesh-Portfolio/blob/main/app/assets/projects/Math2Latex.png?raw=true" className="project-image" />
               <p>Uses deep learning CNN model with PyTorch to predict the mathematical symbol and predict upon the input image.</p>
               <a href="https://github.com/KoushaAm/Math2Latex">
                 <button>Learn More</button>
@@ -379,7 +389,7 @@ const Home: React.FC = () => {
 
             <div className="project-card slide">
               <h2>Survey Manager</h2>
-              <img src="https://github.com/KoushaAm/KoushaAmouzesh-Portfolio/blob/main/survey.png?raw=true" className="project-image" />
+              <img src="https://github.com/KoushaAm/KoushaAmouzesh-Portfolio/blob/main/app/assets/projects/survey.png?raw=true" className="project-image" />
               <p>A Java-based windows application to manage the created survey by users. The application provides users with opportunities to collect data from their custom surveys and edit them as desired</p>
               <a href="https://github.com/KoushaAm/SurveyManager">
                 <button>Learn More</button>
@@ -397,7 +407,7 @@ const Home: React.FC = () => {
 
             <div className="project-card slide">
               <h2>Food Prediction Model</h2>
-              <img src="https://github.com/KoushaAm/KoushaAmouzesh-Portfolio/blob/main/foodPred.png?raw=true" className="project-image" />
+              <img src="https://github.com/KoushaAm/KoushaAmouzesh-Portfolio/blob/main/app/assets/projects/foodPred.png?raw=true" className="project-image" />
               <p>Built a CNN model on TensorFlow to predict the name of 10 different dishes based on their images. The model is trained on 10,000 images</p>
               <a href="https://github.com/KoushaAm/Deeplearning">
                 <button>Learn More</button>
@@ -406,7 +416,7 @@ const Home: React.FC = () => {
 
             <div className="project-card slide">
               <h2>Word Sudoku App</h2>
-              <img src="https://github.com/KoushaAm/KoushaAmouzesh-Portfolio/blob/main/sudoku.png?raw=true" style={{ height: "200px" }} />
+              <img src="https://github.com/KoushaAm/KoushaAmouzesh-Portfolio/blob/main/app/assets/projects/sudoku.png?raw=true" style={{ height: "200px" }} />
               <p>Created a Java-based Android Sudoku game with multiple language levels and modes, utilizing a vast word database for translations.</p>
               <a href="https://github.com/KoushaAm/WordSudoku">
                 <button>Learn More</button>
@@ -415,7 +425,7 @@ const Home: React.FC = () => {
 
             <div className="project-card slide">
               <h2>Deep Learning</h2>
-              <img src="https://github.com/KoushaAm/KoushaAmouzesh-Portfolio/blob/main/deeplearning.png?raw=true" style={{ height: "200px" }} />
+              <img src="https://github.com/KoushaAm/KoushaAmouzesh-Portfolio/blob/main/app/assets/projects/deeplearning.png?raw=true" style={{ height: "200px" }} />
               <p>I have also worked on several other multi-class &amp; Binary classification projects with raw and processed data using TensorFlow</p>
               <a href="https://github.com/KoushaAm/Deeplearning">
                 <button>Learn More</button>
