@@ -350,10 +350,7 @@ const Home: React.FC = () => {
 
           <div className="slideshow-container">
 
-          <div className = "project-card slide active">
-            <h2>Handwritten Digit Recognizer NLP</h2>
-            <p style = {{fontSize : "15px"}}>Developed a Convolutional Neural Network (CNN) AI model to identify numbers within images. Integrated the model into a React.js frontend, enabling users to draw numbers. The model's performance is visualized using an animated bar chart, to show AI's accuracy</p>
-          </div>
+          
 
           <div className="project-card slide active">
               <h2>Party-Nav</h2>
