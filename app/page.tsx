@@ -352,9 +352,9 @@ const Home: React.FC = () => {
 
           <div className="project-card slide active">
               <h2>Handwritten Digit Recognizer</h2>
-              <img src="https://user-images.githubusercontent.com/67440795/252758463-29ce8d6e-a6f4-40f9-ae0f-63c774fabb1d.png" alt="Job Seeking Platform" className="project-image" />
-              <p>Created social networking website with React and Node.js for people in Vancouver to find or announce parties and talk to friends about the events in real-time chatroom using Firebase</p>
-              <a href="https://github.com/KoushaAm/PartyNav-react">
+              <img src="https://user-images.githubusercontent.com/67440795/264207443-198a4a45-dcee-4cfc-8c1e-6dc578d6a0a0.png" />
+              <p style = {{fontSize : "15px"}}>Developed a Convolutional Neural Network (CNN) AI model to identify numbers within images. Integrated the model into a React.js frontend, enabling users to draw numbers. The model's performance is visualized using an animated bar chart, to show AI's accuracy</p>
+              <a href="https://github.com/KoushaAm/Handwritten-Digit-Recognizer">
                 <button>Learn More</button>
               </a>
             </div>
