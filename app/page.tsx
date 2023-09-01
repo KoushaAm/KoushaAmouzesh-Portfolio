@@ -171,7 +171,7 @@ const Home: React.FC = () => {
 
 
       
-      <section id="Skills" className="section" style={{ backgroundColor }}>
+      <section id="Skills" className="skill-section" style={{ backgroundColor }}>
         <div className="skills-section">
           <h2 className="skills-heading">Skills</h2>
           <div className="skills-table">
