@@ -113,6 +113,53 @@ body {
   color: white;
 }
 
+.education-section {
+  background-image: url('./education.svg');
+  background-size: auto 100%; /* Adjust to maintain aspect ratio and cover the height */
+  background-repeat: no-repeat;
+  background-position: top right; /* Position the image
+  /* background-size: cover;
+  background-repeat: no-repeat; */
+  /* padding: 40px;
+  color: white;
+  position: relative;
+  margin-top: -100px; */
+}
+
+/* .education-card {
+  padding: 40px; 
+  width: 80%;
+  height: 60%;
+  background: linear-gradient(to bottom, #a3daeb4b, #87aff032); 
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+} */
+
+/* Gradient effect with a pseudo-element */
+.education-card {
+  padding: 40px;
+  width: 80%;
+  height: 60%;
+  background: linear-gradient(to bottom, #edededb8, #87aff0c3);
+  border-radius: 8px;
+  box-shadow: 0 0 0 0 #e8e5e5; 
+  position: relative;
+  overflow: hidden; 
+  transition: box-shadow 1s ease 1s, background 1s ease 1s; /* Add delay to both border and background animation */
+}
+
+/* Show the border on hover */
+.education-card:hover {
+  /* add delay animation */
+  background: linear-gradient(to bottom, #edededb8, #87aff0c3);
+  background-position: 100% 0; /* Change background position diagonally */
+  box-shadow: 0 0 0 6px #e8e5e5; /* Show a 6px border on hover (adjust as needed) */
+  transition: box-shadow 1s ease, background 1s ease; /* Adjust timing for both border and background */
+}
+
+  
+
 .education-section p {
   padding : 10px; 
   font-size: 25px; 
