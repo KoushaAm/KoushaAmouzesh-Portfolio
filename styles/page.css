@@ -139,24 +139,23 @@ body {
 /* Gradient effect with a pseudo-element */
 .education-card {
   padding: 40px;
-  width: 80%;
+  /* width: 80%;
   height: 60%;
   background: linear-gradient(to bottom, #edededb8, #87aff0c3);
   border-radius: 8px;
   box-shadow: 0 0 0 0 #e8e5e5; 
   position: relative;
   overflow: hidden; 
-  transition: box-shadow 1s ease 1s, background 1s ease 1s; /* Add delay to both border and background animation */
+  transition: box-shadow 1s ease 1s, background 1s ease 1s;  */
 }
 
 /* Show the border on hover */
-.education-card:hover {
-  /* add delay animation */
+/* .education-card:hover {
   background: linear-gradient(to bottom, #edededb8, #87aff0c3);
-  background-position: 100% 0; /* Change background position diagonally */
-  box-shadow: 0 0 0 6px #e8e5e5; /* Show a 6px border on hover (adjust as needed) */
-  transition: box-shadow 1s ease, background 1s ease; /* Adjust timing for both border and background */
-}
+  background-position: 100% 0; 
+  box-shadow: 0 0 0 6px #e8e5e5; 
+  transition: box-shadow 1s ease, background 1s ease; 
+}  */
 
   
 
