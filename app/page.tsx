@@ -134,7 +134,7 @@ const Home: React.FC = () => {
         </div>
       </section>
 
-      <section id="Education" className="section" style={{ backgroundColor }}>
+      <section id="Education" className="education-section" style={{ backgroundColor }}>
         <div className="education-content" style={{ lineHeight: "1.2", padding: "20px" }}>
           <div className="card" style={{textAlign: "center" }}>
             <h1 style={{ textAlign: 'center', marginBottom: "20px" }}><strong>Education</strong></h1>
