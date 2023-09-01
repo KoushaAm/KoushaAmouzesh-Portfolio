@@ -114,7 +114,7 @@ body {
 }
 
 .education-section {
-  background-image: url('./education.svg');
+  /* background-image: url('./education.svg'); */
   background-size: auto 100%; /* Adjust to maintain aspect ratio and cover the height */
   background-repeat: no-repeat;
   background-position: top right; /* Position the image
@@ -180,7 +180,7 @@ body {
 
 @media (max-width: 1000px) {
   .about-section p {
-    font-size: 16px; 
+    font-size: 17px; 
     padding: 2px;
   }
 }
@@ -976,9 +976,13 @@ p {
 
 
 .section-contact {
-  min-height: 100vh;
   width: 100%;
-  max-width: 120%;
+  height: 100%;
   background-color: black;
   color: white;
+  /* background-image: url('./contact.svg'); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 100px;
+  
 }
