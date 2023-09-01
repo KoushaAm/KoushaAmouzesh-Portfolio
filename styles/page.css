@@ -38,6 +38,16 @@ body {
   background-color: black;
 }
 
+.about-section {
+  /* Remove height property */
+  background-image: url('./smallCircuit.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 40px;
+  color: white;
+  position: relative;
+}
+
 .hero-section {
   background-image: url('./circuit.svg');
   min-height: 100vh;
@@ -51,19 +61,26 @@ body {
   padding: 40px;
   color: white;
   position: relative;
+  
 }
 
-@media screen and (max-width: 800px) {
+
+@media screen and (max-width: 1000px) {
   .about-section {
-    margin-bottom: 300px;
+    height: 120vh;
+    margin-bottom: 100px;
   }
 }
+
   
 
 .about-content {
   display: flex;
   align-items: center;
+
 }
+
+
 
 
 .about-section p {
@@ -71,6 +88,8 @@ body {
   font-size: 30px; 
   color: white;
 }
+
+
 
 .skill-section {
   background-image: url('./skill.svg');
@@ -170,14 +189,23 @@ p {
 
 
 
-
 .about-content {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    font-size: 40px;
-
+  display: flex;
+  flex-direction: column; /* Change to row for side-by-side display */
+  align-items: center;
+  text-align: center;
 }
+
+
+
+
+/* after 1000 screen remove image */
+@media screen and (max-width: 1000px) {
+  .about-content {
+    flex-direction: column;
+  }
+}
+  
 
 
 
@@ -190,8 +218,14 @@ p {
   margin-left: 80px;
   height: 100%;
   width: 100%;
-
 }
+
+@media screen and (max-width: 1000px) {
+  .image-container{
+    opacity: 0;
+  }
+}
+  
 
 
 
@@ -214,9 +248,7 @@ p {
 }
 }
 
-.about-paragraph {
-    margin-bottom: 15px;
-}
+
 
 
 .wrapper {
@@ -396,9 +428,7 @@ p {
     padding: 20px; 
   }
   
-  .about-paragraph {
-    margin-bottom: 10px; 
-  }
+ 
   
   .section-box {
     padding: 20px; 
