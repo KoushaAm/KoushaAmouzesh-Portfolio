@@ -42,22 +42,22 @@ const Home: React.FC = () => {
     };
   }, []);
 
-  useEffect(() => {
-    const calculateBackgroundColor = () => {
-      const windowHeight = window.innerHeight;
-      const documentHeight = document.documentElement.scrollHeight;
-      const scrollableDistance = documentHeight - windowHeight;
+  // useEffect(() => {
+  //   const calculateBackgroundColor = () => {
+  //     const windowHeight = window.innerHeight;
+  //     const documentHeight = document.documentElement.scrollHeight;
+  //     const scrollableDistance = documentHeight - windowHeight;
 
-      const percentage = (scrollPosition / scrollableDistance) * 100;
-      const rateOfChange = 400;
-      const colorValue = Math.round((percentage / rateOfChange) * 255);
-      const backgroundColor = `rgb(${colorValue}, ${colorValue}, ${colorValue})`;
+  //     const percentage = (scrollPosition / scrollableDistance) * 100;
+  //     const rateOfChange = 400;
+  //     const colorValue = Math.round((percentage / rateOfChange) * 255);
+  //     const backgroundColor = `rgb(${colorValue}, ${colorValue}, ${colorValue})`;
 
-      setBackgroundColor(backgroundColor);
-    };
+  //     setBackgroundColor(backgroundColor);
+  //   };
 
-    calculateBackgroundColor();
-  }, [scrollPosition]);
+  //   calculateBackgroundColor();
+  // }, [scrollPosition]);
 
   const sections = [
     { id: 'Intro', title: 'Home'},
@@ -111,7 +111,7 @@ const Home: React.FC = () => {
         
       </section>
 
-      <section id="AboutMe" className="section" style={{ backgroundColor }}>
+      <section id="AboutMe" className="about-section" style={{ backgroundColor }}>
         <h1 style={{ marginLeft: "80px", fontSize: "60px" }}>
           <strong>About me...</strong>
         </h1>

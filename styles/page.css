@@ -23,8 +23,9 @@ body {
 
 
 .section,
-.hero-section {
-  min-height: 100vh;
+.hero-section,
+.about-section {
+  min-height: 120vh;
   width: 100%;
   max-width: 120%;
   background-color: black;
@@ -41,7 +42,34 @@ body {
     
 }
 
-.hero-section::after {
+.about-section {
+  background-image: url('./smallCircuit.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 40px;
+  color: white;
+  position: relative;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+}
+
+
+.about-section p {
+  padding : 40px; 
+  font-size: 30px; 
+}
+
+@media (max-width: 1000px) {
+  .about-section p {
+    font-size: 20px; 
+  }
+}
+
+.hero-section::after, 
+.about-section::after {
   content: "";
   position: absolute;
   bottom:0;
@@ -58,6 +86,19 @@ body {
   );
   pointer-events: none; /* Allow interaction with content behind the overlay */
 }
+
+.about-section::after {
+  height: 300%;
+}
+
+@media screen and (max-width: 1000px) {
+  .hero-section::after, 
+  .about-section::after {
+    height:500%;
+  }
+}
+  
+
 
 p {
   font-family: 'Quicksand', sans-serif;
@@ -101,8 +142,8 @@ p {
 
 .section p, 
 .section-contact p {
-font-size: 20px; /* Set the font size for section paragraphs */
-padding: 20px;
+  font-size: 20px;
+  padding: 20px;
 }
 
 .about-image {
@@ -134,6 +175,8 @@ padding: 20px;
 
 
 .image-container{
+  /* no repeat */
+  background-repeat: no-repeat;
   justify-content: center;
   margin-left: 80px;
   height: 100%;
@@ -282,6 +325,7 @@ padding: 20px;
   }
   
   .contact-box {
+    
     text-align: center;
     margin-top: 50px;
   }
