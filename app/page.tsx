@@ -387,7 +387,7 @@ const Home: React.FC = () => {
               <h2>Scam Email Detector</h2>
               <img src="https://github.com/KoushaAm/KoushaAmouzesh-Portfolio/blob/main/scamDetector.png?raw=true" className="project-image" />
               <p>A deep learning model with Tensorflow - built a Natural Langauge Processing (NLP) model that is trained on scam and non-scam raw dataset to predict the liklihood of the inputed email on a website</p>
-              <a href="https://github.com/KoushaAm/Handwritten-Digit-Recognizer">
+              <a href="https://github.com/KoushaAm/SpamEmailDetector-NLP">
                 <button>Learn More</button>
               </a>
             </div>
