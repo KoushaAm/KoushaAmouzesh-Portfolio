@@ -384,6 +384,15 @@ const Home: React.FC = () => {
             </div>
 
             <div className="project-card slide">
+              <h2>Scam Email Detector</h2>
+              <img src="https://github.com/KoushaAm/KoushaAmouzesh-Portfolio/blob/main/scamDetector.png?raw=true" className="project-image" />
+              <p>A deep learning model with Tensorflow - built a Natural Langauge Processing (NLP) model that is trained on scam and non-scam raw dataset to predict the liklihood of the inputed email on a website</p>
+              <a href="https://github.com/KoushaAm/Handwritten-Digit-Recognizer">
+                <button>Learn More</button>
+              </a>
+            </div>
+
+            <div className="project-card slide">
               <h2>Math2Latex</h2>
               <img src="https://github.com/KoushaAm/KoushaAmouzesh-Portfolio/blob/main/Math2Latex.png?raw=true" className="project-image" />
               <p>Uses deep learning CNN model with PyTorch to predict the mathematical symbol and predict upon the input image.</p>
