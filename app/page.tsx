@@ -375,6 +375,15 @@ const Home: React.FC = () => {
             </div>
 
             <div className="project-card slide">
+              <h2>Hand-Written Digit Recognizer</h2>
+              <img src="https://github.com/KoushaAm/KoushaAmouzesh-Portfolio/blob/main/handwriter.png?raw=true" className="project-image" />
+              <p>A deep learning model with pytorch - built a Convolutional neural network that is trained on hand wirtten images to predict a user-drawn digit on a React.js web app.</p>
+              <a href="https://github.com/KoushaAm/Handwritten-Digit-Recognizer">
+                <button>Learn More</button>
+              </a>
+            </div>
+
+            <div className="project-card slide">
               <h2>Math2Latex</h2>
               <img src="https://github.com/KoushaAm/KoushaAmouzesh-Portfolio/blob/main/Math2Latex.png?raw=true" className="project-image" />
               <p>Uses deep learning CNN model with PyTorch to predict the mathematical symbol and predict upon the input image.</p>
