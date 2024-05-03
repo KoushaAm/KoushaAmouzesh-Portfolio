@@ -6,7 +6,7 @@ import '../styles/page.css';
 import Intro from './intro';
 import AboutMe from './aboutMe';
 import Experience from './experience';
-import Education from './Education'
+import Education from './education'
 import Skills from './skills';
 import Projects from './projects';
 import Resume from './resume';
