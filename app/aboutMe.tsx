@@ -11,10 +11,10 @@ export default function AboutMe() {
         <div className="about-content">
           <div className="about-text" style={{ margin: "10px", marginTop: "-15px"}}>
             <p className="about-paragraph">
-              I am a 20-year-old Computer Science student at Simon Fraser University in Burnaby, British Columbia. Since a young age, I have been fascinated by the potential of computer science and mathematics, starting with the first spaceship game I developed at the age of 14. As I progress in my academic journey, I am constantly inspired by projects that bridge the vast world of mathematics with computer science. Currently, I am actively seeking a co-op position for the remainder of 2023.
+              I am a 20-year-old Software Engineer and a Computer Science student at Simon Fraser University in Burnaby, British Columbia. I am currently active as an ML engineer at Forgeahead Solutions and Intend to dive deeper into the world of Machine Learning by seeking more opportunites in both fields of development and research.
             </p>
             <p className="about-paragraph">
-              Besides my passion for technology and academia, I have a strong drive for sports and thrive in competitive environments. I have been involved in competitive swimming for 8 years and also enjoy the complexity and excitement of recreational soccer. Additionally, I have a musical background and play the Persian Tombak, piano, and drums.
+              Besides my passion for technology and academia, I've been active in competitive swimming and find joy in recreational soccer. Additionally, I've pursued hobbies like drawing and music, mastering multiple percussion instruments along the way.
             </p>
           </div>
         </div>
