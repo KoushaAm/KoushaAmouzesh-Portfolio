@@ -26,7 +26,7 @@ const Home: React.FC = () => {
     { id: 'AboutMe', title: 'About Me' },
     { id: 'Education', title: 'Education' },
     { id: 'Skills', title: 'Skills' },
-    // { id: 'Experience', title: 'Experience' },
+    { id: 'Experience', title: 'Experience' },
     { id: 'Projects', title: 'Projects' },
     {id : 'Resume', title: 'Resume'},
     { id: 'Contact', title: 'Contact' },
@@ -61,7 +61,7 @@ const Home: React.FC = () => {
       <AboutMe />
     
 
-      {/* <Experience /> */}
+      <Experience />
 
       
       <Education />

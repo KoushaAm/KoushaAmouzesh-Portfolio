@@ -81,12 +81,15 @@ const Header: React.FC = () => {
             <div className="icon">
               <Image src={logo} alt="logo" />
             </div>
-            <h1 className="software-title">Kousha | Software Developer</h1>
+            <h1 className="software-title">Kousha | Software Engineer</h1>
           </div>
           <ul>
             {/* Navigation links */}
             <a href="#AboutMe" onClick={(e) => scrollToSection(e, 'AboutMe')}>
               <li>Me</li>
+            </a>
+            <a href="#Experience" onClick={(e) => scrollToSection(e, 'Experience')}>
+              <li>Experience</li>
             </a>
             <a href="#Education" onClick={(e) => scrollToSection(e, 'Education')}>
               <li>Education</li>
@@ -115,6 +118,9 @@ const Header: React.FC = () => {
           {/* Sidebar links */}
           <a href="#AboutMe" onClick={(e) => scrollToSection(e, 'AboutMe')}>
             <li>Me</li>
+          </a>
+          <a href="#Experience" onClick={(e) => scrollToSection(e, 'Experience')}>
+            <li>Experience</li> 
           </a>
           <a href="#Education" onClick={(e) => scrollToSection(e, 'Education')}>
             <li>Education</li>

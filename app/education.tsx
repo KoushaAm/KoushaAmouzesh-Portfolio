@@ -14,7 +14,8 @@ export default function Education() {
     <div className="education-content" style={{ lineHeight: "1.2", padding: "20px" }}>
       <div className='education-card'>
       <div className="card" style={{textAlign: "center" }}>
-        <h1 style={{ textAlign: 'center', marginBottom: "20px" }}><strong>Education</strong></h1>
+      
+        <h1 style={{ fontSize:"60px",marginTop: "0px",  textAlign: 'center', marginBottom: "20px" }}><strong>Education</strong></h1>
         <div className="education-item" style={{ marginBottom: "10px" }}>
           <p style={{ fontSize: '30px', fontWeight: "bold", marginBottom: "5px" }}>
             <FontAwesomeIcon icon={faGraduationCap} style={{ marginRight: "10px"}} />

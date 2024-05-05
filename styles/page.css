@@ -139,23 +139,8 @@ body {
 /* Gradient effect with a pseudo-element */
 .education-card {
   padding: 40px;
-  /* width: 80%;
-  height: 60%;
-  background: linear-gradient(to bottom, #edededb8, #87aff0c3);
-  border-radius: 8px;
-  box-shadow: 0 0 0 0 #e8e5e5; 
-  position: relative;
-  overflow: hidden; 
-  transition: box-shadow 1s ease 1s, background 1s ease 1s;  */
 }
 
-/* Show the border on hover */
-/* .education-card:hover {
-  background: linear-gradient(to bottom, #edededb8, #87aff0c3);
-  background-position: 100% 0; 
-  box-shadow: 0 0 0 6px #e8e5e5; 
-  transition: box-shadow 1s ease, background 1s ease; 
-}  */
 
   
 
@@ -224,6 +209,7 @@ p {
 }
 
 .section-project {
+  padding : 40px;
   min-height: 400vh;
   background-color: black;
   font-family: 'Oswald', sans-serif;
@@ -258,6 +244,8 @@ p {
   position: relative;
   margin-right: 25px;
 }
+
+
 
 .section p, 
 .education-section p,
