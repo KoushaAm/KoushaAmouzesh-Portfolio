@@ -14,11 +14,11 @@ export default function Resume() {
             </h1>
             <div style={{ marginLeft: "70px", marginTop: "20px" }}>
             
-                <a href="https://github.com/KoushaAm/KoushaAmouzesh-Portfolio/blob/main/resume-KoushaAmouzesh.pdf?raw=true" download>
+                <a href="https://github.com/KoushaAm/KoushaAmouzesh-Portfolio/blob/main/Kousha-Amouzesh-Resume.pdf?raw=true" download>
                 <FontAwesomeIcon icon={faDownload} style={{ marginRight: "8px" }} />
                 Download Resume
                 </a>
-                <img src="https://github.com/KoushaAm/KoushaAmouzesh-Portfolio/blob/main/resume.png?raw=true" style={{ padding: "150px" }}></img>
+                <img src="https://github.com/KoushaAm/KoushaAmouzesh-Portfolio/blob/main/Kousha-Amouzesh-Resume.jpg?raw=true" style={{ padding: "150px" }}></img>
             </div>
             
       
