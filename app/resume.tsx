@@ -18,7 +18,7 @@ export default function Resume() {
                 <FontAwesomeIcon icon={faDownload} style={{ marginRight: "8px" }} />
                 Download Resume
                 </a>
-                <img src="https://github.com/KoushaAm/KoushaAmouzesh-Portfolio/blob/main/Kousha-Amouzesh-Resume.jpg?raw=true" style={{ padding: "150px" }}></img>
+                <img src="https://github.com/KoushaAm/KoushaAmouzesh-Portfolio/blob/main/Kousha-Amouzesh-Resume.png?raw=true" style={{ padding: "150px" }}></img>
             </div>
             
       
