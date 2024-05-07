@@ -16,6 +16,14 @@ export default function Projects() {
           <div className="slideshow-container">
 
           
+          <div className="project-card slide active">
+              <h2>Facial Key Point Detection (Transfer Learning)</h2>
+              <img src="https://github.com/KoushaAm/KoushaAmouzesh-Portfolio/blob/main/Facial%20KP%20Detection.png?raw=true" alt="Job Seeking Platform" className="project-image" />
+              <p>With the concept of Transfer Learning I trained a ResNet Network with a dataset of image. The process consists of data cleaning and labling in addition to model training and validation</p>
+              <a href="https://github.com/KoushaAm/FaicialKeyPointDetection-LearningPhase">
+                <button>Learn More</button>
+              </a>
+          </div>
 
           <div className="project-card slide active">
               <h2>Party-Nav</h2>
