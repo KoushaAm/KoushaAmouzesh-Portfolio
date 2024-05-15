@@ -7,6 +7,7 @@
     width: 50px;
     display: flex;
     margin-right: 10px;
+    
 }
 
 .logo {
@@ -14,9 +15,11 @@
     align-items: center; /* Vertically align the items */
   }
 
+
+
   
   .software-title {
-    font-size: 1.5rem; /* Adjust font size as needed */
+    font-size: 1.3rem; /* Adjust font size as needed */
     margin: 0; /* Remove margin from h1 element */
   }
 
@@ -41,8 +44,8 @@
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 999; /* Adjust the z-index if needed to ensure the header is above other elements */
-    /* Add any other styles you want to apply when the header is visible */
+    z-index: 999; 
+   
   }
 
 /*change the background color of li text when hovered */
@@ -52,7 +55,7 @@
 
 .transparent-header-nav {
     display: none;
-    font-size:25px;
+    font-size:30px;
     position: fixed;
     width: 100%;
     z-index: 1000; /* Adjust the z-index as needed */
@@ -125,7 +128,7 @@
 }
 
 .sidebar li {
-    font-size: 30px;
+    font-size: 1rem;
     padding: 20px;
 }
 
