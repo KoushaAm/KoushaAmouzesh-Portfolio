@@ -3,12 +3,21 @@
 @tailwind utilities;
 
 .icon {
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
     display: flex;
-    margin-right: 10px;
+    margin: 0 auto;
+
     
 }
+
+/* @media screen and (max-width: 768px) {
+    .icon {
+        height: 15vw;
+        width: 15vw;
+    }
+    
+} */
 
 .logo {
     display: flex; /* Use flex display */
@@ -35,8 +44,10 @@
 
 .sidebar-icon{
    /* center */
+
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .header.visible {

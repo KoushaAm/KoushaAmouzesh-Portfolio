@@ -61,7 +61,7 @@ const Header: React.FC = () => {
               <div className="icon">
                 <Image src={logo} alt="logo" />
               </div>
-            <h1 className="software-title">Kousha</h1>
+            {/* <h1 className="software-title">Kousha</h1> */}
           </div>
 
           <div className="sidebar-toggle" onClick={toggleSidebar}>
@@ -81,9 +81,9 @@ const Header: React.FC = () => {
             <div className="icon">
               <Image src={logo} alt="logo" />
             </div>
-            <h1 className="software-title">Kousha | Software Engineer</h1>
+            <h1 className="software-title" style ={{marginLeft: "2vw"}}>Kousha | Software Engineer</h1>
           </div>
-          <ul>
+          <ul style = {{fontSize: "1.3rem"}}>
             {/* Navigation links */}
             <a href="#AboutMe" onClick={(e) => scrollToSection(e, 'AboutMe')}>
               <li>Me</li>

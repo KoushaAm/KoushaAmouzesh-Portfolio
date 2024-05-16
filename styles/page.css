@@ -11,9 +11,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 body {
-    /* avoid horizontal scroll */
     overflow-x: hidden;
     margin: 0;
+}
+
+/* keep the scroll bar functionality but hide it */
+body::-webkit-scrollbar {
+  display: none;
 }
 
 .button {
@@ -101,7 +105,6 @@ body {
 
 .about-content {
   display: flex;
-  /* align-items: center; */
 
 }
 .about-section p{
@@ -356,7 +359,7 @@ p {
 
   @media (max-width: 1000px) {
     .typing-demo {
-      font-size: 6vw;
+      font-size: 7vw;
     }
     
   }
@@ -728,160 +731,55 @@ p {
   margin-top: -100vh;
 }
 
-/* the intro animation */
-/* Thanks to https://codepen.io/AlexWarnes/pen/jXYYKL */
-/* .spinner-box {
-  width: 500px;
-  height: 500px;
+
+
+.section-project {
+  background-color: #f9f9f9;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.slideshow-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-  background-color: transparent;
 }
 
-
-.leo {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
+.project-card {
+  margin: 40px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 400px;
 }
 
-
-.blue-orbit {
-  width: 150px;
-  height: 150px;
-  border: 1px solid #91daff4c;
-  animation: spin3D 30s linear .2s infinite;
+.project-image {
+  width: 100%;
+  max-width: 400px;
+  height: 200px;
+  object-fit: cover;
 }
 
-.green-orbit {
-  width: 500px;
-  height: 500px;
-  border: 1px solid #91ffbf42;
-  animation: spin3D 20s linear 0s infinite;
+.project-card h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
 }
 
-.red-orbit {
-  width: 50px;
-  height: 50px;
-  border: 2px solid #ffca9145;
-  animation: spin3D 10s linear 0s infinite;
+.project-card p {
+  font-size: 16px;
+  margin-bottom: 10px;
 }
 
-.white-orbit {
-  width: 300px;
-  height: 300px;
-  border: 2px solid #33333367;
-  animation: spin3D 10s linear 0s infinite;
+.project-card button {
+  font-size: 16px;
+  padding: 8px 16px;
+  background-color: #2a2c2e;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
-
-@keyframes spin3D {
-  0% {
-    transform: rotateX(0) rotateY(0) rotateZ(0);
-  }
-  100% {
-    transform: rotateX(1turn) rotateY(1turn) rotateZ(1turn);
-  }
-} */
-
-/* For the blue orbit */
-/* 
-@media (max-width: 1000px) {
-  .leo {
-    margin-top: -300px;
-  }
-}
-
-@media (max-width: 1000px) {
-  .blue-orbit {
-    width: 75px; 
-    height: 75px;
-  }
-} */
-
-/* For the green orbit */
-
-
-/* For mobile view */
-/* @media (max-width: 1000px) {
-  .green-orbit {
-    width: 250px; 
-    height: 250px; 
-  }
-} */
-
-/* For the red orbit */
-
-
-/* For mobile view */
-/* @media (max-width: 1000px) {
-  .red-orbit {
-    width: 25px; 
-    height: 25px; 
-  }
-} */
-
-
-
-/* For mobile view */
-/* @media (max-width: 1000px) {
-  .white-orbit {
-    width: 150px; 
-    height: 150px; 
-  }
-} */
-
-
-
-   .section-project {
-      background-color: #f9f9f9;
-      margin-top: 0;
-      margin-bottom: 0;
-   }
-
-    .slideshow-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-
-    .project-card {
-      margin: 40px;
-      padding: 20px;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      width: 400px;
-    }
-
-    .project-image {
-      width: 100%;
-      max-width: 400px;
-      height: 200px;
-      object-fit: cover;
-    }
-
-    .project-card h2 {
-      font-size: 24px;
-      margin-bottom: 10px;
-    }
-
-    .project-card p {
-      font-size: 16px;
-      margin-bottom: 10px;
-    }
-
-    .project-card button {
-      font-size: 16px;
-      padding: 8px 16px;
-      background-color: #2a2c2e;
-      color: #fff;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-    }
 
 
 
@@ -891,7 +789,8 @@ p {
   position: absolute;
   left: 50%;
   right: 50%;
-  bottom: 20vw;
+  top: 50%;
+  bottom: 25vw;
   
 }
 
@@ -913,7 +812,7 @@ p {
   width: 20px;
   height: 20px;
   position: absolute;
-  left: 50%;
+  /* left: 50%; */
   bottom: 50%; /* Adjust as needed */
   margin: -10px 0 0 -10px;
   margin-bottom: -10px;
@@ -941,13 +840,14 @@ p {
   .arrow:before {
     left: 50%;
     right:50%;
+
   }
   .arrow {
-    top: 70%;
-    margin: -20px 0 0 -20px;
-    
-    /* make hidden */
-
+    /* top: 70%; */
+    /* margin: -20px 0 0 -20px; */
+    left: 50%;
+    right: 50%;
+    bottom: 90vw;
   }
 
 }
