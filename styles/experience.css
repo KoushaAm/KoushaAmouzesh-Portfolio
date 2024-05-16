@@ -137,6 +137,15 @@
     position: relative;
     border-radius: 10px;
     height: 100%; 
+    padding: 2vw; 
+  }
+
+  .content:hover {
+    /* animate box so that it gradually get bigger */
+    transform: scale(1.05);
+    transition: transform 0.5s;
+    
+
   }
   
   /* Media queries - Responsive timeline on screens less than 600px wide */
@@ -197,10 +206,12 @@
     }
   
     .content {
-      padding: 10px;
-      width: 65vw; /* Adjust content width */
+      padding: 5vw;
+      width: 68vw; /* Adjust content width */
       left: 0 ; 
     }
+
+  
   
     /* Adjust font size for better readability */
     .content h4,
@@ -209,7 +220,7 @@
     }
   
     ul {
-      font-size: 0.9rem;
+      font-size: 0.8rem;
     }
   
     /* Adjust the size and position of timeline points */
@@ -218,6 +229,7 @@
       left: 0;
       visibility: hidden;
     }
+
 
 
   
