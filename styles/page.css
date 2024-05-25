@@ -52,10 +52,12 @@ body::-webkit-scrollbar {
   padding: 50px; 
 }
 
+
 @media screen and (max-width: 1000px) {
   .education-content {
     margin-top: 300px; 
   }
+
 }
   
 
@@ -108,14 +110,16 @@ body::-webkit-scrollbar {
 
 }
 .about-section p{
-  padding : 40px; 
-  font-size: 1.5rem; 
+  margin-bottom : 30px; 
+  font-size: 1.5rem;
+  margin-left: 2vw;
+ 
   color: white;
 }
 
 .about-section h1 {
   font-size: 6.0rem;
-  margin-left: 4vw;
+  margin-left: 3vw;
   margin-bottom: 2px; 
 }
 
@@ -123,11 +127,13 @@ body::-webkit-scrollbar {
   .about-section p {
     font-size: 0.7rem;
     padding: 0px;
-    /* margin-left: -5vw; */
+    margin-left: 0px; 
   }
 
   .about-section h1 {
+    
     font-size: 2.0rem;
+    margin-left:5vw; 
   }
 }
 
@@ -152,11 +158,6 @@ body::-webkit-scrollbar {
 
   
 
-.education-section p {
-  padding : 10px; 
-  font-size: 25px; 
-  color: white;
-}
 
 
 
@@ -237,13 +238,29 @@ p {
 }
   
 .section h1, 
-.education-section h1, 
 .section-contact h1 {
   font-size: 40px;
   margin-left: 25px;
   margin-top: 25px;
   position: relative;
   margin-right: 25px;
+}
+
+.education-section h1 {
+  font-size: 5.0rem;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+
+  margin-left: 25px;
+  margin-top: 25px;
+  position: relative;
+  margin-right: 25px;
+}
+
+@media (max-width: 1000px) {
+  .education-section h1 {
+    font-size: 3.0rem;
+  }
 }
 
 
@@ -295,25 +312,8 @@ p {
 }
   
 
-
-
-
-
-@media (max-width: 768px) {
-    .about-content {
-        flex-direction: column;
-    }
-}
-
 .about-text {
-    padding: 40px;
     text-align: left;
-}
-
-@media (max-width: 768px) {
-.about-text {
-    padding: 10px;
-  }
 }
 
 .wrapper {
@@ -446,8 +446,7 @@ p {
   }
   
 
-  .section h1 , 
-  .education-section h1 {
+  .section h1 {
     margin-top: 10px; 
     margin-bottom: 10px; 
   }
@@ -455,10 +454,7 @@ p {
   .section p {
     margin-bottom: 10px; 
   }
-  
-  .about-content {
-    font-size: 30px; /* Reduce the font size */
-  }
+
   
   .image-container {
     justify-content: center;
@@ -477,12 +473,6 @@ p {
   @media (max-width: 1000px) {
     .about-image {
  
-      /* border-radius: 20px; 
-      margin-bottom:100px;
-      display: flex;
-      justify-content: center;
-      width: 200px;
-      height: 270px; */
       opacity: 0;
     }
   }

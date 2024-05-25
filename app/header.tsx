@@ -86,7 +86,7 @@ const Header: React.FC = () => {
           <ul style = {{fontSize: "1.3rem"}}>
             {/* Navigation links */}
             <a href="#AboutMe" onClick={(e) => scrollToSection(e, 'AboutMe')}>
-              <li>Me</li>
+              <li>About</li>
             </a>
             <a href="#Experience" onClick={(e) => scrollToSection(e, 'Experience')}>
               <li>Experience</li>

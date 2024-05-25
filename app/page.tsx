@@ -55,7 +55,9 @@ const Home: React.FC = () => {
       <Analytics />
 
       <link href="https://fonts.googleapis.com/css?family=Cardo:400,700|Oswald" rel="stylesheet"></link>
+
       <Header />
+      
       <Intro />
 
       <AboutMe />
