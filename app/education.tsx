@@ -2,6 +2,8 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGraduationCap, faUniversity, faStar, faCalendarAlt } from "@fortawesome/free-solid-svg-icons";
 import '../styles/education.css'; // Import the CSS file
+import { IconProp } from "@fortawesome/fontawesome-svg-core";
+
 
 export default function Education() {
   return (
@@ -12,19 +14,19 @@ export default function Education() {
             <h1 className="education-title">Education</h1>
             <div className="education-item">
               <p>
-                <FontAwesomeIcon icon={faGraduationCap} style={{ marginRight: "10px"}} />
+                <FontAwesomeIcon icon={faGraduationCap as IconProp} style={{ marginRight: "10px"}} />
                 Computer Science BSc
               </p>
               <p>
-                <FontAwesomeIcon icon={faUniversity} style={{ marginRight: "10px" }} />
+                <FontAwesomeIcon icon={faUniversity as IconProp} style={{ marginRight: "10px" }} />
                 Simon Fraser University
               </p>
               <p>
-                <FontAwesomeIcon icon={faStar} style={{ marginRight: "10px" }} />
+                <FontAwesomeIcon icon={faStar as IconProp} style={{ marginRight: "10px" }} />
                 GPA: (A+) 4.00/4.33
               </p>
               <p>
-                <FontAwesomeIcon icon={faCalendarAlt} style={{ marginRight: "10px" }} />
+                <FontAwesomeIcon icon={faCalendarAlt as IconProp} style={{ marginRight: "10px" }} />
                 Expected Graduation: December 2025
               </p>
             </div>
