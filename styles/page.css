@@ -237,7 +237,6 @@ p {
   pointer-events: none; /* Allow interaction with content behind the overlay */
 }
   
-.section h1, 
 .section-contact h1 {
   font-size: 40px;
   margin-left: 25px;
