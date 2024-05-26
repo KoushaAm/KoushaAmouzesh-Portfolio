@@ -121,11 +121,11 @@ export default function Skills() {
         }, 500); 
     };
 
-    const handleTouchStart = (e) => {
+    const handleTouchStart = (e: React.TouchEvent) => {
         touchStartX = e.touches[0].clientX;
     };
 
-    const handleTouchMove = (e) => {
+    const handleTouchMove = (e: React.TouchEvent) => {
         const touchEndX = e.touches[0].clientX;
         const touchDiff = touchStartX - touchEndX;
         if (touchDiff > 100) {
@@ -135,13 +135,13 @@ export default function Skills() {
         }
     };
 
-    const handleMouseDown = (e) => {
+    const handleMouseDown = (e: React.MouseEvent) => {
         touchStartX = e.clientX;
-        document.addEventListener('mousemove', handleMouseMove);
-        document.addEventListener('mouseup', handleMouseUp);
+        document.addEventListener('mousemove', handleMouseMove as any);
+        document.addEventListener('mouseup', handleMouseUp as any);
     };
 
-    const handleMouseMove = (e) => {
+    const handleMouseMove = (e: MouseEvent) => {
         const touchEndX = e.clientX;
         const touchDiff = touchStartX - touchEndX;
         if (touchDiff > 100) {
