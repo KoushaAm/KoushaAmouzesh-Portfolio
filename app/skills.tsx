@@ -39,6 +39,8 @@ import pycharmIcon from '../styles/logos/pycharm-icon.png';
 import tailwindIcon from '../styles/logos/tailwind-icon.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleChevronRight, faCircleChevronLeft } from '@fortawesome/free-solid-svg-icons';
+import { IconProp } from "@fortawesome/fontawesome-svg-core";
+
 
 const baseURL = 'https://github.com/KoushaAm/KoushaAmouzesh-Portfolio/blob/main/styles/logos/';
 
@@ -174,10 +176,13 @@ export default function Skills() {
 
                 <div className="skills-navigation">
                     <button onClick={handlePrevClick} className="navigation-button">
-                        <FontAwesomeIcon icon={faCircleChevronLeft} />
+                        {/* <FontAwesomeIcon icon={faCircleChevronLeft} /> */}
+                        <FontAwesomeIcon icon={faCircleChevronLeft as IconProp} />
                     </button>
                     <button onClick={handleNextClick} className="navigation-button">
-                        <FontAwesomeIcon icon={faCircleChevronRight} />
+                        {/* <FontAwesomeIcon icon={faCircleChevronRight} /> */}
+                        <FontAwesomeIcon icon={faCircleChevronRight as IconProp} />
+
                     </button>
                 </div>
                 <div className="slide-indicators">
