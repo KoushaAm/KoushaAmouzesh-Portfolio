@@ -3,6 +3,8 @@ import '../styles/page.css';
 import { useState } from 'react';
 import { faDownload } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { IconProp } from "@fortawesome/fontawesome-svg-core";
+
 
 export default function Resume() {
     const [backgroundColor, setBackgroundColor] = useState<string>('black');
@@ -15,7 +17,7 @@ export default function Resume() {
             <div style={{ marginLeft: "70px", marginTop: "20px" }}>
             
                 <a href="https://github.com/KoushaAm/KoushaAmouzesh-Portfolio/blob/main/Kousha-Amouzesh-Resume.pdf?raw=true" download>
-                <FontAwesomeIcon icon={faDownload} style={{ marginRight: "8px" }} />
+                <FontAwesomeIcon icon={faDownload as IconProp} style={{ marginRight: "8px" }} />
                 Download Resume
                 </a>
                 <img src="https://github.com/KoushaAm/KoushaAmouzesh-Portfolio/blob/main/Kousha-Amouzesh-Resume.png?raw=true" style={{ padding: "150px" }}></img>
