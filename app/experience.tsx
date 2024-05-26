@@ -2,19 +2,21 @@
 import React from 'react';
 import { metadata } from './layout';
 import '../styles/experience.css'
-// import an image 
-import forgeahead from '../styles/logos/forgeahead.jpeg'
+
 
 
 export default function Experience() {
   const logo_forgeahead = "https://media.licdn.com/dms/image/C4D0BAQGspzJE3XyRzw/company-logo_200_200/0/1643298805986/forgeahead_solutions_logo?e=1723075200&v=beta&t=03-WDQsd-NA_2op6ozpI0utlrpIOXl1qszUVylkB4C0"
   const logo_teamOrange = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQMAAADCCAMAAAB6zFdcAAAAA1BMVEX/XgA92nntAAAASElEQVR4nO3BMQEAAADCoPVPbQwfoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIC3AcUIAAFkqh/QAAAAAElFTkSuQmCC"
   return (
-    <section id="Experience">
+    <section className= 'section-experience' id="Experience">
+      {/* at smaller screen decrease header size */}
+        
         <h1 >
-                <strong>Experience</strong>
-                
+
+            <strong>Experience</strong>
         </h1>
+
         <div className="timeline">
             <div className="container left">
                 <div className="content">

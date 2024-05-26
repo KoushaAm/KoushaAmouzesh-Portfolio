@@ -2,28 +2,32 @@
 * {
     box-sizing: border-box;
     
-  }
+}
   
-  section {
-    padding : 40px;
-  }
-  /* Set a background color */
-  body {
-    background-color: #474e5d;
-    font-family: Helvetica, sans-serif;
-  }
-  
-  h1 {
-    font-size: 5.0rem;
-    margin-left: 2vw;
-    margin-bottom: 5vw; 
-  }
+.section-experience {
+  padding : 40px;
+}
+/* Set a background color */
+body {
+  background-color: #474e5d;
+  font-family: Helvetica, sans-serif;
+}
 
-  @media screen and (max-width: 1000px) {
-    h1 {
-      font-size: 3.0rem;
-    }
+.section-experience h1 {
+  color: white;
+  margin-bottom: 2vw;
+}
+
+@media screen and (max-width: 1000px) {
+  .section-experience h1 {
+    text-align: center;
+    margin-bottom:5vw;
+    font-size: 2.5rem;
   }
+  
+}
+
+
   
   /* The actual timeline (the vertical ruler) */
   .timeline {
