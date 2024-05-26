@@ -10,6 +10,8 @@ import {
   faGithub 
 } from '@fortawesome/free-brands-svg-icons';
 import '../styles/contact.css'; // Import the CSS file
+import { IconProp } from "@fortawesome/fontawesome-svg-core";
+
 
 export default function Contact() {
   return (
@@ -19,23 +21,23 @@ export default function Contact() {
         <div className="contact-content">
           <div className="contact-item">
             <p>
-              <FontAwesomeIcon icon={faEnvelope} />
+              <FontAwesomeIcon icon={faEnvelope as IconProp} />
               <span>koushaamouzesh@gmail.com</span>
             </p>
             <p>
-              <FontAwesomeIcon icon={faPhone} />
+              <FontAwesomeIcon icon={faPhone as IconProp} />
               <span>604-782-2974</span>
             </p>
             <a href="https://www.linkedin.com/in/kousha-amouzesh-b31445232/" className="link">
-              <FontAwesomeIcon icon={faLinkedin} />
+              <FontAwesomeIcon icon={faLinkedin as IconProp} />
               <span>LinkedIn</span>
             </a>
             <a href="https://github.com/KoushaAm?tab=overview&from=2023-05-01&to=2023-05-28" className="link">
-              <FontAwesomeIcon icon={faGithub} />
+              <FontAwesomeIcon icon={faGithub as IconProp} />
               <span>GitHub</span>
             </a>
             <p>
-              <FontAwesomeIcon icon={faMapMarkerAlt} />
+              <FontAwesomeIcon icon={faMapMarkerAlt as IconProp} />
               <span>Vancouver, B.C., Canada</span>
             </p>
           </div>
