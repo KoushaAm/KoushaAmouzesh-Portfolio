@@ -1,180 +1,4 @@
-// import React from 'react'
-// import '../styles/page.css';
 
-// export default function Skills() {
-//     return (
-              
-//       <section id="Skills" className="skill-section" >
-//       <div className="skills-section">
-//         <h2 className="skills-heading">Skills</h2>
-//         <div className="skills-table">
-//           <div className="skills-column">
-//             <h3 className="skills-category">Languages</h3>
-//             <ul className="skills-list">
-//               <li>
-//                 <span className="skill-name">Java</span>
-//                 <div className="skill-bar">
-//                   <div className="skill-progress" style= {{width: "99%"}}></div>
-//                 </div>
-//               </li>
-//               <li>
-//                 <span className="skill-name">Python</span>
-//                 <div className="skill-bar">
-//                   <div className="skill-progress" style= {{width: "90%"}}></div>
-//                 </div>
-//               </li>
-//               <li>
-//                 <span className="skill-name">JavaScript</span>
-//                 <div className="skill-bar">
-//                   <div className="skill-progress" style= {{width: "85%"}}></div>
-//                 </div>
-//               </li>
-//               <li>
-//                 <span className="skill-name">C</span>
-//                 <div className="skill-bar">
-//                   <div className="skill-progress" style= {{width: "60%"}}></div>
-//                 </div>
-//               </li>
-//               <li>
-//                 <span className="skill-name">C++</span>
-//                 <div className="skill-bar">
-//                   <div className="skill-progress" style= {{width: "80%"}}></div>
-//                 </div>
-//               </li>
-//               <li>
-//                 <span className="skill-name">R</span>
-//                 <div className="skill-bar">
-//                   <div className="skill-progress" style= {{width: "80%"}}></div>
-//                 </div>
-//               </li>
-//               <li>
-//                 <span className="skill-name">HTML</span>
-//                 <div className="skill-bar">
-//                   <div className="skill-progress" style= {{width: "100%"}}></div>
-//                 </div>
-//               </li>
-//               <li>
-//                 <span className="skill-name">CSS</span>
-//                 <div className="skill-bar">
-//                   <div className="skill-progress" style= {{width: "80%"}}></div>
-//                 </div>
-//               </li>
-//             </ul>
-//           </div>
-//           <div className="skills-column">
-//             <h3 className="skills-category">Tools</h3>
-//             <ul className="skills-list">
-//             <li>
-//                 <span className="skill-name">Node.js</span>
-//                 <div className="skill-bar">
-//                   <div className="skill-progress" style= {{width: "95%"}}></div>
-//                 </div>
-//               </li>
-//               <li>
-//                 <span className="skill-name">React.js</span>
-//                 <div className="skill-bar">
-//                   <div className="skill-progress" style= {{width: "85%"}}></div>
-//                 </div>
-//               </li>
-//               <li>
-//                 <span className="skill-name">Next.js</span>
-//                 <div className="skill-bar">
-//                   <div className="skill-progress" style= {{width: "80%"}}></div>
-//                 </div>
-//               </li>
-//               <li>
-//                 <span className="skill-name">EJS</span>
-//                 <div className="skill-bar">
-//                   <div className="skill-progress" style= {{width: "95%"}}></div>
-//                 </div>
-//               </li>
-//               <li>
-//                 <span className="skill-name">PyTorch</span>
-//                 <div className="skill-bar">
-//                   <div className="skill-progress" style= {{width: "60%"}}></div>
-//                 </div>
-//               </li>
-//               <li>
-//                 <span className="skill-name">Tensorflow</span>
-//                 <div className="skill-bar">
-//                   <div className="skill-progress" style= {{width: "75%"}}></div>
-//                 </div>
-//               </li>
-//               <li>
-//                 <span className="skill-name">Firebase</span>
-//                 <div className="skill-bar">
-//                   <div className="skill-progress" style= {{width: "85%"}}></div>
-//                 </div>
-//               </li>
-//               <li>
-//                 <span className="skill-name">Web APIs</span>
-//                 <div className="skill-bar">
-//                   <div className="skill-progress" style= {{width: "99%"}}></div>
-//                 </div>
-//               </li>
-//             </ul>
-//           </div>
-//           <div className="skills-column">
-//             <h3 className="skills-category">Soft Skills</h3>
-//             <ul className="skills-list">
-//             <li>
-//                 <span className="skill-name">Leadership</span>
-//                 <div className="skill-bar">
-//                   <div className="skill-progress" style= {{width: "90%"}}></div>
-//                 </div>
-//               </li>
-//               <li>
-//                 <span className="skill-name">Teamwork</span>
-//                 <div className="skill-bar">
-//                   <div className="skill-progress" style= {{width: "99%"}}></div>
-//                 </div>
-//               </li>
-//               <li>
-//                 <span className="skill-name">Planning</span>
-//                 <div className="skill-bar">
-//                   <div className="skill-progress" style= {{width: "95%"}}></div>
-//                 </div>
-//               </li>
-//               <li>
-//                 <span className="skill-name">Public Speaking</span>
-//                 <div className="skill-bar">
-//                   <div className="skill-progress" style= {{width: "99%"}}></div>
-//                 </div>
-//               </li>
-//               <li>
-//                 <span className="skill-name">Communication</span>
-//                 <div className="skill-bar">
-//                   <div className="skill-progress" style= {{width: "99%"}}></div>
-//                 </div>
-//               </li>
-//               <li>
-//                 <span className="skill-name">Agile Development</span>
-//                 <div className="skill-bar">
-//                   <div className="skill-progress" style= {{width: "95%"}}></div>
-//                 </div>
-//               </li>
-//               <li>
-//                 <span className="skill-name">Fluent in Farsi</span>
-//                 <div className="skill-bar">
-//                   <div className="skill-progress" style= {{width: "100%"}}></div>
-//                 </div>
-//               </li>
-//               <li>
-//                 <span className="skill-name">Teaching</span>
-//                 <div className="skill-bar">
-//                   <div className="skill-progress" style= {{width: "80%"}}></div>
-//                 </div>
-//               </li>
-//             </ul>
-//           </div>
-//         </div>
-//       </div>
-
-//     </section>
-
-//     )
-// }
-// import React from 'react';
 import React, { useState, useEffect} from 'react';
 
 
@@ -216,60 +40,58 @@ import tailwindIcon from '../styles/logos/tailwind-icon.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleChevronRight, faCircleChevronLeft } from '@fortawesome/free-solid-svg-icons';
 
+const baseURL = 'https://github.com/KoushaAm/KoushaAmouzesh-Portfolio/blob/main/styles/logos/';
 
 const slides = [
     {
         title: 'Programming Languages',
         skills: [
-            { title: 'Java', imageUrl: javaIcon.src },
-            { title: 'Python', imageUrl: pythonIcon.src },
-            { title: 'JavaScript', imageUrl: javascriptIcon.src },
-            { title: 'C', imageUrl: cIcon.src },
-            { title: 'C++', imageUrl: cppIcon.src },
-            { title: 'R', imageUrl: rIcon.src },
-            { title: 'SQL', imageUrl: sqlIcon.src },
-            { title: 'TypeScript', imageUrl: tsIcon.src },
-            { title: 'HTML', imageUrl: htmlIcon.src },
-            { title: 'CSS', imageUrl: cssIcon.src },
-
+            { title: 'Java', imageUrl: `${baseURL}java-icon-256x256-k4ufhihr.png?raw=true` },
+            { title: 'Python', imageUrl: `${baseURL}python-icon.png?raw=true` },
+            { title: 'JavaScript', imageUrl: `${baseURL}js-icon.png?raw=true` },
+            { title: 'C', imageUrl: `${baseURL}c-icon.png?raw=true` },
+            { title: 'C++', imageUrl: `${baseURL}cpp-icon.png?raw=true` },
+            { title: 'R', imageUrl: `${baseURL}r-icon.png?raw=true` },
+            { title: 'SQL', imageUrl: `${baseURL}sql-icon.png?raw=true` },
+            { title: 'TypeScript', imageUrl: `${baseURL}ts-icon.png?raw=true` },
+            { title: 'HTML', imageUrl: `${baseURL}html-icon.png?raw=true` },
+            { title: 'CSS', imageUrl: `${baseURL}css-icon.png?raw=true` },
         ],
     },
     {
         title: 'Libraries',
         skills: [
-            { title: 'React.js', imageUrl: reactIcon.src },
-            { title: 'Node.js', imageUrl: nodeIcon.src },
-            { title: 'Next.js', imageUrl: nextjsIcon.src },
-            {title: 'Tailwind CSS', imageUrl: tailwindIcon.src},
-            { title: 'PyTorch', imageUrl: pytorchIcon.src },
-            { title: 'Tensorflow', imageUrl: tensorflowIcon.src },
-            { title: 'Langchain', imageUrl: langchainIcon.src },
-            { title: 'MongoDB', imageUrl: mongodbIcon.src },
-            { title: 'Firebase', imageUrl: firebaseIcon.src },
-            { title: 'Flask', imageUrl: flaskIcon.src },
-            
+            { title: 'React.js', imageUrl: `${baseURL}react-icon.png?raw=true` },
+            { title: 'Node.js', imageUrl: `${baseURL}node-icon.png?raw=true` },
+            { title: 'Next.js', imageUrl: `${baseURL}next-icon.png?raw=true` },
+            { title: 'Tailwind CSS', imageUrl: `${baseURL}tailwind-icon.png?raw=true` },
+            { title: 'PyTorch', imageUrl: `${baseURL}pytorch-icon.png?raw=true` },
+            { title: 'Tensorflow', imageUrl: `${baseURL}tensorflow-icon.png?raw=true` },
+            { title: 'Langchain', imageUrl: `${baseURL}langchain-icon.png?raw=true` },
+            { title: 'MongoDB', imageUrl: `${baseURL}mongodb-icon.png?raw=true` },
+            { title: 'Firebase', imageUrl: `${baseURL}firebase-icon.png?raw=true` },
+            { title: 'Flask', imageUrl: `${baseURL}flask-icon.png?raw=true` },
         ],
     },
     {
         title: 'Tools',
         skills: [
-            { title: 'Git', imageUrl: gitIcon.src },
-            { title: 'AWS Sagemaker', imageUrl: sagemakerIcon.src },
-            { title: 'AWS DynamoDB', imageUrl: dynamoDBIcon.src },
-            { title: 'Anaconda', imageUrl: anacondaIcon.src },
-            { title: 'Docker', imageUrl: dockerIcon.src },
-            { title: 'Huggingface', imageUrl: huggingfaceIcon.src },
-            { title: 'Jira', imageUrl: jiraIcon.src },
-            { title: 'Bitbucket', imageUrl: bitbucketIcon.src },
-            { title: 'VSCode', imageUrl: vscode.src },
-            { title: 'IntelliJ', imageUrl: intellijIcon.src },
-            { title: 'PyCharm', imageUrl: pycharmIcon.src },
-            { title: 'Android Studio', imageUrl: androidStudioIcon.src },
-
-            
+            { title: 'Git', imageUrl: `${baseURL}git-icon.png?raw=true` },
+            { title: 'AWS Sagemaker', imageUrl: `${baseURL}sagemaker-icon.png?raw=true` },
+            { title: 'AWS DynamoDB', imageUrl: `${baseURL}aws-dynamoDB.png?raw=true` },
+            { title: 'Anaconda', imageUrl: `${baseURL}anaconda-icon.png?raw=true` },
+            { title: 'Docker', imageUrl: `${baseURL}docker-icon.png?raw=true` },
+            { title: 'Huggingface', imageUrl: `${baseURL}huggingface-icon.png?raw=true` },
+            { title: 'Jira', imageUrl: `${baseURL}jira-icon.png?raw=true` },
+            { title: 'Bitbucket', imageUrl: `${baseURL}bitbucket-icon.png?raw=true` },
+            { title: 'VSCode', imageUrl: `${baseURL}vscode-icon.png?raw=true` },
+            { title: 'IntelliJ', imageUrl: `${baseURL}intellij-icon.png?raw=true` },
+            { title: 'PyCharm', imageUrl: `${baseURL}pycharm-icon.png?raw=true` },
+            { title: 'Android Studio', imageUrl: `${baseURL}androidStudio-icon.png?raw=true` },
         ],
     }
 ];
+
 
 
 export default function Skills() {
