@@ -1,0 +1,88 @@
+.section-project {
+    padding: 20px;
+    /* text-align: center; Center the text within the section */
+}
+h1 {
+    font-size: 5rem;
+    margin-left: 2vw;
+    margin-bottom: -5vw; 
+    
+}
+
+@media screen and (max-width: 1000px) {
+    .section-project h1{
+        text-align: center;;
+        margin-left: 0;
+        font-size: 2.5rem;
+
+    }
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 20px; /* Adjust the gap as needed */
+    padding: 10vw;
+    justify-content: center; 
+    align-content: center; 
+    justify-items: center; 
+    align-items: center; 
+}
+
+@media screen and (max-width: 768px) {
+    .project-grid {
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    }
+}
+
+.project-card {
+    background-color: #fff;
+    border-radius: 28px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s;
+    max-width: 100%;
+}
+
+/* make the card smaller at smaller screen */
+@media (max-width: 768px) {
+    .project-card {
+        margin: 0 auto;
+        font-size: 0.8em;
+    }
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    background-color: #fff;
+}
+
+.project-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.project-card h2 {
+    font-size: 1.5em;
+    margin: 16px;
+}
+
+.project-card p {
+    font-size: 1em;
+    margin: 16px;
+}
+
+.project-card button {
+    margin-left: 0.4vw;
+    background-color: #232323;
+    color: #fff;
+    border: none;
+    border-radius: 28px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.project-card button:hover {
+    background-color: #646161;
+}

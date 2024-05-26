@@ -68,7 +68,7 @@
     font-size: 0.8rem;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
     .skill-item {
         width: 45%;
     }
