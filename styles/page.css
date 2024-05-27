@@ -75,6 +75,7 @@ body::-webkit-scrollbar {
   background-image: url('./circuit.svg');
   min-height: 100vh;
   place-items: center; 
+  /* shadow  */
 }
 
 .about-section {
@@ -178,12 +179,12 @@ body::-webkit-scrollbar {
   top: 0;
   left: 0;
   width: 100%;
-  height:180%;
+  height:160%;
   
   background: linear-gradient(
     to top,
     rgb(0, 0, 0) 0%, 
-    rgba(0, 0, 0, 0.863) 50%, 
+    rgba(0, 0, 0, 0.967) 50%, 
     rgba(0, 0, 0, 0) 100% 
   );
   pointer-events: none; /* Allow interaction with content behind the overlay */
