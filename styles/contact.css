@@ -1,55 +1,170 @@
 /* contact.css */
 
 .section-contact {
-  background-color: black;
-  color: white;
-  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #000000;
+  padding: 20px;
 }
 
-.section-contact h1 {
-  font-size: 4rem;
+.contact-card {
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  transform: translateY(0);
+  transition: transform 0.3s ease-in-out;
+  width: 100%;
+  max-width: 500px; 
+  margin-bottom: 50px; 
 }
 
-.container-contact {
-  max-width: 800px;
-  margin: 0 auto;
+.contact-card:hover {
+  transform: translateY(-10px);
 }
 
-.contact-content {
-  margin-top: 20px;
+.contact-card-body {
+  padding: 20px;
 }
 
-.contact-item {
+.contact-card-header {
+  border-bottom: 2px solid #eee;
   margin-bottom: 20px;
+  text-align: center;
 }
 
-.contact-item p {
-  margin-bottom: 10px;
+.contact-card-header h2 {
+  margin: 0;
+  font-size: 3.0rem;
+  color: #333;
 }
 
-.link {
-  color: white;
-  text-decoration: none;
-  display: inline-block;
-  margin-right: 20px;
-  position: relative;
-  transition: color 0.3s ease;
-}
-
-.link:hover,
-.contact-item p:hover {
-  text-decoration: underline;
-}
-
-@media screen and (max-width: 1000px) {
-  .contact-item p, .contact-item a {
-      font-size: 1.0rem;
+@media screen and (max-width: 600px) {
+  .contact-card-header h2 {
+    font-size: 2.0rem;
   }
   
 }
 
-.contact-item span{
-  margin-left: 10px; 
+.contact-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
 
+.profile-pic {
+  margin-bottom: 20px;
+}
 
+.profile-pic img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 5px solid #eee;
+  transition: transform 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 600px){
+  .profile-pic img {
+    width: 150px;
+    height: 150px;
+  }
+
+  /* content font*/
+  .contact-content p {
+    font-size: 0.9rem;
+  }  
+}
+
+.profile-pic img:hover {
+  transform: scale(1.1);
+}
+
+.contact-info {
+  width: 100%;
+  text-align: center;
+}
+
+.contact-info p {
+  display: flex;
+  justify-content: center; /* Center text within paragraphs */
+  align-items: center;
+  font-size: 1.5rem;
+  color: #555;
+  margin: 10px 0;
+}
+
+.contact-info p strong {
+  margin-left: 10px;
+}
+
+.social-buttons {
+  display: flex;
+  justify-content: center; /* Center the social buttons on larger screens */
+  gap: 10px;
+  margin-top: 20px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+  color: white;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.linkedin {
+  background-color: #0077b5;
+}
+
+.github {
+  background-color: #333;
+}
+
+.linkedin:hover {
+  background-color: #005582;
+}
+
+.github:hover {
+  background-color: #222;
+}
+
+.button span {
+  margin-left: 10px;
+}
+
+@media (max-width: 600px) {
+  .contact-card {
+    width: 90vw;
+    padding: 10px;
+  }
+
+  .contact-card-body {
+    padding: 10px;
+  }
+
+  .contact-content {
+    align-items: center; /* Ensure items are centered */
+  }
+
+  .social-buttons {
+    flex-direction: column;
+    align-items: center; /* Center the social buttons */
+  }
+
+  .contact-info p {
+    font-size: 0.9rem;
+  }
+
+  .button {
+    width: 100%;
+    justify-content: center;
+  }
+}

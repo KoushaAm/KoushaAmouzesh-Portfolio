@@ -11,13 +11,14 @@
     
 }
 
-/* @media screen and (max-width: 768px) {
-    .icon {
-        height: 15vw;
-        width: 15vw;
-    }
-    
-} */
+.icon img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+
 
 .logo {
     display: flex; /* Use flex display */

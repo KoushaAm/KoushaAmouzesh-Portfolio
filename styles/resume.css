@@ -1,0 +1,77 @@
+.section {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+
+.section h1 {
+    color: white;
+    margin-bottom: 2vw;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .section h1 {
+      text-align: center;
+      margin-bottom:5vw;
+      font-size: 2.5rem;
+    }
+    
+  }
+
+
+.button-content {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.resume-content {
+    max-width: 800px;
+    margin: 0 auto;
+    color: #acacac;
+
+}
+
+
+
+.resume-content img {
+    width: 100vw;
+    height: auto;
+    border-radius: 20px;
+
+}
+
+@media screen and (max-width: 768px) {
+    .resume-content img {
+        width: 100%;
+        height: auto;
+    }
+}
+.download-button {
+    background-color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: black; /* Change button text color to black */
+}
+
+.download-button:hover {
+    background-color: #f0f0f0;
+}
+
+/* reduce button size at smaller screen */
+@media screen and (max-width: 1000px) {
+    .download-button {
+        padding: 5px 12px;
+        font-size: 0.8rem;
+
+    }
+}
+
+.resume-image {
+    margin-top: 20px;
+    border-radius: 20px;
+}

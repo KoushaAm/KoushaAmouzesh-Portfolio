@@ -1,45 +1,49 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { 
-  faEnvelope, 
-  faPhone, 
-  faMapMarkerAlt 
-} from '@fortawesome/free-solid-svg-icons';
-import { 
-  faLinkedin, 
-  faGithub 
-} from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope, faPhone, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
+import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import '../styles/contact.css'; // Import the CSS file
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
 
+const profilePic = 'https://media.licdn.com/dms/image/D5603AQFkK1rwK4Cblw/profile-displayphoto-shrink_400_400/0/1706899488257?e=1722470400&v=beta&t=bLgA8P7N5kvDWBO48xzTMhZrCA06JmIWr3cWhv738Vk';
 
 export default function Contact() {
   return (
     <section className="section-contact" id="Contact">
-      <div className="container-contact">
-        <h1>Contact</h1>
-        <div className="contact-content">
-          <div className="contact-item">
-            <p>
-              <FontAwesomeIcon icon={faEnvelope as IconProp} />
-              <span>koushaamouzesh@gmail.com</span>
-            </p>
-            <p>
-              <FontAwesomeIcon icon={faPhone as IconProp} />
-              <span>604-782-2974</span>
-            </p>
-            <a href="https://www.linkedin.com/in/kousha-amouzesh-b31445232/" className="link">
-              <FontAwesomeIcon icon={faLinkedin as IconProp} />
-              <span>LinkedIn</span>
-            </a>
-            <a href="https://github.com/KoushaAm?tab=overview&from=2023-05-01&to=2023-05-28" className="link">
-              <FontAwesomeIcon icon={faGithub as IconProp} />
-              <span>GitHub</span>
-            </a>
-            <p>
-              <FontAwesomeIcon icon={faMapMarkerAlt as IconProp} />
-              <span>Vancouver, B.C., Canada</span>
-            </p>
+      <div className="contact-card">
+        <div className="contact-card-body">
+          <div className="contact-card-header">
+            <h2>Contact</h2>
+          </div>
+          
+          <div className="contact-content">
+            <div className="profile-pic">
+              <img src={profilePic} alt="Profile" />
+            </div>
+            <div className="contact-info">
+              <p>
+                <FontAwesomeIcon icon={faEnvelope as IconProp} />
+                <span><strong>koushaamouzesh@gmail.com</strong></span>
+              </p>
+              <p>
+                <FontAwesomeIcon icon={faPhone as IconProp} />
+                <span><strong>604-782-2974</strong></span>
+              </p>
+              <p>
+                <FontAwesomeIcon icon={faMapMarkerAlt as IconProp} />
+                <span><strong>Vancouver, Canada</strong></span>
+              </p>
+              <div className="social-buttons">
+                <a href="https://www.linkedin.com/in/kousha-amouzesh-b31445232/" className="button linkedin">
+                  <FontAwesomeIcon icon={faLinkedin as IconProp} />
+                  <span>LinkedIn</span>
+                </a>
+                <a href="https://github.com/KoushaAm?tab=overview&from=2023-05-01&to=2023-05-28" className="button github">
+                  <FontAwesomeIcon icon={faGithub as IconProp} />
+                  <span>GitHub</span>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>

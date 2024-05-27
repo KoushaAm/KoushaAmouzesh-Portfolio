@@ -27,7 +27,7 @@ export default function Intro() {
             <div  className={`typing-demo-2 ${isVisible ? 'visible' : ''}`}>
                 I am a software engineer 💻 
             </div>
-            <div className='arrow'></div>
+            <div style = {{marginTop: "20px"}} className='arrow'></div>
             
             </div>
             

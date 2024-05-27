@@ -112,45 +112,33 @@ const Header: React.FC = () => {
       {/* Mobile view sidebar */}
       
       <nav className={`sidebar ${(isSidebarOpen && isMobileView) || (isSidebarOpen && isScrolled)? "open" : ""}`}>
-  <ul>
-    {/* Sidebar links */}
-    <a href="#AboutMe" onClick={(e) => scrollToSection(e, 'AboutMe')}>
-      <li>
-        <div className="sidebar-item">Me</div>
-      </li>
-    </a>
-    <a href="#Experience" onClick={(e) => scrollToSection(e, 'Experience')}>
-      <li>
-        <div className="sidebar-item">Experience</div>
-      </li>
-    </a>
-    <a href="#Education" onClick={(e) => scrollToSection(e, 'Education')}>
-      <li>
-        <div className="sidebar-item">Education</div>
-      </li>
-    </a>
-    <a href="#Skills" onClick={(e) => scrollToSection(e, 'Skills')}>
-      <li>
-        <div className="sidebar-item">Skills</div>
-      </li>
-    </a>
-    <a href="#Projects" onClick={(e) => scrollToSection(e, 'Projects')}>
-      <li>
-        <div className="sidebar-item">Projects</div>
-      </li>
-    </a>
-    <a href="#Resume" onClick={(e) => scrollToSection(e, 'Resume')}>
-      <li>
-        <div className="sidebar-item">Resume</div>
-      </li>
-    </a>
-    <a href="#Contact" onClick={(e) => scrollToSection(e, 'Contact')}>
-      <li>
-        <div className="sidebar-item">Contact</div>
-      </li>
-    </a>
-  </ul>
-</nav>
+        
+        <ul>
+          
+          {/* Sidebar links */}
+          <a href="#AboutMe" onClick={(e) => scrollToSection(e, 'AboutMe')}>
+            <li>Me</li>
+          </a>
+          <a href="#Experience" onClick={(e) => scrollToSection(e, 'Experience')}>
+            <li>Experience</li> 
+          </a>
+          <a href="#Education" onClick={(e) => scrollToSection(e, 'Education')}>
+            <li>Education</li>
+          </a>
+          <a href="#Skills" onClick={(e) => scrollToSection(e, 'Skills')}>
+            <li>Skills</li>
+          </a>
+          <a href="#Projects" onClick={(e) => scrollToSection(e, 'Projects')}>
+            <li>Projects</li>
+          </a>
+          <a href="#Resume" onClick={(e) => scrollToSection(e, 'Resume')}>
+            <li>Resume</li>
+          </a>
+          <a href="#Contact" onClick={(e) => scrollToSection(e, 'Contact')}>
+            <li>Contact</li>
+          </a>
+        </ul>
+      </nav>
     </header>
   );
 };
