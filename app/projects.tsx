@@ -7,6 +7,12 @@ export default function Projects() {
 
     const projects = [
         {
+            title: 'NewLink Social Platform',
+            img: 'https://github.com/KoushaAm/KoushaAmouzesh-Portfolio/blob/main/app/assets/NewLink-image.png?raw=true',
+            description: 'A platform for SFU newcomers to learn about the culture at SFU using fine-tuned Llama 3 chatbot and take part in social events organized by student volunteers.',
+            link: 'https://github.com/KoushaAm/stormhacks-project-NewLink'
+        },
+        {
             title: 'Facial Key Point Detection',
             img: 'https://github.com/KoushaAm/KoushaAmouzesh-Portfolio/blob/main/Facial%20KP%20Detection.png?raw=true',
             description: 'With the concept of Transfer Learning I trained a ResNet Network with a dataset of images.',
