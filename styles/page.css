@@ -175,7 +175,7 @@ body::-webkit-scrollbar {
 
 .hero-section {
   background-image: url('./circuit.svg');
-  padding: 1px; 
+  padding: 10px; 
   min-height: 100vh;
   place-items: center;
   background-attachment: fixed;
