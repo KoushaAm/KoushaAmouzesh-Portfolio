@@ -183,6 +183,7 @@ body::-webkit-scrollbar {
   background-position: center;
   position: relative;
 }
+
 .hero-section::after{
   content: "";
   position: absolute;
