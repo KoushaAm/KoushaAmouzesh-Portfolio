@@ -6,7 +6,7 @@ import '../styles/experience.css'
 
 
 export default function Experience() {
-  const logo_forgeahead = "https://media.licdn.com/dms/image/C4D0BAQGspzJE3XyRzw/company-logo_200_200/0/1643298805986/forgeahead_solutions_logo?e=1723075200&v=beta&t=03-WDQsd-NA_2op6ozpI0utlrpIOXl1qszUVylkB4C0"
+  const logo_forgeahead = "https://github.com/KoushaAm/KoushaAmouzesh-Portfolio/blob/main/styles/logos/forgeahead_solutions_logo.jpeg?raw=true"
   const logo_teamOrange = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQMAAADCCAMAAAB6zFdcAAAAA1BMVEX/XgA92nntAAAASElEQVR4nO3BMQEAAADCoPVPbQwfoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIC3AcUIAAFkqh/QAAAAAElFTkSuQmCC"
   return (
     <section className= 'section-experience' id="Experience">

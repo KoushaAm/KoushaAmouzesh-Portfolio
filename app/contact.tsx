@@ -5,7 +5,7 @@ import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import '../styles/contact.css'; // Import the CSS file
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
 
-const profilePic = 'https://media.licdn.com/dms/image/D5603AQFkK1rwK4Cblw/profile-displayphoto-shrink_400_400/0/1706899488257?e=1722470400&v=beta&t=bLgA8P7N5kvDWBO48xzTMhZrCA06JmIWr3cWhv738Vk';
+const profilePic = 'https://github.com/KoushaAm/KoushaAmouzesh-Portfolio/blob/main/styles/logos/kousha_amouzesh_profile.png?raw=true';
 
 export default function Contact() {
   return (
