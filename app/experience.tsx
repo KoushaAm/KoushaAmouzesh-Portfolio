@@ -9,6 +9,7 @@ export default function Experience() {
   const logo_forgeahead = "https://github.com/KoushaAm/KoushaAmouzesh-Portfolio/blob/main/styles/logos/forgeahead_solutions_logo.jpeg?raw=true"
   const sfu_blueprint_logo = "https://github.com/KoushaAm/KoushaAmouzesh-Portfolio/blob/main/styles/logos/sfu_blueprint_logo.jpeg?raw=true"
   const logo_teamOrange = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQMAAADCCAMAAAB6zFdcAAAAA1BMVEX/XgA92nntAAAASElEQVR4nO3BMQEAAADCoPVPbQwfoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIC3AcUIAAFkqh/QAAAAAElFTkSuQmCC"
+  const icbc_log = "https://github.com/KoushaAm/KoushaAmouzesh-Portfolio/blob/main/styles/logos/icbc.png?raw=true"
   return (
     <section className= 'section-experience' id="Experience">
       {/* at smaller screen decrease header size */}
@@ -63,6 +64,23 @@ export default function Experience() {
                       <li>Managed clients data on a the Neo4j graph database and collaboratively implemented the bot to send Cypher Quries to the database for information retrieval.</li>
                       <li>Organized Github Issues and communicated the tasks and progresses with the client.</li>
                       <li>Planned the integration phase of the chatbot with the clients website.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div className="container right">
+                <div className="content">
+                  <div style ={{display: "flex"}}>
+                    <img src={icbc_log} alt="ICBC Icon" style={{width: "50px", height: "50px",borderRadius: "50px",  marginRight: "10px", marginBottom: "10px"}}></img>
+                    <h4 style = {{ marginTop: "10px"}}><strong>ICBC - Insurance Corporation of British Columbia</strong></h4>
+                  </div>
+                  <h2 style = {{color: "#7cbde6"}}>May 2025 - August 2025</h2>
+                  <h4 ><strong>Software Developer</strong></h4>
+                    <ul className="bullet-list" style = {{marginTop: "10px"}}>
+                      <li>Served as main developer for 3 AWS cloud migration projects on ICBC Claim Center, a critical automation platform for customer claims, using JavaScript, Python, and BluePrism.</li>
+                      <li>Improved payload efficiency by implementing optimized PostgreSQL queries for AWS Redshift</li>
+                      <li>Developed Batch scripts to enable automated claim updates via Redshift connections</li>
+                      <li>Partnered with stakeholder to create Excel QA report for acceptance testing to track user requirements</li>
                     </ul>
                 </div>
             </div>
