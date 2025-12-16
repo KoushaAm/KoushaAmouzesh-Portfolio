@@ -7,7 +7,7 @@ export default function Projects() {
 
     const projects = [
         {
-            title: "AutoSec: A Multi-Agent Code Security Tool for Vulnerability Detection & Remediation",
+            title: "AutoSec: A Multi-Agent Code Security Tool",
             img: "https://github.com/KoushaAm/KoushaAmouzesh-Portfolio/blob/main/app/assets/autosec.png?raw=true",
             description: "A pipeline for automated security testing using AI models to detect and autonomously fix vulnerabilities in Java applications.",
             link: "https://github.com/KoushaAm/AutoSec"
