@@ -7,10 +7,23 @@ export default function Projects() {
 
     const projects = [
         {
+            title: "AutoSec: A Multi-Agent Code Security Tool for Vulnerability Detection & Remediation",
+            img: "https://github.com/KoushaAm/KoushaAmouzesh-Portfolio/blob/main/app/assets/autosec.png?raw=true",
+            description: "A pipeline for automated security testing using AI models to detect and autonomously fix vulnerabilities in Java applications.",
+            link: "https://github.com/KoushaAm/AutoSec"
+        },
+
+        {
             title: 'NewLink Social Platform',
             img: 'https://github.com/KoushaAm/KoushaAmouzesh-Portfolio/blob/main/app/assets/NewLink-image.png?raw=true',
             description: 'A platform for SFU newcomers to learn about the culture at SFU using fine-tuned Llama 3 chatbot and take part in social events organized by student volunteers.',
             link: 'https://github.com/KoushaAm/stormhacks-project-NewLink'
+        },
+        {
+            title: "Network Packet Sniffer/Analyzer",
+            img: "https://github.com/KoushaAm/KoushaAmouzesh-Portfolio/blob/main/app/assets/packetsniffer.png?raw=true",
+            description: "Developed a Packet Sniffer in C++ to recieve network traffic, and analyzed the anamolies with Scikit-learn unsupervised models in Python.",
+            link: "https://github.com/KoushaAm/Packet-Sniffer/"
         },
         {
             title: 'Facial Key Point Detection',
