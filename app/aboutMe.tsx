@@ -11,7 +11,7 @@ export default function AboutMe() {
         <div className="about-content">
           <div className="about-text" >
             <p className="about-paragraph">
-              I am a 22-year-old Software Engineer and a Computer Science student at Simon Fraser University in Burnaby, British Columbia. I am currently active as an ML engineer at Forgeahead Solutions and Intend to dive deeper into the world of Machine Learning by seeking more opportunites in both fields of development and research.
+              I am a 22-year-old Software Engineer and a Computer Science student at Simon Fraser University in Burnaby, British Columbia. I have collected 2 years of experience as a ML engineer and software developer at Forgeahead Solutions, SFU Blueprint and ICBC and Intend to dive deeper into the world of AI, security and software development by seeking more opportunites.
             </p>
             <p className="about-paragraph">
               Besides my passion for technology and academia, I've been active in competitive swimming and find joy in recreational soccer. Additionally, I've pursued hobbies like drawing and music, mastering multiple percussion instruments along the way.
