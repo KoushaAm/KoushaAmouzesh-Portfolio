@@ -13,13 +13,8 @@ import Resume from './resume';
 import Contact from './contact';
 import { Analytics } from '@vercel/analytics/react';
 
-
 const Home: React.FC = () => {
-
   const [scrollPosition, setScrollPosition] = useState<number>(0);
-  const [backgroundColor, setBackgroundColor] = useState<string>('black');
-
-
 
   const sections = [
     { id: 'Intro', title: 'Home'},
@@ -48,10 +43,8 @@ const Home: React.FC = () => {
     return () => clearInterval(slideInterval);
   }, []);
 
-  
-
   return (
-    <main style = {{backgroundColor}}>
+    <main style={{ position: 'relative' }}> {/* Add position relative */}
       <Analytics />
 
       <link href="https://fonts.googleapis.com/css?family=Cardo:400,700|Oswald" rel="stylesheet"></link>
@@ -61,10 +54,8 @@ const Home: React.FC = () => {
       <Intro />
 
       <AboutMe />
-    
 
       <Experience />
-
       
       <Education />
       
@@ -75,7 +66,6 @@ const Home: React.FC = () => {
       <Resume />
 
       <Contact/>
-
 
     </main>
   );

@@ -1,0 +1,221 @@
+/* ===================================
+   HERO/INTRO SECTION - FASTER SUBTITLE
+   =================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@600;700&display=swap');
+
+/* Hero Section Container */
+.hero-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent !important;
+  position: relative;
+  padding: 2rem;
+  z-index: 1;
+}
+
+.hero-section::before,
+.hero-section::after {
+  display: none !important;
+}
+
+/* Content Wrapper - CENTERED */
+.wrapper {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 100%;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 2rem 12rem;
+}
+
+/* Main Title - CENTERED */
+.typing-demo {
+  font-family: 'Space Grotesk', -apple-system, sans-serif;
+  font-size: clamp(2.5rem, 8vw, 6rem);
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: -0.04em;
+  line-height: 1.2;
+  white-space: nowrap;
+  border-right: 3px solid rgba(255, 255, 255, 0.75);
+  animation: typing 1.5s steps(16) forwards, blink 0.75s step-end infinite; /* Faster: 1.5s instead of 2s */
+  margin: 0 auto;
+  text-align: center;
+  display: inline-block;
+}
+
+.typing-demo.visible {
+  animation: typing 1.5s steps(16) forwards, blink 0.75s step-end 3;
+}
+
+/* Subtitle - FASTER APPEARANCE */
+.typing-demo-2 {
+  font-family: 'Inter', -apple-system, sans-serif;
+  font-size: clamp(1.125rem, 2.5vw, 1.75rem);
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.65);
+  letter-spacing: -0.01em;
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out 1.2s; /* Changed from 1s/2s to 0.6s/1.2s - appears faster */
+  margin: 0 auto;
+  max-width: 600px;
+  text-align: center;
+}
+
+.typing-demo-2.visible {
+  opacity: 1;
+}
+
+/* Scroll Arrow - POSITIONED LOWER */
+.arrow {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+  width: 28px;
+  height: 28px;
+  border-right: 2px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+  animation: arrowFloat 2s ease-in-out infinite;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.arrow:hover {
+  border-color: rgba(255, 255, 255, 0.9);
+  transform: translateX(-50%) rotate(45deg) scale(1.1);
+}
+
+/* ===================================
+   ANIMATIONS
+   =================================== */
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+    border-right: none;
+  }
+}
+
+@keyframes blink {
+  0%, 50% {
+    border-color: rgba(255, 255, 255, 0.75);
+  }
+  51%, 100% {
+    border-color: transparent;
+  }
+}
+
+@keyframes arrowFloat {
+  0%, 100% {
+    transform: translateX(-50%) translateY(0) rotate(45deg);
+    opacity: 0.5;
+  }
+  50% {
+    transform: translateX(-50%) translateY(12px) rotate(45deg);
+    opacity: 1;
+  }
+}
+
+/* ===================================
+   RESPONSIVE DESIGN
+   =================================== */
+
+/* Tablet */
+@media screen and (max-width: 1024px) {
+  .wrapper {
+    padding: 0 1.5rem 10rem;
+  }
+
+  .typing-demo {
+    font-size: clamp(2rem, 7vw, 4.5rem);
+  }
+  
+  .typing-demo-2 {
+    font-size: clamp(1rem, 2.2vw, 1.5rem);
+  }
+
+  .arrow {
+    bottom: 2.5rem;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+  .hero-section {
+    padding: 1.5rem 0.5rem;
+  }
+  
+  .wrapper {
+    gap: 1.5rem;
+    padding: 0 1rem 8rem;
+  }
+  
+  .typing-demo {
+    font-size: clamp(1.75rem, 8vw, 3rem);
+  }
+  
+  .typing-demo-2 {
+    font-size: clamp(0.95rem, 4vw, 1.25rem);
+    padding: 0 0.5rem;
+  }
+  
+  .arrow {
+    bottom: 2rem;
+    width: 24px;
+    height: 24px;
+  }
+}
+
+/* Small Mobile */
+@media screen and (max-width: 480px) {
+  .wrapper {
+    padding: 0 0.5rem 6rem;
+  }
+  
+  .typing-demo {
+    font-size: clamp(1.5rem, 9vw, 2.5rem);
+    border-right-width: 2px;
+  }
+  
+  .typing-demo-2 {
+    font-size: 1rem;
+  }
+
+  .arrow {
+    bottom: 1.5rem;
+    width: 22px;
+    height: 22px;
+  }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .typing-demo,
+  .typing-demo-2,
+  .arrow {
+    animation: none !important;
+  }
+  
+  .typing-demo {
+    width: auto;
+    border-right: none;
+  }
+  
+  .typing-demo-2 {
+    opacity: 1;
+  }
+}

@@ -3,7 +3,6 @@ import { useState } from 'react';
 import '../styles/projects.css'; // Import the CSS file
 
 export default function Projects() {
-    const [backgroundColor, setBackgroundColor] = useState('black');
 
     const projects = [
         {
@@ -20,7 +19,7 @@ export default function Projects() {
             link: 'https://github.com/KoushaAm/stormhacks-project-NewLink'
         },
         {
-            title: "Network Packet Sniffer/Analyzer",
+            title: "Network Packet Analyzer",
             img: "https://github.com/KoushaAm/KoushaAmouzesh-Portfolio/blob/main/app/assets/packetsniffer.png?raw=true",
             description: "Developed a Packet Sniffer in C++ to recieve network traffic, and analyzed the anamolies with Scikit-learn unsupervised models in Python.",
             link: "https://github.com/KoushaAm/Packet-Sniffer/"
@@ -88,7 +87,7 @@ export default function Projects() {
     ];
 
     return (
-        <section id="Projects" className="section-project" style={{ backgroundColor, marginTop: "0px", marginBottom: "0px" }}>
+        <section id="Projects" className="section-project" style={{marginTop: "0px", marginBottom: "0px" }}>
             <h1>Projects</h1>
             <div className="project-grid">
                 {projects.map((project, idx) => (

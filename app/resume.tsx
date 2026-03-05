@@ -6,9 +6,8 @@ import { IconProp } from "@fortawesome/fontawesome-svg-core";
 import '../styles/resume.css'
 
 export default function Resume() {
-    const [backgroundColor, setBackgroundColor] = useState<string>('black');
     return (
-        <section id="Resume" className="section" style={{ backgroundColor }}>
+        <section id="Resume" className="section" >
             <h1>
                 <strong>Resume</strong>
             </h1>

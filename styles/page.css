@@ -27,20 +27,18 @@ body::-webkit-scrollbar {
 
 
 .section,
-.hero-section,
+/* .hero-section, */
 .about-section,
 .skill-section,
 .education-section {
   min-height: 120vh;
   width: 100%;
   max-width: 120%;
-  background-color: black;
+  background-color: transparent;
   color: white;
   margin-bottom: 100px;
-  background-color: #04051F;
-  background-color: #020311;
+
   position: relative; 
-  background-color: black;
 }
 
 .education-content {
@@ -63,7 +61,7 @@ body::-webkit-scrollbar {
 
 .about-section {
   /* Remove height property */
-  background-image: url('./smallCircuit.svg');
+  /* background-image: url('./smallCircuit.svg'); */
   background-size: cover;
 
   background-repeat: no-repeat;
@@ -73,14 +71,14 @@ body::-webkit-scrollbar {
 }
 
 .hero-section {
-  background-image: url('./circuit.svg');
+  /* background-image: url('./circuit.svg'); */
   min-height: 100vh;
   place-items: center; 
   /* shadow  */
 }
 
 .about-section {
-  background-image: url('./smallCircuit.svg');
+  /* background-image: url('./smallCircuit.svg'); */
   height: 120vh;
   background-size: cover;
   background-repeat: no-repeat;
@@ -165,7 +163,7 @@ body::-webkit-scrollbar {
 
 .skill-section {
   margin-top:-120px; 
-  background-image: url('./skill.svg');
+  /* background-image: url('./skill.svg'); */
   background-size: cover;
   background-repeat: no-repeat;
   padding: 40px;
@@ -174,7 +172,7 @@ body::-webkit-scrollbar {
 }
 
 .hero-section {
-  background-image: url('./circuit.svg');
+  /* background-image: url('./circuit.svg'); */
   /* reduce the scale of image */
   background-size: 100%;
   padding: 10px; 
@@ -228,7 +226,7 @@ p {
 .section-project {
   padding : 40px;
   min-height: 400vh;
-  background-color: black;
+  background-color: transparent;
   font-family: 'Oswald', sans-serif;
   font-size: 300;
   
@@ -627,15 +625,7 @@ p {
   color:black;
 }
 
-.project-card button {
-  font-size: 16px;
-  padding: 10px 20px;
-  background-color: #000000;
-  color: #ffffff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
+
 
 .project-card button:hover {
   background-color: #aaaaaa;
@@ -738,7 +728,7 @@ p {
 
 
 .section-project {
-  background-color: #f9f9f9;
+  /* background-color: #f9f9f9; */
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -860,7 +850,7 @@ p {
 .section-contact {
   width: 100%;
   height: 100vh;
-  background-color: black;
+  background-color: transparent;
   color: white;
   /* background-image: url('./contact.svg'); */
   background-size: cover;
@@ -868,3 +858,5 @@ p {
   padding: 100px;
   
 }
+
+

@@ -1,77 +1,108 @@
+/* MODERNIZED RESUME.CSS */
+
 .section {
-    display: flex;
-    flex-direction: column;
-    /* align-items: center; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background-color: transparent;
+  padding: 10rem 2rem 4rem; /* Added top padding for fixed header */
 }
 
 .section h1 {
-    color: white;
-    margin-bottom: 2vw;
-  }
-  
-  @media screen and (max-width: 768px) {
-    .section h1 {
-      text-align: center;
-      margin-bottom:5vw;
-      font-size: 2.5rem;
-    }
-    
-  }
-
+  color: white;
+  font-size: clamp(2.5rem, 8vw, 5rem);
+  font-weight: 600;
+  margin: 0 0 3rem 0;
+  text-align: center;
+  letter-spacing: -0.03em;
+}
 
 .button-content {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2.5rem;
 }
 
 .resume-content {
-    max-width: 800px;
-    margin: 0 auto;
-    color: #acacac;
-
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
 }
-
-
 
 .resume-content img {
-    width: 100vw;
-    height: auto;
-    border-radius: 20px;
-
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-@media screen and (max-width: 768px) {
-    .resume-content img {
-        width: 100%;
-        height: auto;
-    }
-}
 .download-button {
-    background-color: white;
-    border: none;
-    border-radius: 20px;
-    padding: 10px 20px;
-    font-size: 1.2rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    color: black; /* Change button text color to black */
+  background-color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 14px 32px;
+  font-size: 1.05rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  color: black;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: 'Inter', -apple-system, sans-serif;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
 }
 
 .download-button:hover {
-    background-color: #f0f0f0;
-}
-
-/* reduce button size at smaller screen */
-@media screen and (max-width: 1000px) {
-    .download-button {
-        padding: 5px 12px;
-        font-size: 0.8rem;
-
-    }
+  background-color: rgba(255, 255, 255, 0.95);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 255, 255, 0.2);
 }
 
 .resume-image {
-    margin-top: 20px;
-    border-radius: 20px;
+  margin-top: 0;
+  border-radius: 16px;
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 768px) {
+  .section {
+    padding: 8rem 1rem 3rem;
+  }
+
+  .section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .download-button {
+    padding: 12px 24px;
+    font-size: 0.95rem;
+  }
+
+  .resume-content {
+    max-width: 100%;
+  }
+
+  .resume-content img {
+    border-radius: 12px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .section {
+    padding: 7rem 0.75rem 2rem;
+  }
+
+  .download-button {
+    padding: 11px 20px;
+    font-size: 0.9rem;
+  }
+
+  .resume-content img {
+    border-radius: 10px;
+  }
 }

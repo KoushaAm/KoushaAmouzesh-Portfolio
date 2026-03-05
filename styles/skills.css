@@ -1,127 +1,121 @@
-
+/* modernized-skills.css */
 .skill-section {
-    padding: 4rem 2rem;
-}
-
-.skill-section h2 {
-    text-align: center;
-    font-size: 4rem;
-    margin-bottom: 2rem;
-}
-
-@media screen and (max-width: 600px) {
-    .skill-section h2 {
-        font-size: 2.5rem;
-    }
-    
+  padding: 8rem 2rem;
+  background-color:transparent;
 }
 
 .skills-heading {
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 2rem;
+  text-align: center;
+  font-size: clamp(2.5rem, 8vw, 4rem);
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: white;
 }
 
 .skills-category {
-    text-align: center;
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin-bottom: 3rem;
+  color: rgba(255, 255, 255, 0.6);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
 }
 
 .skills-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .skill-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 20%;
-    max-width: 12rem;
-    text-align: center;
-    transition: transform 0.3s ease, opacity 0.5s ease;
-    padding: 1rem;
-    opacity: 0;
-    transform: translateY(20px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 120px;
+  text-align: center;
+  transition: all 0.3s ease;
+  opacity: 0;
+  transform: translateY(20px);
 }
 
 .skill-item.visible {
-    opacity: 1;
-    transform: translateY(0);
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .skill-icon {
-    width: 6vw;
-    height: 6vw;
-    margin-bottom: 1rem;
-    border-radius: 20%;
-    object-fit: cover;
-    animation: glow 3.0s infinite alternate;
-    background-color: rgba(255, 255, 255, 0.25);
-    filter: drop-shadow(0 0.1rem 0.8rem rgba(0, 0, 0, 0.798));
+  width: 72px;
+  height: 72px;
+  margin-bottom: 1rem;
+  border-radius: 16px;
+  object-fit: cover;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 12px;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.skill-item:hover .skill-icon {
+  transform: translateY(-4px);
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.2);
 }
 
 .skill-name {
-    font-size: 0.8rem;
-}
-
-@media screen and (max-width: 768px) {
-    .skill-item {
-        width: 45%;
-    }
-    .skill-icon {
-        width: 20vw;
-        height: 20vw;
-    }
-    .skill-name {
-        font-size: 0.8rem;
-    }
-}
-
-.skill-item:hover {
-    transform: scale(1.1);
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.9);
 }
 
 .skills-navigation {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 3rem;
 }
 
 .navigation-button {
-    background: none;
-    border: none;
-    color: #8a8a8a;
-    font-size: 24px;
-    padding: 10px;
-    cursor: pointer;
-    transition: transform 0.3s ease;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .navigation-button:hover {
-    transform: scale(1.2);
+  background: rgba(255, 255, 255, 0.12);
+  transform: scale(1.1);
 }
 
 .slide-indicators {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 2rem;
 }
 
 .slide-indicator {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: #ddd;
-    margin: 0 5px;
-    transition: background-color 0.3s ease;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+  margin-bottom: 15px;
 }
 
 .slide-indicator.active {
-    background-color: #464646;
+  background-color: white;
+  width: 24px;
+  border-radius: 4px;
 }
