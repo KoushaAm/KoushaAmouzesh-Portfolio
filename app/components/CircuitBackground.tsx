@@ -1,4 +1,3 @@
-"use client";
 import React, { useEffect, useRef } from 'react';
 import '../../styles/circuit-background.css';
 
@@ -17,12 +16,13 @@ export default function CircuitBackground() {
 
     // Set canvas size
     const setCanvasSize = () => {
+      if (!canvas) return;
       canvas.width = window.innerWidth;
       canvas.height = window.innerHeight;
       initParticles(); // Recreate particles on resize
     };
 
-    // Particle class
+    // Particle class - MOVED INSIDE useEffect so canvas is always defined
     class Particle {
       x: number;
       y: number;
@@ -31,14 +31,16 @@ export default function CircuitBackground() {
       radius: number;
 
       constructor() {
-        this.x = Math.random() * canvas.width;
-        this.y = Math.random() * canvas.height;
+        // canvas is guaranteed to exist here because we're inside useEffect after the null check
+        this.x = Math.random() * canvas!.width;
+        this.y = Math.random() * canvas!.height;
         this.vx = (Math.random() - 0.5) * 0.5;
         this.vy = (Math.random() - 0.5) * 0.5;
         this.radius = Math.random() * 2 + 1;
       }
 
       update() {
+        if (!canvas) return;
         this.x += this.vx;
         this.y += this.vy;
 
@@ -60,6 +62,7 @@ export default function CircuitBackground() {
 
     // Initialize particles
     const initParticles = () => {
+      if (!canvas) return;
       particles = [];
       const particleCount = window.innerWidth < 768 ? 50 : 80;
       for (let i = 0; i < particleCount; i++) {
@@ -69,7 +72,7 @@ export default function CircuitBackground() {
 
     // Animation loop
     const animate = () => {
-      if (!ctx) return;
+      if (!ctx || !canvas) return;
 
       // Clear canvas with black background
       ctx.fillStyle = '#000000';

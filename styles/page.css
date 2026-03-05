@@ -777,7 +777,6 @@ p {
 
 
 
-  /* arrow down */
 .arrow,
 .arrow:before {
   position: absolute;
@@ -785,15 +784,12 @@ p {
   right: 50%;
   top: 50%;
   bottom: 25vw;
-  
 }
 
 .arrow {
   width: 40px;
   height: 40px;
   position: flex;
-  /* left: 50%; */
-  /* bottom: 20px; Adjust as needed */
   transform: translateX(-10%) rotate(45deg);
   border-left: none;
   border-top: none;
